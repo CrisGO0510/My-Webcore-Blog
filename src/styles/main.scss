@@ -1,0 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=VT323&family=Space+Mono&display=swap");
+
+:root {
+  background-color: #050208;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: "Space Mono", monospace;
+  color: $text-color;
+}
