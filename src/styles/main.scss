@@ -11,3 +11,10 @@ body {
   font-family: "Space Mono", monospace;
   color: $text-color;
 }
+
+@font-face {
+  font-family: 'GothicByte';
+  src: url('/fonts/GothicByte.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
