@@ -5,4 +5,45 @@
     </div>
     <h3>CrisGO</h3>
   </div>
+
+  <!-- BOTONES CYBERPUNK -->
+  <div class="header-profile-actions">
+    <!-- Botón Ankh -->
+    <q-icon name="fas fa-ankh" size="20px" />
+
+    <!-- Botón GitHub -->
+    <q-btn round size="md" class="action-btn github-btn" @click="openGitHub">
+      <q-icon name="fab fa-github" size="20px" />
+      <q-tooltip class="custom-tooltip">GitHub Profile</q-tooltip>
+    </q-btn>
+
+    <!-- Botón Instagram -->
+    <q-btn
+      round
+      size="md"
+      class="action-btn instagram-btn"
+      @click="openInstagram"
+    >
+      <q-icon name="fab fa-instagram" size="20px" />
+      <q-tooltip class="custom-tooltip">Instagram</q-tooltip>
+    </q-btn>
+
+    <!-- Select de Idioma -->
+    <q-select
+      v-model="selectedLanguage"
+      :options="languageOptions"
+      class="language-select"
+      filled
+      dense
+      options-dense
+      emit-value
+      map-options
+      @update:model-value="changeLanguage"
+    >
+      <template v-slot:prepend>
+        <q-icon name="language" size="18px" />
+        <p class="language-label">{{ selectedLanguage }}</p>
+      </template>
+    </q-select>
+  </div>
 </div>

@@ -1,0 +1,26 @@
+@use "../../styles/variables" as *;
+
+.home-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.home-content {
+  flex: 1;
+  padding: 20px;
+  color: $text-color;
+  
+  h2 {
+    font-family: "GothicByte", monospace;
+    color: $cyan-accent;
+    text-shadow: 0 0 10px $cyan-accent;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+}
