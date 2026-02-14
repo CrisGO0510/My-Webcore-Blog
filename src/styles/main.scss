@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=VT323&family=Space+Mono&display=swap");
 
+// Import variables first
+@import "variables";
+
+// Import Quasar overrides
+@import "quasar-overrides";
+
 :root {
   background-color: #050208;
 }
