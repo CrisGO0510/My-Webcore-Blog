@@ -13,6 +13,12 @@ export default defineConfig({
     preprocessorOptions: {
       scss: {
         additionalData: `@use "@/styles/_variables.scss" as *;`,
+        quietDeps: true,
+        silenceDeprecations: ["import"], // Silencia específicamente warnings de @import
+      },
+      sass: {
+        quietDeps: true,
+        silenceDeprecations: ["import"], // Silencia específicamente warnings de @import
       },
     },
   },
