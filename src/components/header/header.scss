@@ -133,15 +133,21 @@
 
         /* ANIMATED BORDER */
         animation: profile-glow 1.5s ease-in-out infinite alternate;
+      }
 
-        transition: all 0.3s ease;
+      transition: all 0.3s ease;
 
-        &:hover {
-          transform: scale(5) rotate(0deg) translate(24px, 25px);
+      &:hover {
+        transform: scale(5) rotate(0deg) translate(24px, 25px);
+        padding: 6px 0 5px 0px;
+        cursor: grab;
+
+        img {
           box-shadow:
             0 0 25px #00f3ff,
             inset 0 0 15px rgba(191, 0, 255, 0.5);
-          margin-top: 15px;
+
+          cursor: grabbing;
         }
       }
     }
