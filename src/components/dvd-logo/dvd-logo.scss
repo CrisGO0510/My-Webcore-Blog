@@ -1,0 +1,10 @@
+.dvd-logo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 80px;
+  height: 60px;
+  z-index: 1000;
+  pointer-events: none;
+  filter: drop-shadow(0 0 10px rgba(138, 43, 226, 0.6));
+}
