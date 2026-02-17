@@ -2,19 +2,19 @@
   "header": {
     "title": "CrisGO",
     "tooltips": {
-      "ankh": "Mystical Ankh Symbol",
+      "ankh": "Ankh Symbol",
       "github": "GitHub Profile",
-      "instagram": "Instagram Profile", 
+      "instagram": "Instagram Profile",
       "language": "Change Language"
     }
   },
   "home": {
-    "welcome": "Welcome to the cyberpunk blog!",
-    "description": "This is the main content with fisheye effect.",
-    "subtitle": "Senior Architect & Cyberpunk Enthusiast"
+    "welcome": "CrisGO's Core",
+    "description": "Fragments of a digital consciousness."
   },
   "languages": {
     "es": "Español",
     "en": "English"
   }
 }
+
