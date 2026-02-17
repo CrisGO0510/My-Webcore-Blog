@@ -1,3 +1,33 @@
-<div class="eye-container" ref="eye">
-  <div class="pupil" :style="pupilStyle" />
-</div>
+<svg ref="eye" class="eye-svg" viewBox="0 0 160 160">
+  <defs>
+    <radialGradient id="irisGrad">
+      <stop offset="0%" stop-color="#e7d8ff" />
+      <stop offset="55%" stop-color="#9b6cff" />
+      <stop offset="100%" stop-color="#2c004f" />
+    </radialGradient>
+
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Esclerótica -->
+  <circle cx="80" cy="80" r="75" class="sclera" />
+
+  <!-- Iris -->
+  <g :transform="irisTransform">
+    <circle cx="80" cy="80" r="42" fill="url(#irisGrad)" />
+  </g>
+
+  <!-- Pupila -->
+  <g :transform="pupilTransform">
+    <circle cx="80" cy="80" r="14" class="pupil" filter="url(#glow)" />
+  </g>
+
+  <!-- Reflejo -->
+  <circle cx="60" cy="60" r="6" class="highlight" />
+</svg>
