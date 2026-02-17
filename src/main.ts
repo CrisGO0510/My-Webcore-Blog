@@ -14,11 +14,12 @@ import i18n from "./i18n";
 
 import "./styles/main.scss";
 import App from "./app/App.vue";
+import router from "./router";
 
 const myApp = createApp(App);
 
 myApp.use(Quasar, {
-  plugins: {}, 
+  plugins: {},
   lang: quasarLang,
   components: {
     QBtn,
@@ -30,5 +31,6 @@ myApp.use(Quasar, {
 
 // Configurar Vue I18n
 myApp.use(i18n);
+myApp.use(router);
 
 myApp.mount("#app");

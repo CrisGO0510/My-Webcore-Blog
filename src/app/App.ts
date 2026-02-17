@@ -1,11 +1,9 @@
 import { defineComponent } from "vue";
-import Home from "../components/home/home.vue";
-import Header from "../components/header/header.vue";
+import Header from "../pages/header/header.vue";
 
 export default defineComponent({
   name: "App",
   components: {
-    Home,
     Header,
   },
   setup() {
