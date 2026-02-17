@@ -1,0 +1,26 @@
+#app-container {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+
+  // CSS Variables para el offset del mouse
+  --bg-x: 0px;
+  --bg-y: 0px;
+
+  &::before {
+    content: "";
+    position: fixed;
+    top: -5%;
+    left: -5%;
+    width: 110%;
+    height: 110%;
+    background-image: url("/src/assets/bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+    transform: translate(var(--bg-x), var(--bg-y));
+    transition: transform 0.1s ease-out;
+  }
+}
+
