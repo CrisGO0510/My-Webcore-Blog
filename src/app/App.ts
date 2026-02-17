@@ -1,5 +1,5 @@
 import { defineComponent, onMounted, onUnmounted } from "vue";
-import Header from "../pages/header/header.vue";
+import Header from "../components/header/header.vue";
 import DvdLogo from "../components/dvd-logo/dvd-logo.vue";
 
 // Función responsable de calcular el offset del mouse
