@@ -1,13 +1,27 @@
 <svg ref="eye" class="eye-svg" viewBox="0 0 160 160">
   <defs>
-    <radialGradient id="irisGrad">
-      <stop offset="0%" stop-color="#e7d8ff" />
-      <stop offset="55%" stop-color="#9b6cff" />
-      <stop offset="100%" stop-color="#2c004f" />
+    <!-- Gradiente sci-fi claro para iris -->
+    <radialGradient id="irisSciFiGrad">
+      <stop offset="0%" stop-color="#e6f3ff" stop-opacity="0.9" />
+      <stop offset="20%" stop-color="#b3d9ff" stop-opacity="0.95" />
+      <stop offset="50%" stop-color="#8b2be2" stop-opacity="0.8" />
+      <stop offset="80%" stop-color="#6a4c93" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#4c3575" stop-opacity="1" />
     </radialGradient>
 
-    <filter id="glow">
+    <!-- Glow sci-fi sutil -->
+    <filter id="scifiGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/> 
+      </feMerge>
+    </filter>
+
+    <!-- Glow para pupila más suave -->
+    <filter id="pupilGlow" x="-40%" y="-40%" width="180%" height="180%">
       <feGaussianBlur stdDeviation="4" result="blur" />
+      <feColorMatrix in="blur" values="0 0.8 1 0 0  0 0.8 1 0 0  0 0.8 1 0 0  0 0 0 1 0"/>
       <feMerge>
         <feMergeNode in="blur" />
         <feMergeNode in="SourceGraphic" />
@@ -15,19 +29,39 @@
     </filter>
   </defs>
 
-  <!-- Esclerótica -->
+  <!-- Esclerótica clara -->
   <circle cx="80" cy="80" r="75" class="sclera" />
 
-  <!-- Iris -->
+  <!-- Iris sci-fi -->
   <g :transform="irisTransform">
-    <circle cx="80" cy="80" r="42" fill="url(#irisGrad)" />
+    <circle cx="80" cy="80" r="42" class="iris-scifi" fill="url(#irisSciFiGrad)" />
+    
+    <!-- Líneas de circuito sci-fi -->
+    <circle cx="80" cy="80" r="38" class="circuit-lines"
+            stroke-dasharray="8,4" opacity="0.6"/>
+    <circle cx="80" cy="80" r="30" class="circuit-lines-cyan"
+            stroke-dasharray="6,3" opacity="0.5"/>
+    <circle cx="80" cy="80" r="22" class="circuit-lines"
+            stroke-dasharray="4,2" opacity="0.7"/>
+    
+    <!-- Patrones geométricos sci-fi -->
+    <polygon points="80,58 85,68 75,68" class="circuit-lines-cyan" stroke-width="0.8"/>
+    <polygon points="80,102 85,92 75,92" class="circuit-lines-cyan" stroke-width="0.8"/>
+    <polygon points="58,80 68,85 68,75" class="circuit-lines" stroke-width="0.6"/>
+    <polygon points="102,80 92,85 92,75" class="circuit-lines" stroke-width="0.6"/>
   </g>
 
-  <!-- Pupila -->
+  <!-- Pupila con glow cyan suave -->
   <g :transform="pupilTransform">
-    <circle cx="80" cy="80" r="14" class="pupil" filter="url(#glow)" />
+    <circle cx="80" cy="80" r="14" class="pupil" filter="url(#pupilGlow)" />
+    <!-- Punto central luminoso -->
+    <circle cx="80" cy="80" r="3" fill="rgba(0, 255, 255, 0.8)" opacity="0.9" />
   </g>
 
-  <!-- Reflejo -->
-  <circle cx="60" cy="60" r="6" class="highlight" />
+  <!-- Reflejo sci-fi -->
+  <circle cx="65" cy="65" r="8" class="highlight" opacity="0.8" />
+  <circle cx="63" cy="63" r="3" fill="rgba(138, 43, 226, 0.3)" opacity="0.7" />
+  
+  <!-- Reflejo secundario -->
+  <circle cx="95" cy="70" r="4" fill="rgba(255, 255, 255, 0.6)" opacity="0.6" />
 </svg>

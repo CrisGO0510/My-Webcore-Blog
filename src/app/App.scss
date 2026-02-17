@@ -3,10 +3,16 @@
   overflow: hidden;
   height: 100vh;
 
-  // CSS Variables para el offset del mouse
+  // CSS Variables para efectos cyberpunk
   --bg-x: 0px;
   --bg-y: 0px;
+  --glow-intensity: 0;
+  --hue-shift: 0deg;
+  --glow-radius: 30px;
+  --scanline-distortion: 0;
+  --purple-opacity: 0.2;
 
+  // Fondo principal con eye-tracking
   &::before {
     content: "";
     position: fixed;
@@ -18,9 +24,74 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    z-index: -1;
+    z-index: -3;
     transform: translate(var(--bg-x), var(--bg-y));
     transition: transform 0.1s ease-out;
+    
+    // Glow dinámico que sigue el cursor
+    box-shadow: 
+      0 0 var(--glow-radius) rgba(138, 43, 226, var(--purple-opacity)),
+      0 0 calc(var(--glow-radius) * 2) rgba(138, 43, 226, calc(var(--purple-opacity) * 0.5)),
+      inset 0 0 calc(var(--glow-radius) * 0.5) rgba(138, 43, 226, calc(var(--purple-opacity) * 0.3));
+    
+    // Color shifting basado en posición del cursor
+    filter: 
+      contrast(calc(1.1 + var(--glow-intensity) * 0.2))
+      brightness(calc(1.05 + var(--glow-intensity) * 0.15))
+      hue-rotate(var(--hue-shift))
+      saturate(calc(1 + var(--glow-intensity) * 0.5));
+  }
+  
+  // Scanlines cyberpunk que se distorsionan
+  &::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    pointer-events: none;
+    
+    // Scanlines horizontales
+    background: repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 2px,
+      rgba(138, 43, 226, calc(0.03 + var(--scanline-distortion) * 0.05)) 2px,
+      rgba(138, 43, 226, calc(0.03 + var(--scanline-distortion) * 0.05)) 4px
+    );
+    
+    mix-blend-mode: overlay;
+    opacity: calc(0.6 + var(--glow-intensity) * 0.4);
+    
+    // Distorsión de scanlines
+    transform: 
+      skewY(calc(var(--scanline-distortion) * 2deg))
+      scaleY(calc(1 + var(--scanline-distortion) * 0.02));
+    
+    transition: transform 0.1s ease-out, opacity 0.1s ease-out;
+  }
+  
+  // Overlay de ruido cyberpunk
+  .cyberpunk-noise {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    pointer-events: none;
+    
+    background: 
+      radial-gradient(
+        circle at calc(50% + var(--bg-x)), calc(50% + var(--bg-y)),
+        rgba(0, 255, 255, calc(0.05 + var(--glow-intensity) * 0.1)) 0%,
+        transparent 50%
+      );
+    
+    mix-blend-mode: screen;
+    transition: background 0.1s ease-out;
   }
 }
 
