@@ -1,0 +1,20 @@
+{
+  "header": {
+    "title": "CrisGO",
+    "tooltips": {
+      "ankh": "Símbolo Ankh Místico",
+      "github": "Perfil de GitHub",
+      "instagram": "Perfil de Instagram",
+      "language": "Cambiar Idioma"
+    }
+  },
+  "home": {
+    "welcome": "¡Bienvenido al blog cyberpunk!",
+    "description": "Este es el contenido principal con efecto ojo de pez.",
+    "subtitle": "Arquitecto Senior & Entusiasta Cyberpunk"
+  },
+  "languages": {
+    "es": "Español",
+    "en": "English"
+  }
+}
