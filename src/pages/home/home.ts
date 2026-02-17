@@ -1,8 +1,12 @@
 import { computed, defineComponent } from "vue";
 import { useI18n } from "vue-i18n";
+import EyeTracker from "../eye-tracker/eye-tracker.vue";
 
 export default defineComponent({
   name: "Home",
+  components: {
+    EyeTracker,
+  },
   setup() {
     console.log("Home Component Loaded...");
 
