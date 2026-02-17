@@ -11,16 +11,18 @@
   flex: 1;
   padding: 20px;
   color: $text-color;
-  
+  text-align: center;
+
   h2 {
     font-family: "GothicByte", monospace;
     color: $cyan-accent;
     text-shadow: 0 0 10px $cyan-accent;
     margin-bottom: 20px;
   }
-  
+
   p {
     font-size: 18px;
     line-height: 1.6;
   }
 }
+
