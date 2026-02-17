@@ -17,9 +17,8 @@ export const PROFILE_LINKS = {
     url: "https://www.instagram.com/cristhian_0510/",
   },
 
-  // Otros links que puedas agregar en el futuro
   LINKEDIN: {
-    url: "https://linkedin.com/in/tu-usuario",
+    url: "https://www.linkedin.com/in/cristhian-giraldo-orozco-9137492a5/",
   },
 } as const satisfies Record<string, ProfileLink>;
 
@@ -37,4 +36,3 @@ export const LANGUAGE_OPTIONS: LanguageOption[] = [
 ] as const;
 
 export const DEFAULT_LANGUAGE = "es";
-
