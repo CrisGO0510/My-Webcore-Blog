@@ -218,6 +218,50 @@ $social-colors: (
   }
 }
 
+// Estilos para el toggle de animaciones
+.cyberpunk-toggle {
+  .q-toggle__track {
+    @include cyberpunk-bg;
+  }
+  //
+  .q-toggle__thumb {
+    @include cyberpunk-bg;
+    border-radius: 50%;
+    background: red;
+    color: rgb(148, 26, 226);
+  }
+
+  // Efectos hover
+  &:hover .q-toggle__track {
+    background: linear-gradient(
+      145deg,
+      rgba($purple-neon, 0.9),
+      rgba($cyan-accent, 0.3)
+    ) !important;
+    box-shadow:
+      0 0 25px $cyan-accent,
+      inset 0 1px 0 rgba(255, 255, 255, 0.2) !important;
+  }
+
+  &:hover .q-toggle__thumb {
+    background: linear-gradient(
+      145deg,
+      rgba($purple-neon, 0.9),
+      rgba($cyan-accent, 0.3)
+    ) !important;
+    box-shadow:
+      0 0 25px $cyan-accent,
+      inset 0 1px 0 rgba(255, 255, 255, 0.2) !important;
+    transform: scale(1.1) !important;
+  }
+
+  &:hover .q-toggle__icon {
+    color: $cyan-accent !important;
+    text-shadow: 0 0 10px $cyan-accent;
+    transform: scale(1.1) !important;
+  }
+}
+
 :deep(.q-menu),
 .cyberpunk-menu {
   background: linear-gradient(

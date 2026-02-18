@@ -1,5 +1,5 @@
 import { createApp } from "vue";
-import { Quasar, QBtn, QIcon, QSelect, QTooltip } from "quasar";
+import { Quasar, QBtn, QIcon, QSelect, QTooltip, QInput, QToggle } from "quasar";
 import quasarLang from "quasar/lang/es";
 
 // Import icon libraries
@@ -26,6 +26,8 @@ myApp.use(Quasar, {
     QIcon,
     QSelect,
     QTooltip,
+    QInput,
+    QToggle,
   },
 });
 

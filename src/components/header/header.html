@@ -10,13 +10,25 @@
   <div class="header-profile-actions">
     <!-- Botón Ankh -->
     <q-icon name="fas fa-ankh" size="20px">
-      <q-tooltip class="custom-tooltip">{{ translations.tooltips.ankh }}</q-tooltip>
+      <q-tooltip class="custom-tooltip"
+        >{{ translations.tooltips.ankh }}</q-tooltip
+      >
     </q-icon>
+
+    <!-- Botón para desactivar animaciones -->
+    <q-toggle
+      size="80px"
+      v-model="animationEnable"
+      icon="animation"
+      class="cyberpunk-toggle"
+    />
 
     <!-- Botón GitHub -->
     <q-btn round size="md" class="action-btn github-btn" @click="openGitHub">
       <q-icon name="fab fa-github" size="20px" />
-      <q-tooltip class="custom-tooltip">{{ translations.tooltips.github }}</q-tooltip>
+      <q-tooltip class="custom-tooltip"
+        >{{ translations.tooltips.github }}</q-tooltip
+      >
     </q-btn>
 
     <!-- Botón Instagram -->
@@ -27,7 +39,9 @@
       @click="openInstagram"
     >
       <q-icon name="fab fa-instagram" size="20px" />
-      <q-tooltip class="custom-tooltip">{{ translations.tooltips.instagram }}</q-tooltip>
+      <q-tooltip class="custom-tooltip"
+        >{{ translations.tooltips.instagram }}</q-tooltip
+      >
     </q-btn>
 
     <!-- Select de Idioma CON CLASES PROPIAS -->
@@ -48,7 +62,9 @@
         <q-icon name="language" size="18px" />
         <p class="language-label">{{ selectedLanguage }}</p>
       </template>
-      <q-tooltip class="custom-tooltip">{{ translations.tooltips.language }}</q-tooltip>
+      <q-tooltip class="custom-tooltip"
+        >{{ translations.tooltips.language }}</q-tooltip
+      >
     </q-select>
   </div>
 </div>

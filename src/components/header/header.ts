@@ -1,4 +1,4 @@
-import { defineComponent, computed, onMounted } from "vue";
+import { defineComponent, computed, onMounted, ref } from "vue";
 import { useI18n } from "vue-i18n";
 import { PROFILE_LINKS } from "../../constants/profile-links";
 import { useGlobalLanguage } from "../../composables/useGlobalLanguage";
@@ -6,6 +6,8 @@ import { useGlobalLanguage } from "../../composables/useGlobalLanguage";
 export default defineComponent({
   name: "Header",
   setup() {
+    const animationEnable = ref(true);
+
     console.log("🚀 Header Component Loaded...");
 
     const pfpPath = "/src/assets/fisheye-pfp.png";
@@ -54,6 +56,7 @@ export default defineComponent({
       openGitHub,
       openInstagram,
       changeLanguage,
+      animationEnable,
     };
   },
 });
