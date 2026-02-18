@@ -1,12 +1,13 @@
-import { defineComponent, computed, onMounted, ref } from "vue";
+import { defineComponent, computed, onMounted } from "vue";
 import { useI18n } from "vue-i18n";
 import { PROFILE_LINKS } from "../../constants/profile-links";
 import { useGlobalLanguage } from "../../composables/useGlobalLanguage";
+import { useSettings } from "../../composables/useSettings";
 
 export default defineComponent({
   name: "Header",
   setup() {
-    const animationEnable = ref(true);
+    const { animationEnable } = useSettings();
 
     console.log("🚀 Header Component Loaded...");
 

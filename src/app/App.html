@@ -3,7 +3,6 @@
     <Header />
     <router-view />
   </div>
-  <!-- Overlay de ruido cyberpunk -->
-  <div class="cyberpunk-noise"></div>
-  <DvdLogo />
+
+  <DvdLogo v-if="animationEnable" />
 </div>

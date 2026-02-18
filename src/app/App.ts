@@ -1,6 +1,7 @@
-import { defineComponent, onMounted, onUnmounted } from "vue";
+import { defineComponent, onUnmounted, watch } from "vue";
 import Header from "../components/header/header.vue";
 import DvdLogo from "../components/dvd-logo/dvd-logo.vue";
+import { useSettings } from "../composables/useSettings";
 
 // Función responsable de calcular el offset del mouse
 function calculateMouseOffset(
@@ -10,6 +11,19 @@ function calculateMouseOffset(
   const x = (clientX / window.innerWidth - 0.5) * 20;
   const y = (clientY / window.innerHeight - 0.5) * 20;
   return { x, y };
+}
+
+// Función junto a las otras funciones de efectos (arriba)
+function resetCyberpunkEffects(): void {
+  const appContainer = document.getElementById("app-container");
+  if (appContainer) {
+    appContainer.style.setProperty("--bg-x", `0px`);
+    appContainer.style.setProperty("--bg-y", `0px`);
+    appContainer.style.setProperty("--glow-intensity", "0");
+    appContainer.style.setProperty("--hue-shift", "0deg");
+    appContainer.style.setProperty("--scanline-distortion", "0");
+    appContainer.style.setProperty("--purple-opacity", "0.2");
+  }
 }
 
 // Función responsable de calcular efectos cyberpunk
@@ -103,15 +117,39 @@ export default defineComponent({
   },
   setup() {
     let cleanup: (() => void) | null = null;
+    const { animationEnable } = useSettings();
 
-    onMounted(() => {
-      cleanup = setupMouseTracking();
-    });
+    const startTracking = () => {
+      if (!cleanup) {
+        cleanup = setupMouseTracking();
+      }
+    };
+
+    const stopTracking = () => {
+      if (cleanup) {
+        cleanup();
+        cleanup = null;
+      }
+      resetCyberpunkEffects();
+    };
+
+    watch(
+      animationEnable,
+      (isEnabled) => {
+        if (isEnabled) {
+          startTracking();
+        } else {
+          stopTracking();
+        }
+      },
+      { immediate: true },
+    );
 
     onUnmounted(() => {
-      cleanup?.();
+      stopTracking();
     });
-
-    return {};
+    return {
+      animationEnable,
+    };
   },
 });

@@ -1,6 +1,7 @@
 import { computed, defineComponent } from "vue";
 import { useI18n } from "vue-i18n";
 import EyeTracker from "../../components/eye-tracker/eye-tracker.vue";
+import { useSettings } from "../../composables/useSettings";
 
 export default defineComponent({
   name: "Home",
@@ -9,6 +10,7 @@ export default defineComponent({
   },
   setup() {
     console.log("Home Component Loaded...");
+    const { animationEnable } = useSettings();
 
     const { t } = useI18n();
 
@@ -20,6 +22,6 @@ export default defineComponent({
       },
     }));
 
-    return { translations };
+    return { translations, animationEnable };
   },
 });
