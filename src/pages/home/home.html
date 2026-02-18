@@ -2,8 +2,36 @@
   <div class="home-content">
     <h2>{{ translations.home.welcome }}</h2>
     <p>{{ translations.home.description }}</p>
-  </div>
-  <div v-if="animationEnable" class="home-eye">
-    <Eye-tracker />
+
+    <!-- Navegación principal con 4 botones -->
+    <div class="main-navigation">
+      <div class="nav-column left">
+        <q-btn :to="'/about-me'" class="nav-btn about-btn" no-caps>
+          <q-icon name="person" class="nav-icon" />
+          <span class="nav-label">About Me</span>
+        </q-btn>
+
+        <q-btn :to="'/projects'" class="nav-btn projects-btn" no-caps>
+          <q-icon name="code" class="nav-icon" />
+          <span class="nav-label">Projects</span>
+        </q-btn>
+      </div>
+
+      <div class="home-eye">
+        <Eye-tracker />
+      </div>
+
+      <div class="nav-column right">
+        <q-btn :to="'/music'" class="nav-btn music-btn" no-caps>
+          <q-icon name="library_music" class="nav-icon" />
+          <span class="nav-label">Music</span>
+        </q-btn>
+
+        <q-btn :to="'/games'" class="nav-btn games-btn" no-caps>
+          <q-icon name="sports_esports" class="nav-icon" />
+          <span class="nav-label">Games</span>
+        </q-btn>
+      </div>
+    </div>
   </div>
 </div>

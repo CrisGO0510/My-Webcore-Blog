@@ -1,4 +1,5 @@
 @use "../../styles/variables" as *;
+@use "sass:color";
 
 .home-container {
   width: 100%;
@@ -11,17 +12,173 @@
   flex: 1;
   color: $text-color;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
 
   h2 {
     font-family: "GothicByte", monospace;
     color: $cyan-accent;
     text-shadow: 0 0 10px $cyan-accent;
     margin-bottom: 20px;
+    font-size: 2.5rem;
   }
 
   p {
     font-size: 18px;
     line-height: 1.6;
+    margin-bottom: 3rem;
+    max-width: 600px;
+  }
+}
+
+.main-navigation {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+  }
+}
+
+.nav-column {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  &.left {
+    align-items: flex-end;
+
+    @media (max-width: 768px) {
+      align-items: center;
+    }
+  }
+
+  &.right {
+    align-items: flex-start;
+
+    @media (max-width: 768px) {
+      align-items: center;
+    }
+  }
+}
+
+.nav-btn {
+  width: 200px;
+  height: 80px;
+  background: linear-gradient(
+    145deg,
+    rgba($purple-main, 0.8),
+    rgba($purple-neon, 0.6)
+  );
+  border: 2px solid $cyan-accent;
+  border-radius: 15px;
+  color: $text-color !important;
+  font-family: "GothicByte", monospace !important;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  box-shadow:
+    0 0 20px rgba($cyan-accent, 0.3),
+    inset 0 2px 0 rgba(255, 255, 255, 0.1);
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgba($cyan-accent, 0.2),
+      transparent
+    );
+    transition: left 0.5s ease;
+  }
+
+  .nav-icon {
+    font-size: 28px;
+    color: $cyan-accent;
+    text-shadow: 0 0 10px $cyan-accent;
+    transition: all 0.3s ease;
+  }
+
+  .nav-label {
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+  }
+
+  &:hover {
+    transform: translateY(-5px) scale(1.05);
+    background: linear-gradient(
+      145deg,
+      rgba($purple-neon, 0.9),
+      rgba($cyan-accent, 0.4)
+    );
+    box-shadow:
+      0 10px 40px rgba($cyan-accent, 0.6),
+      inset 0 2px 0 rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.8);
+
+    &::before {
+      left: 100%;
+    }
+
+    .nav-icon {
+      transform: scale(1.2);
+      color: #ffffff;
+      text-shadow:
+        0 0 15px $cyan-accent,
+        0 0 25px rgba(255, 255, 255, 0.5);
+    }
+
+    .nav-label {
+      color: #ffffff;
+      text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+      transform: translateY(-2px);
+    }
+  }
+
+  // Colores específicos para cada botón
+  &.about-btn:hover {
+    box-shadow:
+      0 10px 40px rgba(#4caf50, 0.6),
+      inset 0 2px 0 rgba(255, 255, 255, 0.2);
+  }
+
+  &.projects-btn:hover {
+    box-shadow:
+      0 10px 40px rgba(#2196f3, 0.6),
+      inset 0 2px 0 rgba(255, 255, 255, 0.2);
+  }
+
+  &.music-btn:hover {
+    box-shadow:
+      0 10px 40px rgba(#e91e63, 0.6),
+      inset 0 2px 0 rgba(255, 255, 255, 0.2);
+  }
+
+  &.games-btn:hover {
+    box-shadow:
+      0 10px 40px rgba(#ff9800, 0.6),
+      inset 0 2px 0 rgba(255, 255, 255, 0.2);
   }
 }
 
@@ -29,5 +186,5 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  align-self: center;
 }
-
