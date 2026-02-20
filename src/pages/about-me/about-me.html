@@ -1,25 +1,105 @@
-<div class="page-container">
-  <main class="main-content">
-    <div class="page-header">
-      <h1 class="page-title">{{ translations.aboutMe.title }}</h1>
-      <p class="page-subtitle">{{ translations.aboutMe.subtitle }}</p>
-    </div>
-
-    <div class="content-section">
-      <div class="bio-card">
-        <h2>{{ translations.aboutMe.myStory }}</h2>
-        <p>{{ translations.aboutMe.description }}</p>
+<div class="about-page">
+  <div class="about-window">
+    <!-- LADO IZQUIERDO: CHARACTER BIO -->
+    <aside class="bio-panel">
+      <div class="avatar-container">
+        <!-- Tu imagen fisheye-pfp.png -->
+        <img
+          src="/src/assets/fisheye-pfp.png"
+          alt="CrisGO"
+          class="pixel-avatar"
+        />
       </div>
 
-      <div class="skills-card">
-        <h2>{{ translations.aboutMe.skills }}</h2>
-        <div class="skills-grid">
-          <span v-for="skill in skills" :key="skill" class="skill-tag">
-            {{ skill }}
-          </span>
+      <div class="stats-table">
+        <div v-for="stat in characterStats" :key="stat.label" class="stat-row">
+          <span class="stat-label">{{ stat.label }}</span>
+          <span class="stat-separator">:</span>
+          <span class="stat-value">{{ stat.value }}</span>
         </div>
       </div>
-    </div>
-  </main>
+    </aside>
+
+    <!-- CENTRO: NAVEGACIÓN (ICON RAIL) -->
+    <nav class="nav-rail">
+      <button
+        @click="currentSection = 'presentation'"
+        :class="{ active: currentSection === 'presentation' }"
+      >
+        <span class="icon">👤</span>
+      </button>
+      <button
+        @click="currentSection = 'tools'"
+        :class="{ active: currentSection === 'tools' }"
+      >
+        <span class="icon">🛠️</span>
+      </button>
+      <button
+        @click="currentSection = 'apps'"
+        :class="{ active: currentSection === 'apps' }"
+      >
+        <span class="icon">💻</span>
+      </button>
+      <button
+        @click="currentSection = 'workspace'"
+        :class="{ active: currentSection === 'workspace' }"
+      >
+        <span class="icon">⌨️</span>
+      </button>
+    </nav>
+
+    <!-- LADO DERECHO: CONTENIDO DINÁMICO -->
+    <section class="content-panel">
+      <!-- SECCIÓN: PRESENTATION -->
+      <div v-if="currentSection === 'presentation'" class="section-container">
+        <h2 class="section-title">Presentation</h2>
+        <div class="text-block">
+          <p>{{ translations.aboutMe.description }}</p>
+          <p>Tearing down the family laptop since 2005...</p>
+        </div>
+      </div>
+
+      <!-- SECCIÓN: TOOLS -->
+      <div v-if="currentSection === 'tools'" class="section-container">
+        <h2 class="section-title">Tools</h2>
+
+        <div class="group-box">
+          <label>Langs</label>
+          <div class="icons-grid">
+            <div v-for="lang in tools.langs" :key="lang" class="tool-item">
+              <!-- Aquí irían tus iconos -->
+              <span class="tool-label">{{ lang }}</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="group-box">
+          <label>Libs / Frameworks</label>
+          <div class="icons-grid">
+            <div v-for="lib in tools.libs" :key="lib" class="tool-item">
+              <span class="tool-label">{{ lib }}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SECCIÓN: APPS -->
+      <div v-if="currentSection === 'apps'" class="section-container">
+        <h2 class="section-title">Apps</h2>
+        <ul class="simple-list">
+          <li v-for="app in apps" :key="app">{{ app }}</li>
+        </ul>
+      </div>
+
+      <!-- SECCIÓN: WORKSPACE -->
+      <div v-if="currentSection === 'workspace'" class="section-container">
+        <h2 class="section-title">Workspace</h2>
+        <div class="workspace-details">
+          <p><strong>OS:</strong> {{ workspace.os }}</p>
+          <p><strong>Keyboard:</strong> {{ workspace.keyboard }}</p>
+        </div>
+      </div>
+    </section>
+  </div>
 </div>
 
