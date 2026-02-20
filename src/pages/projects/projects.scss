@@ -1,0 +1,247 @@
+@use "../../styles/variables" as *;
+
+.page-container {
+  min-height: 100vh;
+}
+
+.main-content {
+  padding: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.page-header {
+  text-align: center;
+  margin: 2rem 0 3rem 0;
+}
+
+.page-title {
+  font-size: 3rem;
+  color: $cyan-accent;
+  text-shadow: 0 0 15px $cyan-accent;
+  font-family: "GothicByte", monospace;
+  margin-bottom: 1rem;
+  animation: title-glow 2s ease-in-out infinite alternate;
+}
+
+.page-subtitle {
+  color: $text-color;
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+.projects-grid {
+  display: grid;
+  gap: 2.5rem;
+  
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  }
+  
+  @media (min-width: 1200px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.project-card {
+  background: linear-gradient(
+    145deg,
+    rgba($purple-main, 0.15),
+    rgba($purple-neon, 0.08)
+  );
+  border: 1px solid rgba($cyan-accent, 0.6);
+  border-radius: 15px;
+  padding: 2.5rem;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgba($cyan-accent, 0.1),
+      transparent
+    );
+    transition: left 0.6s ease;
+  }
+  
+  &:hover {
+    border-color: $cyan-accent;
+    box-shadow: 
+      0 0 25px rgba($cyan-accent, 0.4),
+      inset 0 0 15px rgba($purple-main, 0.2);
+    transform: translateY(-8px);
+
+    &::before {
+      left: 100%;
+    }
+  }
+  
+  h3 {
+    color: $cyan-accent;
+    margin-bottom: 1rem;
+    font-family: "GothicByte", monospace;
+    font-size: 1.4rem;
+    text-shadow: 0 0 10px rgba($cyan-accent, 0.5);
+  }
+  
+  p {
+    color: $text-color;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    font-size: 1.05rem;
+  }
+}
+
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-bottom: 1.5rem;
+}
+
+.tech {
+  background: linear-gradient(
+    145deg,
+    rgba($purple-neon, 0.25),
+    rgba($purple-main, 0.15)
+  );
+  border: 1px solid rgba($purple-neon, 0.6);
+  color: $purple-neon;
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  cursor: pointer;
+
+  &:hover {
+    background: linear-gradient(
+      145deg,
+      rgba($purple-neon, 0.4),
+      rgba($purple-main, 0.3)
+    );
+    border-color: $purple-neon;
+    box-shadow: 0 0 10px rgba($purple-neon, 0.3);
+    transform: scale(1.05);
+    color: #ffffff;
+    text-shadow: 0 0 8px rgba($purple-neon, 0.6);
+  }
+}
+
+.project-actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.project-btn {
+  padding: 0.7rem 1.5rem;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  border: 1px solid;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    transition: left 0.4s ease;
+  }
+
+  &.demo-btn {
+    background: linear-gradient(
+      145deg,
+      rgba($cyan-accent, 0.2),
+      rgba($cyan-accent, 0.1)
+    );
+    border-color: $cyan-accent;
+    color: $cyan-accent;
+
+    &::before {
+      background: linear-gradient(
+        90deg,
+        transparent,
+        rgba($cyan-accent, 0.3),
+        transparent
+      );
+    }
+
+    &:hover {
+      background: linear-gradient(
+        145deg,
+        rgba($cyan-accent, 0.3),
+        rgba($cyan-accent, 0.2)
+      );
+      box-shadow: 0 0 15px rgba($cyan-accent, 0.4);
+      transform: translateY(-2px);
+      color: #ffffff;
+      text-shadow: 0 0 10px rgba($cyan-accent, 0.8);
+
+      &::before {
+        left: 100%;
+      }
+    }
+  }
+
+  &.code-btn {
+    background: linear-gradient(
+      145deg,
+      rgba($purple-neon, 0.2),
+      rgba($purple-neon, 0.1)
+    );
+    border-color: $purple-neon;
+    color: $purple-neon;
+
+    &::before {
+      background: linear-gradient(
+        90deg,
+        transparent,
+        rgba($purple-neon, 0.3),
+        transparent
+      );
+    }
+
+    &:hover {
+      background: linear-gradient(
+        145deg,
+        rgba($purple-neon, 0.3),
+        rgba($purple-neon, 0.2)
+      );
+      box-shadow: 0 0 15px rgba($purple-neon, 0.4);
+      transform: translateY(-2px);
+      color: #ffffff;
+      text-shadow: 0 0 10px rgba($purple-neon, 0.8);
+
+      &::before {
+        left: 100%;
+      }
+    }
+  }
+}
+
+@keyframes title-glow {
+  0% {
+    text-shadow: 0 0 15px $cyan-accent;
+  }
+  100% {
+    text-shadow: 
+      0 0 20px $cyan-accent,
+      0 0 30px rgba($purple-neon, 0.6);
+  }
+}

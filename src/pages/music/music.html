@@ -1,0 +1,64 @@
+<div class="page-container">
+  <main class="main-content">
+    <div class="page-header">
+      <h1 class="page-title">{{ translations.music.title }}</h1>
+      <p class="page-subtitle">{{ translations.music.subtitle }}</p>
+    </div>
+
+    <div class="music-content">
+      <div class="playlist-section">
+        <h2>{{ translations.music.favoriteGenres }}</h2>
+        <div class="genre-cards">
+          <div v-for="genre in genres" :key="genre.id" class="genre-card">
+            <q-icon :name="genre.icon" size="3rem" />
+            <h3>{{ genre.name }}</h3>
+            <p>{{ genre.description }}</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="now-playing">
+        <h2>{{ translations.music.currentlyListening }}</h2>
+        <div class="player-mock">
+          <q-icon
+            :name="currentTrack.isPlaying ? 'pause_circle' : 'play_circle'"
+            size="4rem"
+            @click="togglePlay"
+            class="play-btn"
+          />
+          <div class="track-info">
+            <h4>{{ currentTrack.title }}</h4>
+            <p>{{ currentTrack.artist }}</p>
+            <div class="track-progress">
+              <div
+                class="progress-bar"
+                :style="{ width: currentTrack.progress + '%' }"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="playlists-section">
+        <h2>{{ translations.music.codingPlaylists }}</h2>
+        <div class="playlists-grid">
+          <div
+            v-for="playlist in playlists"
+            :key="playlist.id"
+            class="playlist-card"
+            @click="selectPlaylist(playlist)"
+          >
+            <div class="playlist-cover">
+              <q-icon :name="playlist.icon" size="2.5rem" />
+            </div>
+            <div class="playlist-info">
+              <h4>{{ playlist.name }}</h4>
+              <p>{{ playlist.tracks }} tracks • {{ playlist.mood }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+

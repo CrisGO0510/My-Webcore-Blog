@@ -1,0 +1,322 @@
+@use "../../styles/variables" as *;
+
+.page-container {
+  min-height: 100vh;
+}
+
+.main-content {
+  padding: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.page-header {
+  text-align: center;
+  margin: 2rem 0 3rem 0;
+}
+
+.page-title {
+  font-size: 3rem;
+  color: $cyan-accent;
+  text-shadow: 0 0 15px $cyan-accent;
+  font-family: "GothicByte", monospace;
+  margin-bottom: 1rem;
+  animation: title-glow 2s ease-in-out infinite alternate;
+}
+
+.page-subtitle {
+  color: $text-color;
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+.music-content {
+  display: grid;
+  gap: 4rem;
+}
+
+.playlist-section h2,
+.now-playing h2,
+.playlists-section h2 {
+  color: $purple-neon;
+  font-family: "GothicByte", monospace;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 1.8rem;
+  text-shadow: 0 0 10px rgba($purple-neon, 0.6);
+}
+
+.genre-cards {
+  display: grid;
+  gap: 1.5rem;
+  
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  @media (min-width: 1024px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.genre-card {
+  background: linear-gradient(
+    145deg,
+    rgba($purple-main, 0.15),
+    rgba($purple-neon, 0.08)
+  );
+  border: 1px solid rgba($purple-neon, 0.6);
+  border-radius: 15px;
+  padding: 2rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgba($purple-neon, 0.1),
+      transparent
+    );
+    transition: left 0.6s ease;
+  }
+  
+  &:hover {
+    border-color: $cyan-accent;
+    box-shadow: 
+      0 0 25px rgba($purple-neon, 0.4),
+      inset 0 0 15px rgba($purple-main, 0.2);
+    transform: translateY(-8px) scale(1.02);
+
+    &::before {
+      left: 100%;
+    }
+
+    .q-icon {
+      transform: scale(1.1);
+      color: $cyan-accent;
+      text-shadow: 0 0 15px $cyan-accent;
+    }
+  }
+  
+  .q-icon {
+    color: $purple-neon;
+    margin-bottom: 1rem;
+    transition: all 0.3s ease;
+    text-shadow: 0 0 10px rgba($purple-neon, 0.6);
+  }
+  
+  h3 {
+    color: $cyan-accent;
+    margin-bottom: 0.5rem;
+    font-family: "GothicByte", monospace;
+    font-size: 1.2rem;
+  }
+  
+  p {
+    color: $text-color;
+    font-size: 0.95rem;
+    opacity: 0.9;
+  }
+}
+
+.now-playing {
+  text-align: center;
+}
+
+.player-mock {
+  background: linear-gradient(
+    145deg,
+    rgba($purple-main, 0.2),
+    rgba($purple-neon, 0.1)
+  );
+  border: 2px solid rgba($cyan-accent, 0.7);
+  border-radius: 20px;
+  padding: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 600px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgba($cyan-accent, 0.1),
+      transparent
+    );
+    transition: left 0.8s ease;
+  }
+
+  &:hover::before {
+    left: 100%;
+  }
+  
+  .play-btn {
+    color: $cyan-accent;
+    text-shadow: 0 0 15px $cyan-accent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover {
+      transform: scale(1.1);
+      color: #ffffff;
+      text-shadow: 0 0 20px $cyan-accent;
+    }
+  }
+  
+  .track-info {
+    text-align: left;
+    flex: 1;
+    
+    h4 {
+      color: $cyan-accent;
+      margin: 0 0 0.5rem 0;
+      font-family: "GothicByte", monospace;
+      font-size: 1.3rem;
+    }
+    
+    p {
+      color: $text-color;
+      margin: 0 0 1rem 0;
+      font-size: 1rem;
+      opacity: 0.9;
+    }
+
+    .track-progress {
+      width: 100%;
+      height: 4px;
+      background: rgba($purple-main, 0.3);
+      border-radius: 2px;
+      overflow: hidden;
+
+      .progress-bar {
+        height: 100%;
+        background: linear-gradient(90deg, $cyan-accent, $purple-neon);
+        transition: width 0.3s ease;
+        box-shadow: 0 0 8px rgba($cyan-accent, 0.6);
+      }
+    }
+  }
+}
+
+.playlists-section {
+  .playlists-grid {
+    display: grid;
+    gap: 1.5rem;
+    
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    
+    @media (min-width: 1024px) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  .playlist-card {
+    background: linear-gradient(
+      145deg,
+      rgba($purple-main, 0.1),
+      rgba($purple-neon, 0.05)
+    );
+    border: 1px solid rgba($cyan-accent, 0.4);
+    border-radius: 15px;
+    padding: 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(
+        90deg,
+        transparent,
+        rgba($cyan-accent, 0.1),
+        transparent
+      );
+      transition: left 0.5s ease;
+    }
+
+    &:hover {
+      border-color: $cyan-accent;
+      box-shadow: 0 0 20px rgba($cyan-accent, 0.3);
+      transform: translateY(-5px);
+
+      &::before {
+        left: 100%;
+      }
+
+      .playlist-cover .q-icon {
+        transform: scale(1.1);
+        color: $cyan-accent;
+      }
+    }
+
+    .playlist-cover {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 1rem;
+
+      .q-icon {
+        color: $purple-neon;
+        transition: all 0.3s ease;
+        text-shadow: 0 0 10px rgba($purple-neon, 0.6);
+      }
+    }
+
+    .playlist-info {
+      text-align: center;
+
+      h4 {
+        color: $cyan-accent;
+        margin: 0 0 0.5rem 0;
+        font-family: "GothicByte", monospace;
+        font-size: 1.1rem;
+      }
+
+      p {
+        color: $text-color;
+        margin: 0;
+        font-size: 0.85rem;
+        opacity: 0.8;
+      }
+    }
+  }
+}
+
+@keyframes title-glow {
+  0% {
+    text-shadow: 0 0 15px $cyan-accent;
+  }
+  100% {
+    text-shadow: 
+      0 0 20px $cyan-accent,
+      0 0 30px rgba($purple-neon, 0.6);
+  }
+}

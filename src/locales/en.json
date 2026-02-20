@@ -12,6 +12,33 @@
     "welcome": "CrisGO's Core",
     "description": "Fragments of a digital consciousness."
   },
+  "aboutMe": {
+    "title": "About Me",
+    "subtitle": "Learn more about me",
+    "myStory": "My Story",
+    "description": "Senior Architect with over 15 years of experience developing modern web applications. Passionate about Vue.js, Angular, and cyberpunk technologies.",
+    "skills": "Skills"
+  },
+  "projects": {
+    "title": "Projects",
+    "subtitle": "My projects and creations",
+    "viewDemo": "View Demo",
+    "viewCode": "View Code"
+  },
+  "music": {
+    "title": "Music",
+    "subtitle": "My musical world",
+    "favoriteGenres": "Favorite Genres",
+    "currentlyListening": "Currently Listening",
+    "codingPlaylists": "Coding Playlists"
+  },
+  "games": {
+    "title": "Games",
+    "subtitle": "My gaming universe",
+    "favoriteGames": "Favorite Games",
+    "gamingStats": "Gaming Stats",
+    "platforms": "Platforms"
+  },
   "languages": {
     "es": "Español",
     "en": "English"

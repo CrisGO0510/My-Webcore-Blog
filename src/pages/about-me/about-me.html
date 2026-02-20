@@ -1,0 +1,25 @@
+<div class="page-container">
+  <main class="main-content">
+    <div class="page-header">
+      <h1 class="page-title">{{ translations.aboutMe.title }}</h1>
+      <p class="page-subtitle">{{ translations.aboutMe.subtitle }}</p>
+    </div>
+
+    <div class="content-section">
+      <div class="bio-card">
+        <h2>{{ translations.aboutMe.myStory }}</h2>
+        <p>{{ translations.aboutMe.description }}</p>
+      </div>
+
+      <div class="skills-card">
+        <h2>{{ translations.aboutMe.skills }}</h2>
+        <div class="skills-grid">
+          <span v-for="skill in skills" :key="skill" class="skill-tag">
+            {{ skill }}
+          </span>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+

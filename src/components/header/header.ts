@@ -1,5 +1,6 @@
 import { defineComponent, computed, onMounted } from "vue";
 import { useI18n } from "vue-i18n";
+import { useRouter } from "vue-router";
 import { PROFILE_LINKS } from "../../constants/profile-links";
 import { useGlobalLanguage } from "../../composables/useGlobalLanguage";
 import { useSettings } from "../../composables/useSettings";
@@ -8,6 +9,7 @@ export default defineComponent({
   name: "Header",
   setup() {
     const { animationEnable } = useSettings();
+    const router = useRouter();
 
     console.log("🚀 Header Component Loaded...");
 
@@ -33,6 +35,10 @@ export default defineComponent({
       },
     }));
 
+    const goToHome = () => {
+      router.push('/');
+    };
+
     const openGitHub = () => {
       window.open(profileLinks.GITHUB.url, "_blank");
     };
@@ -54,6 +60,7 @@ export default defineComponent({
       selectedLanguage,
       languageOptions: availableLanguages,
       translations,
+      goToHome,
       openGitHub,
       openInstagram,
       changeLanguage,

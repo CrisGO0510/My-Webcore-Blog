@@ -1,0 +1,61 @@
+<div class="page-container">
+  <main class="main-content">
+    <div class="page-header">
+      <h1 class="page-title">{{ translations.games.title }}</h1>
+      <p class="page-subtitle">{{ translations.games.subtitle }}</p>
+    </div>
+
+    <div class="games-content">
+      <div class="favorites-section">
+        <h2>{{ translations.games.favoriteGames }}</h2>
+        <div class="games-grid">
+          <div v-for="game in favoriteGames" :key="game.id" class="game-card">
+            <q-icon :name="game.icon" size="3rem" />
+            <h3>{{ game.title }}</h3>
+            <p>{{ game.description }}</p>
+            <div :class="['game-status', game.status]">
+              {{ getStatusText(game.status) }}
+            </div>
+            <div class="game-rating" v-if="game.rating">
+              <span v-for="n in 5" :key="n" class="star">
+                <q-icon
+                  :name="n <= game.rating ? 'star' : 'star_border'"
+                  size="1rem"
+                />
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="stats-section">
+        <h2>{{ translations.games.gamingStats }}</h2>
+        <div class="stats-grid">
+          <div v-for="stat in gamingStats" :key="stat.id" class="stat-card">
+            <q-icon :name="stat.icon" size="2.5rem" />
+            <h4>{{ stat.label }}</h4>
+            <span :class="stat.type === 'number' ? 'stat-number' : 'stat-text'">
+              {{ stat.value }}
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="platforms-section">
+        <h2>{{ translations.games.platforms }}</h2>
+        <div class="platforms-grid">
+          <div
+            v-for="platform in platforms"
+            :key="platform.id"
+            class="platform-card"
+          >
+            <q-icon :name="platform.icon" size="2rem" />
+            <h4>{{ platform.name }}</h4>
+            <p>{{ platform.gamesCount }} juegos</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+

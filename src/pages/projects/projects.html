@@ -1,0 +1,39 @@
+<div class="page-container">
+  <main class="main-content">
+    <div class="page-header">
+      <h1 class="page-title">{{ translations.projects.title }}</h1>
+      <p class="page-subtitle">{{ translations.projects.subtitle }}</p>
+    </div>
+
+    <div class="projects-grid">
+      <div v-for="project in projects" :key="project.id" class="project-card">
+        <h3>{{ project.name }}</h3>
+        <p>{{ project.description }}</p>
+        <div class="tech-stack">
+          <span v-for="tech in project.technologies" :key="tech" class="tech">
+            {{ tech }}
+          </span>
+        </div>
+        <div class="project-actions" v-if="project.link || project.github">
+          <a
+            v-if="project.link"
+            :href="project.link"
+            target="_blank"
+            class="project-btn demo-btn"
+          >
+            {{ translations.projects.viewDemo }}
+          </a>
+          <a
+            v-if="project.github"
+            :href="project.github"
+            target="_blank"
+            class="project-btn code-btn"
+          >
+            {{ translations.projects.viewCode }}
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+
