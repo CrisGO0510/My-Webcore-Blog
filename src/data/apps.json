@@ -1,0 +1,49 @@
+{
+  "apps": [
+    {
+      "name": "Neovim",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/neovim/neovim-original.svg"
+    },
+    {
+      "name": "Docker",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg"
+    },
+    {
+      "name": "Figma",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg"
+    },
+    {
+      "name": "Notion",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/notion/notion-original.svg"
+    },
+    {
+      "name": "Git",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg"
+    },
+    {
+      "name": "Postman",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg"
+    },
+    {
+      "name": "Slack",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/slack/slack-original.svg"
+    },
+    {
+      "name": "DBeaver",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dbeaver/dbeaver-original.svg"
+    },
+    {
+      "name": "Jira",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jira/jira-original.svg"
+    },
+    {
+      "name": "Asana",
+      "icon": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Asana_logo.svg"
+    },
+    {
+      "name": "Kitty",
+      "icon": "https://user-images.githubusercontent.com/57691142/117370998-96523300-ae9d-11eb-8d7f-c341d6834648.png"
+    }
+  ]
+}
+

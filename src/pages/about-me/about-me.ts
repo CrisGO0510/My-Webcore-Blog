@@ -1,5 +1,9 @@
 import { computed, defineComponent, ref } from "vue";
 import { useI18n } from "vue-i18n";
+import techIcons from "../../data/tech-icons.json";
+import appsData from "../../data/apps.json";
+import workspaceData from "../../data/workspace.json";
+import navigationData from "../../data/navigation.json";
 
 function calculateAge(): string {
   const birth = new Date(2005, 4, 10);
@@ -38,25 +42,14 @@ export default defineComponent({
     ];
 
     const tools = {
-      langs: [
-        "Rust",
-        "C",
-        "TypeScript",
-        "JavaScript",
-        "Kotlin",
-        "Python",
-        "Go",
-      ],
-      libs: ["Vue", "Angular", "React", "Node", "Tailwind", "Three.js"],
-      dbs: ["PostgreSQL", "MongoDB", "Redis", "MySQL"],
+      langs: techIcons.langs,
+      libs: techIcons.libs,
+      dbs: techIcons.dbs,
     };
 
-    const apps = ["VS Code", "Neovim", "Docker", "Figma", "Obsidian"];
-    const workspace = {
-      os: "Arch Linux",
-      keyboard: "Custom 60%",
-      monitor: 'Ultrawide 34"',
-    };
+    const apps = appsData.apps;
+    const workspace = workspaceData.workspace;
+    const navigation = navigationData.navigation;
 
     return {
       translations,
@@ -65,6 +58,7 @@ export default defineComponent({
       tools,
       apps,
       workspace,
+      navigation,
     };
   },
 });

@@ -1,0 +1,37 @@
+{
+  "workspace": {
+    "os": {
+      "name": "Arch Linux",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/archlinux/archlinux-original.svg"
+    },
+    "wm": {
+      "name": "Hyprland",
+      "icon": "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/webp/hyprland.webp"
+    },
+    "shell": {
+      "name": "Zsh",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bash/bash-original.svg"
+    },
+    "terminal": {
+      "name": "Kitty",
+      "icon": "https://user-images.githubusercontent.com/57691142/117370998-96523300-ae9d-11eb-8d7f-c341d6834648.png"
+    },
+    "hardware": {
+      "cpu": {
+        "name": "AMD Ryzen 5 5600",
+        "cores": "6-core/12-thread",
+        "icon": "https://upload.wikimedia.org/wikipedia/commons/7/7c/AMD_Logo.svg"
+      },
+      "gpu": {
+        "name": "AMD RX 5700 XT",
+        "memory": "8GB GDDR6",
+        "icon": "https://upload.wikimedia.org/wikipedia/commons/7/7c/AMD_Logo.svg"
+      },
+      "ram": {
+        "capacity": "24GB",
+        "icon": "https://cdn-icons-png.flaticon.com/512/2164/2164987.png"
+      }
+    }
+  }
+}
+

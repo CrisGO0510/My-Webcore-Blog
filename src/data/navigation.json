@@ -1,0 +1,21 @@
+{
+  "navigation": {
+    "presentation": {
+      "name": "Presentation",
+      "icon": "https://i.pinimg.com/1200x/70/cc/29/70cc297cbb16a1b415e98b4b3bbb1859.jpg"
+    },
+    "tools": {
+      "name": "Tools",
+      "icon": "https://i.pinimg.com/736x/d9/e7/e7/d9e7e7bf5c15ea28697c73a79797c035.jpg"
+    },
+    "apps": {
+      "name": "Apps",
+      "icon": "https://i.pinimg.com/736x/1b/b2/b9/1bb2b9f30648a337326c29c114cc01ad.jpg"
+    },
+    "workspace": {
+      "name": "Workspace",
+      "icon": "https://i.pinimg.com/736x/43/53/8e/43538e9c6ba57c68e798d3dcf533d2b4.jpg"
+    }
+  }
+}
+
