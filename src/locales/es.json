@@ -14,10 +14,8 @@
   },
   "aboutMe": {
     "title": "Sobre Mí c:",
-    "subtitle": "Conoce más sobre mí",
-    "myStory": "Mi Historia", 
-    "description": "Arquitecto Senior con más de 15 años de experiencia desarrollando aplicaciones web modernas. Apasionado por Vue.js, Angular, y tecnologías cyberpunk.",
-    "skills": "Skills"
+    "description": "Aprendí a programar a los 12 años porque quería crear un juego como Minecraft. No lo logré jasjdf, pero me quedó el aprendizaje de qué es programar, y esto me generó dos obsesiones: querer saber qué es todo lo que hay por debajo de los sistemas y querer automatizar todo lo que pudiera.\n\nY así fui avanzando en todo, hasta que al momento de entrar a la universidad tomé la decisión de dedicarme al desarrollo frontend y se me abrieron las puertas al mundo laboral.\n\nHoy me muevo principalmente en el frontend con Angular y Vue, experimento con Rust para scripts y paquetes, y vivo en Linux porque me gusta tener el control total del sistema (Mantengo tirándome el Arch jadsjjadfs).\n\nAunque no soy solo una máquina que programa, claramente tengo gustos; por ejemplo, AMO el cyberpunk, lo gótico y la estética webcore de los 2000.\n\nMás allá de eso tengo hobbies como los videojuegos, el anime y la música. El bodybuilding es algo que tomó fuerza en mi vida recientemente y lo amo. Además, me apasiona el DIY por el arte y por el concepto de que la esencia de algo también puede venir de algo tan simple como tú hacer tus propias customizaciones, además de usar mucho mi cuerpo como forma de expresión.\n\nEsto es un poco de mí, no como desarrollador, sino como persona.",
+    "tools": "Herramientas"
   },
   "projects": {
     "title": "Projects",
@@ -44,4 +42,3 @@
     "en": "English"
   }
 }
-

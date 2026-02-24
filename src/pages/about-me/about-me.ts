@@ -25,6 +25,7 @@ export default defineComponent({
     const translations = computed(() => ({
       aboutMe: {
         title: t("aboutMe.title"),
+        description: t("aboutMe.description"),
       },
     }));
 

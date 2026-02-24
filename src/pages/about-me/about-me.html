@@ -26,25 +26,41 @@
         @click="currentSection = 'presentation'"
         :class="{ active: currentSection === 'presentation' }"
       >
-        <img :src="navigation.presentation.icon" :alt="navigation.presentation.name" class="icon" />
+        <img
+          :src="navigation.presentation.icon"
+          :alt="navigation.presentation.name"
+          class="icon"
+        />
       </button>
       <button
         @click="currentSection = 'tools'"
         :class="{ active: currentSection === 'tools' }"
       >
-        <img :src="navigation.tools.icon" :alt="navigation.tools.name" class="icon" />
+        <img
+          :src="navigation.tools.icon"
+          :alt="navigation.tools.name"
+          class="icon"
+        />
       </button>
       <button
         @click="currentSection = 'apps'"
         :class="{ active: currentSection === 'apps' }"
       >
-        <img :src="navigation.apps.icon" :alt="navigation.apps.name" class="icon" />
+        <img
+          :src="navigation.apps.icon"
+          :alt="navigation.apps.name"
+          class="icon"
+        />
       </button>
       <button
         @click="currentSection = 'workspace'"
         :class="{ active: currentSection === 'workspace' }"
       >
-        <img :src="navigation.workspace.icon" :alt="navigation.workspace.name" class="icon" />
+        <img
+          :src="navigation.workspace.icon"
+          :alt="navigation.workspace.name"
+          class="icon"
+        />
       </button>
     </nav>
 
@@ -52,7 +68,7 @@
     <section class="content-panel">
       <!-- SECCIÓN: PRESENTATION -->
       <div v-if="currentSection === 'presentation'" class="section-container">
-        <h2 class="section-title">Presentation</h2>
+        <h2 class="section-title">{{ translations.aboutMe.title }}</h2>
         <div class="text-block">
           <p>{{ translations.aboutMe.description }}</p>
           <p>Tearing down the family laptop since 2005...</p>
@@ -111,28 +127,52 @@
       <!-- SECCIÓN: WORKSPACE -->
       <div v-if="currentSection === 'workspace'" class="section-container">
         <h2 class="section-title">Workspace</h2>
-        
+
         <div class="group-box">
           <label>System</label>
           <div class="workspace-items">
             <div class="workspace-item">
-              <span class="workspace-label"><strong>OS:</strong> {{ workspace.os.name }}</span>
-              <img :src="workspace.os.icon" :alt="workspace.os.name" class="workspace-icon" />
+              <span class="workspace-label"
+                ><strong>OS:</strong> {{ workspace.os.name }}</span
+              >
+              <img
+                :src="workspace.os.icon"
+                :alt="workspace.os.name"
+                class="workspace-icon"
+              />
             </div>
-            
+
             <div class="workspace-item">
-              <span class="workspace-label"><strong>WM:</strong> {{ workspace.wm.name }}</span>
-              <img :src="workspace.wm.icon" :alt="workspace.wm.name" class="workspace-icon" />
+              <span class="workspace-label"
+                ><strong>WM:</strong> {{ workspace.wm.name }}</span
+              >
+              <img
+                :src="workspace.wm.icon"
+                :alt="workspace.wm.name"
+                class="workspace-icon"
+              />
             </div>
-            
+
             <div class="workspace-item">
-              <span class="workspace-label"><strong>Shell:</strong> {{ workspace.shell.name }}</span>
-              <img :src="workspace.shell.icon" :alt="workspace.shell.name" class="workspace-icon" />
+              <span class="workspace-label"
+                ><strong>Shell:</strong> {{ workspace.shell.name }}</span
+              >
+              <img
+                :src="workspace.shell.icon"
+                :alt="workspace.shell.name"
+                class="workspace-icon"
+              />
             </div>
-            
+
             <div class="workspace-item">
-              <span class="workspace-label"><strong>Terminal:</strong> {{ workspace.terminal.name }}</span>
-              <img :src="workspace.terminal.icon" :alt="workspace.terminal.name" class="workspace-icon" />
+              <span class="workspace-label"
+                ><strong>Terminal:</strong> {{ workspace.terminal.name }}</span
+              >
+              <img
+                :src="workspace.terminal.icon"
+                :alt="workspace.terminal.name"
+                class="workspace-icon"
+              />
             </div>
           </div>
         </div>
@@ -141,18 +181,41 @@
           <label>Hardware</label>
           <div class="workspace-items">
             <div class="workspace-item">
-              <span class="workspace-label"><strong>CPU:</strong> {{ workspace.hardware.cpu.name }}<br><em>{{ workspace.hardware.cpu.cores }}</em></span>
-              <img :src="workspace.hardware.cpu.icon" :alt="workspace.hardware.cpu.name" class="workspace-icon" />
+              <span class="workspace-label"
+                ><strong>CPU:</strong> {{ workspace.hardware.cpu.name }}<br /><em
+                  >{{ workspace.hardware.cpu.cores }}</em
+                ></span
+              >
+              <img
+                :src="workspace.hardware.cpu.icon"
+                :alt="workspace.hardware.cpu.name"
+                class="workspace-icon"
+              />
             </div>
-            
+
             <div class="workspace-item">
-              <span class="workspace-label"><strong>GPU:</strong> {{ workspace.hardware.gpu.name }}<br><em>{{ workspace.hardware.gpu.memory }}</em></span>
-              <img :src="workspace.hardware.gpu.icon" :alt="workspace.hardware.gpu.name" class="workspace-icon" />
+              <span class="workspace-label"
+                ><strong>GPU:</strong> {{ workspace.hardware.gpu.name }}<br /><em
+                  >{{ workspace.hardware.gpu.memory }}</em
+                ></span
+              >
+              <img
+                :src="workspace.hardware.gpu.icon"
+                :alt="workspace.hardware.gpu.name"
+                class="workspace-icon"
+              />
             </div>
-            
+
             <div class="workspace-item">
-              <span class="workspace-label"><strong>RAM:</strong> {{ workspace.hardware.ram.capacity }}</span>
-              <img :src="workspace.hardware.ram.icon" :alt="'RAM'" class="workspace-icon" />
+              <span class="workspace-label"
+                ><strong>RAM:</strong> {{ workspace.hardware.ram.capacity
+                }}</span
+              >
+              <img
+                :src="workspace.hardware.ram.icon"
+                :alt="'RAM'"
+                class="workspace-icon"
+              />
             </div>
           </div>
         </div>
@@ -160,4 +223,3 @@
     </section>
   </div>
 </div>
-
