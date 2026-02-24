@@ -34,9 +34,15 @@
   "games": {
     "title": "Games",
     "subtitle": "Mi universo gaming",
-    "favoriteGames": "Juegos Favoritos",
     "gamingStats": "Estadísticas Gaming",
-    "platforms": "Plataformas"
+    "viewModes": {
+      "favorites": "Todos los Favoritos",
+      "genre": "Por Género"
+    },
+    "stats": {
+      "totalGames": "Gaming Stats",
+      "genres": "Géneros"
+    }
   },
   "languages": {
     "es": "Español",

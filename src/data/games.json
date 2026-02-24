@@ -1,0 +1,160 @@
+{
+  "games": [
+    {
+      "name": "The Binding of Isaac",
+      "genre": "Roguelike",
+      "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/113200/header.jpg"
+    },
+    {
+      "name": "Terraria",
+      "genre": "Sandbox",
+      "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/105600/header.jpg"
+    },
+    {
+      "name": "League of Legends",
+      "genre": "MOBA",
+      "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/1160490/header.jpg"
+    },
+    {
+      "name": "Cyberpunk 2077",
+      "genre": "RPG",
+      "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/1091500/header.jpg"
+    },
+    {
+      "name": "Albion Online",
+      "genre": "MMORPG",
+      "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/761890/header.jpg"
+    },
+    {
+      "name": "Silent Hill 2",
+      "genre": "Horror",
+      "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/2124490/header.jpg"
+    },
+    {
+      "name": "Left 4 Dead 2",
+      "genre": "Co-op Shooter",
+      "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/550/header.jpg"
+    },
+    {
+      "name": "Left 4 Dead",
+      "genre": "Co-op Shooter",
+      "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/500/header.jpg"
+    },
+    {
+      "name": "Undertale",
+      "genre": "Indie",
+      "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/391540/header.jpg"
+    },
+    {
+      "name": "Shovel Knight",
+      "genre": "Indie",
+      "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/250760/header.jpg"
+    },
+    {
+      "name": "Outlast",
+      "genre": "Horror",
+      "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/238320/header.jpg"
+    },
+    {
+      "name": "Children of the Sun",
+      "genre": "Puzzle Shooter",
+      "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/1309290/header.jpg"
+    },
+    {
+      "name": "Call of Duty: Black Ops II",
+      "genre": "FPS",
+      "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/202970/header.jpg"
+    },
+    {
+      "name": "Resident Evil 4",
+      "genre": "Horror",
+      "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/2050650/header.jpg"
+    },
+    {
+      "name": "Hades",
+      "genre": "Roguelike",
+      "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/1145360/header.jpg"
+    },
+    {
+      "name": "Mega Man Collection",
+      "genre": "Retro",
+      "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/363440/header.jpg"
+    },
+    {
+      "name": "GoldenEye 007",
+      "genre": "Retro",
+      "image": "https://upload.wikimedia.org/wikipedia/en/3/36/GoldenEye007box.jpg"
+    },
+    {
+      "name": "Perfect Dark",
+      "genre": "Retro",
+      "image": "https://upload.wikimedia.org/wikipedia/en/d/d2/Perfect_Dark_box_art.jpg"
+    },
+    {
+      "name": "Castlevania",
+      "genre": "Retro",
+      "image": "https://upload.wikimedia.org/wikipedia/en/5/51/Castlevania_1986_cover.png"
+    },
+    {
+      "name": "Super Mario Bros",
+      "genre": "Retro",
+      "image": "https://upload.wikimedia.org/wikipedia/en/0/03/Super_Mario_Bros._box.png"
+    },
+    {
+      "name": "Super Mario 64",
+      "genre": "Retro",
+      "image": "https://upload.wikimedia.org/wikipedia/en/6/6a/Super_Mario_64_box_cover.jpg"
+    },
+    {
+      "name": "Super Smash Bros",
+      "genre": "Retro",
+      "image": "https://upload.wikimedia.org/wikipedia/en/4/42/SSBM_Box_Art.jpg"
+    },
+    {
+      "name": "Sonic the Hedgehog",
+      "genre": "Retro",
+      "image": "https://upload.wikimedia.org/wikipedia/en/b/ba/Sonic_the_Hedgehog_1_Genesis_box_art.jpg"
+    },
+    {
+      "name": "Top Gear",
+      "genre": "Retro",
+      "image": "https://upload.wikimedia.org/wikipedia/en/f/f1/Top_Gear_SNES_Cover.jpg"
+    },
+    {
+      "name": "Contra",
+      "genre": "Retro",
+      "image": "https://upload.wikimedia.org/wikipedia/en/2/21/Contra_cover.jpg"
+    },
+    {
+      "name": "Mario Kart 64",
+      "genre": "Retro",
+      "image": "https://upload.wikimedia.org/wikipedia/en/8/87/MarioKart64box.jpg"
+    },
+    {
+      "name": "Metal Slug",
+      "genre": "Retro",
+      "image": "https://upload.wikimedia.org/wikipedia/en/6/6f/Metal_Slug_1_flyer.jpg"
+    },
+    {
+      "name": "Mortal Kombat",
+      "genre": "Retro",
+      "image": "https://upload.wikimedia.org/wikipedia/en/a/a5/Mortal_Kombat_Cover.jpg"
+    },
+    {
+      "name": "Street Fighter",
+      "genre": "Retro",
+      "image": "https://upload.wikimedia.org/wikipedia/en/8/8c/Street_Fighter_II_Flyer.jpg"
+    },
+    {
+      "name": "Super Mario World",
+      "genre": "Retro",
+      "image": "https://upload.wikimedia.org/wikipedia/en/3/32/Super_Mario_World_Coverart.png"
+    },
+    {
+      "name": "Guilty Gear",
+      "genre": "Retro",
+      "image": "https://upload.wikimedia.org/wikipedia/en/b/ba/Guilty_Gear_cover.jpg"
+    }
+  ]
+}
+

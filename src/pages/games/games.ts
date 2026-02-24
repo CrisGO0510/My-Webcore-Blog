@@ -1,12 +1,15 @@
-import { computed, defineComponent } from "vue";
+import { computed, defineComponent, ref } from "vue";
 import { useI18n } from "vue-i18n";
-import Header from "../../components/header/header.vue";
+import gamesData from "../../data/games.json";
+
+interface Game {
+  name: string;
+  genre: string;
+  image: string;
+}
 
 export default defineComponent({
   name: "Games",
-  components: {
-    Header,
-  },
   setup() {
     console.log("Games Component Loaded...");
 
@@ -16,140 +19,80 @@ export default defineComponent({
       games: {
         title: t("games.title"),
         subtitle: t("games.subtitle"),
-        favoriteGames: t("games.favoriteGames"),
-        gamingStats: t("games.gamingStats"),
-        platforms: t("games.platforms"),
+        viewModes: {
+          favorites: t("games.viewModes.favorites"),
+          genre: t("games.viewModes.genre"),
+        },
+        stats: {
+          totalGames: t("games.stats.totalGames"),
+          topGames: t("games.stats.topGames"),
+          retroGames: t("games.stats.retroGames"),
+          genres: t("games.stats.genres"),
+        },
       },
     }));
 
-    // Favorite games data
-    const favoriteGames = [
+    // View mode control
+    const viewMode = ref<"favorites" | "genre">("favorites");
+
+    // All games from JSON (all are favorites, ordered by priority)
+    const allGames = gamesData.games;
+
+    // Split games: first 14 are top favorites, rest are retro
+    const topGames = allGames.slice(0, 14);
+    const retroGames = allGames.filter((game) => game.genre === "Retro");
+
+    // Gaming stats computed from actual data
+    const gamingStats = computed(() => [
       {
-        id: 1,
-        title: "Cyberpunk 2077",
-        description: "RPG futurista en Night City",
-        icon: "sports_esports",
-        status: "playing",
-        rating: 4
-      },
-      {
-        id: 2,
-        title: "The Witcher 3",
-        description: "RPG épico de fantasía medieval",
+        id: "total",
+        label: translations.value.games.stats.totalGames,
+        value: allGames.length.toString(),
         icon: "videogame_asset",
-        status: "completed",
-        rating: 5
       },
       {
-        id: 3,
-        title: "Hades",
-        description: "Roguelike de mitología griega",
-        icon: "casino",
-        status: "completed",
-        rating: 5
+        id: "genres",
+        label: translations.value.games.stats.genres,
+        value: uniqueGenres.value.length.toString(),
+        icon: "category",
       },
-      {
-        id: 4,
-        title: "Outer Wilds",
-        description: "Aventura espacial y viajes en el tiempo",
-        icon: "rocket",
-        status: "wishlist",
-        rating: null
-      },
-      {
-        id: 5,
-        title: "Hollow Knight",
-        description: "Metroidvania atmosférico",
-        icon: "bug_report",
-        status: "playing",
-        rating: 4
-      },
-      {
-        id: 6,
-        title: "Elden Ring",
-        description: "Souls-like en mundo abierto",
-        icon: "shield",
-        status: "paused",
-        rating: 4
-      }
-    ];
+    ]);
 
-    // Gaming stats data
-    const gamingStats = [
-      {
-        id: 1,
-        label: "Horas Jugadas",
-        value: "1,337",
-        type: "number",
-        icon: "access_time"
-      },
-      {
-        id: 2,
-        label: "Juegos Completados",
-        value: "42",
-        type: "number",
-        icon: "emoji_events"
-      },
-      {
-        id: 3,
-        label: "Género Favorito",
-        value: "RPG",
-        type: "text",
-        icon: "category"
-      },
-      {
-        id: 4,
-        label: "Plataforma Principal",
-        value: "PC",
-        type: "text",
-        icon: "computer"
-      }
-    ];
+    // Computed properties for genre grouping
+    const uniqueGenres = computed(() => {
+      const genres = new Set(allGames.map((game) => game.genre));
+      return Array.from(genres).sort();
+    });
 
-    // Platforms data
-    const platforms = [
-      {
-        id: 1,
-        name: "Steam",
-        gamesCount: 150,
-        icon: "computer"
-      },
-      {
-        id: 2,
-        name: "PlayStation",
-        gamesCount: 85,
-        icon: "gamepad"
-      },
-      {
-        id: 3,
-        name: "Nintendo Switch",
-        gamesCount: 32,
-        icon: "videogame_asset"
-      },
-      {
-        id: 4,
-        name: "Epic Games",
-        gamesCount: 45,
-        icon: "rocket_launch"
-      }
-    ];
+    const gamesByGenre = computed(() => {
+      const grouped: Record<string, Game[]> = {};
 
-    const getStatusText = (status: string): string => {
-      const statusMap: { [key: string]: string } = {
-        'playing': 'Jugando',
-        'completed': 'Completado',
-        'wishlist': 'Lista de Deseos',
-        'paused': 'En Pausa'
-      };
-      return statusMap[status] || status;
+      for (const game of allGames) {
+        if (!grouped[game.genre]) {
+          grouped[game.genre] = [];
+        }
+        grouped[game.genre]!.push(game);
+      }
+
+      return grouped;
+    });
+
+    // Methods
+    const setViewMode = (mode: "favorites" | "genre") => {
+      viewMode.value = mode;
     };
 
-    return { 
+    return {
       translations,
-      favoriteGames,
+      viewMode,
+      allGames,
+      topGames,
+      retroGames,
       gamingStats,
-      platforms,
-      getStatusText
+      uniqueGenres,
+      gamesByGenre,
+      setViewMode,
     };
   },
 });
+
