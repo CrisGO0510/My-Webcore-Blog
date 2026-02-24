@@ -70,14 +70,14 @@
       <div v-if="currentSection === 'presentation'" class="section-container">
         <h2 class="section-title">{{ translations.aboutMe.title }}</h2>
         <div class="text-block">
-          <p>{{ translations.aboutMe.description }}</p>
+          <div class="description-text" v-html="translations.aboutMe.description.replace(/\n/g, '<br>')"></div>
           <p>Tearing down the family laptop since 2005...</p>
         </div>
       </div>
 
       <!-- SECCIÓN: TOOLS -->
       <div v-if="currentSection === 'tools'" class="section-container">
-        <h2 class="section-title">Tools</h2>
+        <h2 class="section-title">{{ translations.aboutMe.tools }}</h2>
 
         <div class="group-box">
           <label>Langs</label>

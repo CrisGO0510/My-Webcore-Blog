@@ -26,13 +26,15 @@ export default defineComponent({
       aboutMe: {
         title: t("aboutMe.title"),
         description: t("aboutMe.description"),
+        tools: t("aboutMe.tools"),
+        age: t("aboutMe.age"),
       },
     }));
 
     const characterStats = [
       { label: "Nick", value: "CrisGO" },
       {
-        label: "Edad",
+        label: translations.value.aboutMe.age,
         value: (() => {
           return calculateAge();
         })(),
