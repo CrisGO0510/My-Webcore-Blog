@@ -1,4 +1,6 @@
 import { createApp } from "vue";
+import { createPinia } from "pinia";
+import piniaPluginPersistedstate from "pinia-plugin-persistedstate";
 import { Quasar, QBtn, QIcon, QSelect, QTooltip, QInput, QToggle } from "quasar";
 import quasarLang from "quasar/lang/es";
 
@@ -17,6 +19,11 @@ import App from "./app/App.vue";
 import router from "./router";
 
 const myApp = createApp(App);
+
+// Configurar Pinia
+const pinia = createPinia();
+pinia.use(piniaPluginPersistedstate);
+myApp.use(pinia);
 
 myApp.use(Quasar, {
   plugins: {},

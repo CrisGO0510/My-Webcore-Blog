@@ -1,14 +1,21 @@
-import { ref } from "vue";
-
-const animationEnable = ref(true);
+import { storeToRefs } from "pinia";
+import { useSettingsStore } from "../stores/useSettingsStore";
 
 export function useSettings() {
-  const toggleAnimations = () => {
-    animationEnable.value = !animationEnable.value;
-  };
+  const settingsStore = useSettingsStore();
+
+  const { animationEnable, theme, language, isDarkMode, currentSettings } =
+    storeToRefs(settingsStore);
 
   return {
     animationEnable,
-    toggleAnimations,
+    toggleAnimations: settingsStore.toggleAnimations,
+    theme,
+    language,
+    setTheme: settingsStore.setTheme,
+    setLanguage: settingsStore.setLanguage,
+    resetSettings: settingsStore.resetSettings,
+    isDarkMode,
+    currentSettings,
   };
 }

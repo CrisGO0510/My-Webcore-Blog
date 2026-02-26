@@ -136,6 +136,7 @@ export default defineComponent({
     watch(
       animationEnable,
       (isEnabled) => {
+        console.log('🎭 Animation state changed:', isEnabled); // Debug temporal
         if (isEnabled) {
           startTracking();
         } else {
