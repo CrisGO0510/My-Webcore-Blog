@@ -7,15 +7,34 @@ import {
   defineComponent,
 } from "vue";
 
+// Tipos específicos para el eye tracker
+interface PupilPosition {
+  x: number
+  y: number
+}
+
+interface IrisPosition {
+  x: number
+  y: number
+}
+
+interface EyeTrackerConstants {
+  MAX_PUPIL: number
+  MAX_IRIS: number
+  SMOOTH: number
+}
+
 export function useEyeTracker() {
   const eye = ref<SVGSVGElement | null>(null);
 
-  const pupil = reactive({ x: 0, y: 0 });
-  const iris = reactive({ x: 0, y: 0 });
+  const pupil = reactive<PupilPosition>({ x: 0, y: 0 });
+  const iris = reactive<IrisPosition>({ x: 0, y: 0 });
 
-  const MAX_PUPIL = 12;
-  const MAX_IRIS = 6;
-  const SMOOTH = 0.15;
+  const constants: EyeTrackerConstants = {
+    MAX_PUPIL: 12,
+    MAX_IRIS: 6,
+    SMOOTH: 0.15,
+  };
 
   function onMouseMove(e: MouseEvent) {
     if (!eye.value) return;
@@ -29,11 +48,11 @@ export function useEyeTracker() {
 
     const angle = Math.atan2(dy, dx);
 
-    pupil.x += (Math.cos(angle) * MAX_PUPIL - pupil.x) * SMOOTH;
-    pupil.y += (Math.sin(angle) * MAX_PUPIL - pupil.y) * SMOOTH;
+    pupil.x += (Math.cos(angle) * constants.MAX_PUPIL - pupil.x) * constants.SMOOTH;
+    pupil.y += (Math.sin(angle) * constants.MAX_PUPIL - pupil.y) * constants.SMOOTH;
 
-    iris.x += (Math.cos(angle) * MAX_IRIS - iris.x) * SMOOTH;
-    iris.y += (Math.sin(angle) * MAX_IRIS - iris.y) * SMOOTH;
+    iris.x += (Math.cos(angle) * constants.MAX_IRIS - iris.x) * constants.SMOOTH;
+    iris.y += (Math.sin(angle) * constants.MAX_IRIS - iris.y) * constants.SMOOTH;
   }
 
   onMounted(() => {

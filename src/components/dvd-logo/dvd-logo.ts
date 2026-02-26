@@ -1,14 +1,26 @@
 import { ref, reactive, onMounted, onBeforeUnmount, computed, defineComponent } from "vue";
 import dvdImageUrl from '../../assets/dvd-watermark.png';
 
+// Tipo para la posición del logo
+interface LogoPosition {
+  x: number
+  y: number
+}
+
+// Tipo para la velocidad del logo
+interface LogoVelocity {
+  x: number
+  y: number
+}
+
 export default defineComponent({
   name: "DvdLogo",
   setup() {
     const logo = ref<HTMLImageElement | null>(null);
 
-    const pos = reactive({ x: 100, y: 100 });
+    const pos = reactive<LogoPosition>({ x: 100, y: 100 });
 
-    const velocity = reactive({ x: 3, y: 3 });
+    const velocity = reactive<LogoVelocity>({ x: 3, y: 3 });
 
     let frameId = 0;
 

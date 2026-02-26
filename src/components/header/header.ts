@@ -4,6 +4,7 @@ import { useRouter } from "vue-router";
 import { PROFILE_LINKS } from "../../constants/profile-links";
 import { useGlobalLanguage } from "../../composables/useGlobalLanguage";
 import { useSettings } from "../../composables/useSettings";
+import type { HeaderTranslations } from "../../types/components";
 
 export default defineComponent({
   name: "Header",
@@ -25,7 +26,7 @@ export default defineComponent({
       initializeLanguage,
     } = useGlobalLanguage();
 
-    const translations = computed(() => ({
+    const translations = computed((): HeaderTranslations => ({
       title: t("header.title"),
       tooltips: {
         ankh: t("header.tooltips.ankh"),

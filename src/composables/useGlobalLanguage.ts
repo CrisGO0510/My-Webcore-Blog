@@ -1,9 +1,10 @@
 import { ref, computed } from "vue";
 import { setLocale, getCurrentLocale, availableLocales } from "../i18n";
+import type { SupportedLanguage, UseGlobalLanguageReturn } from "../types/components";
 
-const currentLanguage = ref(getCurrentLocale());
+const currentLanguage = ref<SupportedLanguage>(getCurrentLocale());
 
-export function useGlobalLanguage() {
+export function useGlobalLanguage(): UseGlobalLanguageReturn {
   const languageInfo = computed(() => {
     const current = availableLocales.find(
       (lang) => lang.value === currentLanguage.value,
@@ -11,7 +12,7 @@ export function useGlobalLanguage() {
     return current || availableLocales[0];
   });
 
-  const changeLanguage = (newLang: "es" | "en") => {
+  const changeLanguage = (newLang: SupportedLanguage): void => {
     currentLanguage.value = newLang;
 
     setLocale(newLang);
@@ -19,16 +20,13 @@ export function useGlobalLanguage() {
     localStorage.setItem("preferred-language", newLang);
   };
 
-  const toggleLanguage = () => {
-    const newLang = currentLanguage.value === "es" ? "en" : "es";
+  const toggleLanguage = (): void => {
+    const newLang: SupportedLanguage = currentLanguage.value === "es" ? "en" : "es";
     changeLanguage(newLang);
   };
 
-  const initializeLanguage = () => {
-    const savedLang = localStorage.getItem("preferred-language") as
-      | "es"
-      | "en"
-      | null;
+  const initializeLanguage = (): void => {
+    const savedLang = localStorage.getItem("preferred-language") as SupportedLanguage | null;
 
     if (
       savedLang &&

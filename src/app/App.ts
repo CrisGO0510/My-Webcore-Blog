@@ -2,12 +2,13 @@ import { defineComponent, onUnmounted, watch } from "vue";
 import Header from "../components/header/header.vue";
 import DvdLogo from "../components/dvd-logo/dvd-logo.vue";
 import { useSettings } from "../composables/useSettings";
+import type { MouseOffset, CyberpunkEffects } from "../types/components";
 
 // Función responsable de calcular el offset del mouse
 function calculateMouseOffset(
   clientX: number,
   clientY: number,
-): { x: number; y: number } {
+): MouseOffset {
   const x = (clientX / window.innerWidth - 0.5) * 20;
   const y = (clientY / window.innerHeight - 0.5) * 20;
   return { x, y };
@@ -30,12 +31,7 @@ function resetCyberpunkEffects(): void {
 function calculateCyberpunkEffects(
   clientX: number,
   clientY: number,
-): {
-  intensity: number;
-  hueShift: number;
-  glowRadius: number;
-  scanlineDistortion: number;
-} {
+): CyberpunkEffects {
   const normalizedX = clientX / window.innerWidth;
   const normalizedY = clientY / window.innerHeight;
 

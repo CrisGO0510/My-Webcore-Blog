@@ -1,6 +1,7 @@
 import { defineComponent, ref, onMounted, onBeforeUnmount, computed } from 'vue';
 import * as THREE from 'three';
 import { useSettings } from '../../composables/useSettings';
+import type { Heart3DProps, ThreeJSConfig } from '../../types/components';
 
 // Función para crear líneas de conexión entre capas (efecto wireframe 3D cyber)
 function createHeartWireframeLines(heartScale: number = 1): THREE.Vector3[][] {
@@ -114,12 +115,13 @@ export default defineComponent({
   name: 'Heart3D',
   props: {
     position: {
-      type: String,
-      default: 'left',
-      validator: (value: string) => ['left', 'right'].includes(value)
+      type: String as () => Heart3DProps['position'],
+      default: 'left' as const,
+      required: false,
+      validator: (value: Heart3DProps['position']) => ['left', 'right'].includes(value)
     }
   },
-  setup(props) {
+  setup(props: Heart3DProps) {
     const canvasRef = ref<HTMLCanvasElement | null>(null);
     const { animationEnable } = useSettings();
     
@@ -146,11 +148,17 @@ export default defineComponent({
       camera = new THREE.PerspectiveCamera(75, 1, 0.1, 1000);
       camera.position.set(0, 0, 120);
 
+      // Configuración tipada del renderer
+      const rendererConfig: ThreeJSConfig = {
+        alpha: true,
+        antialias: true,
+        powerPreference: 'high-performance'
+      };
+
       // Configurar renderer para ocupar todo el contenedor
       renderer = new THREE.WebGLRenderer({ 
         canvas: canvasRef.value,
-        alpha: true,
-        antialias: true,
+        ...rendererConfig,
         premultipliedAlpha: false
       });
       
