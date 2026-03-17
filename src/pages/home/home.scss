@@ -6,13 +6,8 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-  position: relative; // Para que los corazones se posicionen correctamente
-  
-  @media (max-width: 768px) {
-    height: auto;
-    min-height: 100vh;
-    overflow-y: auto;
-  }
+  position: relative;
+  overflow: auto;
 }
 
 .home-content {
@@ -24,13 +19,6 @@
   justify-content: center;
   align-items: center;
   padding: 2rem;
-  
-  @media (max-width: 768px) {
-    justify-content: flex-start;
-    min-height: 100vh;
-    padding: 1rem;
-    overflow-y: auto;
-  }
 
   h2 {
     font-family: "GothicByte", monospace;
@@ -38,7 +26,7 @@
     text-shadow: 0 0 10px $cyan-accent;
     margin-bottom: 20px;
     font-size: 2.5rem;
-    
+
     @media (max-width: 768px) {
       font-size: 2rem;
       margin-top: 1rem;
@@ -51,7 +39,7 @@
     line-height: 1.6;
     margin-bottom: 3rem;
     max-width: 600px;
-    
+
     @media (max-width: 768px) {
       font-size: 16px;
       margin-bottom: 2rem;
@@ -69,7 +57,8 @@
     flex-direction: column;
     gap: 1.5rem;
     align-items: center;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem; // Más espacio al final
+    padding-bottom: 2rem; // Espacio extra para scroll
   }
 }
 
@@ -93,7 +82,7 @@
       align-items: center;
     }
   }
-  
+
   @media (max-width: 768px) {
     gap: 1.5rem;
   }
@@ -153,7 +142,7 @@
     color: $cyan-accent;
     text-shadow: 0 0 10px $cyan-accent;
     transition: all 0.3s ease;
-    
+
     @media (max-width: 768px) {
       font-size: 24px;
     }
