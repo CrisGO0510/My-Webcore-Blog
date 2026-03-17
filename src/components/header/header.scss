@@ -149,7 +149,8 @@ $social-colors: (
         @include box-glow($cyan-accent);
       }
 
-      &:hover {
+      &:hover,
+      &.mobile-active {
         transform: scale(5) translate(24px, 25px);
         cursor: grab;
         z-index: 20;
@@ -159,6 +160,22 @@ $social-colors: (
             0 0 25px #00f3ff,
             inset 0 0 15px rgba(191, 0, 255, 0.5);
           cursor: help;
+        }
+      }
+      
+      // En mobile, solo aplicar el efecto con la clase active
+      @media (max-width: 768px) {
+        &:hover {
+          transform: none;
+          cursor: pointer;
+          z-index: auto;
+          
+          img {
+            box-shadow: 
+              0 0 15px rgba($cyan-accent, 0.6),
+              inset 0 0 10px rgba($purple-main, 0.3);
+            cursor: pointer;
+          }
         }
       }
     }
