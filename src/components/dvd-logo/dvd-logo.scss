@@ -7,4 +7,9 @@
   z-index: 1000;
   pointer-events: none;
   filter: drop-shadow(0 0 10px rgba(138, 43, 226, 0.6));
+
+  // Hide DVD logo on mobile and tablet devices
+  @media (max-width: 1024px) {
+    display: none;
+  }
 }

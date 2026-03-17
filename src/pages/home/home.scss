@@ -7,6 +7,12 @@
   display: flex;
   flex-direction: column;
   position: relative; // Para que los corazones se posicionen correctamente
+  
+  @media (max-width: 768px) {
+    height: auto;
+    min-height: 100vh;
+    overflow-y: auto;
+  }
 }
 
 .home-content {
@@ -18,6 +24,13 @@
   justify-content: center;
   align-items: center;
   padding: 2rem;
+  
+  @media (max-width: 768px) {
+    justify-content: flex-start;
+    min-height: 100vh;
+    padding: 1rem;
+    overflow-y: auto;
+  }
 
   h2 {
     font-family: "GothicByte", monospace;
@@ -25,6 +38,12 @@
     text-shadow: 0 0 10px $cyan-accent;
     margin-bottom: 20px;
     font-size: 2.5rem;
+    
+    @media (max-width: 768px) {
+      font-size: 2rem;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
   }
 
   p {
@@ -32,6 +51,12 @@
     line-height: 1.6;
     margin-bottom: 3rem;
     max-width: 600px;
+    
+    @media (max-width: 768px) {
+      font-size: 16px;
+      margin-bottom: 2rem;
+      padding: 0 1rem;
+    }
   }
 }
 
@@ -42,8 +67,9 @@
 
   @media (max-width: 768px) {
     flex-direction: column;
-    gap: 2rem;
+    gap: 1.5rem;
     align-items: center;
+    margin-bottom: 2rem;
   }
 }
 
@@ -66,6 +92,10 @@
     @media (max-width: 768px) {
       align-items: center;
     }
+  }
+  
+  @media (max-width: 768px) {
+    gap: 1.5rem;
   }
 }
 
@@ -96,6 +126,12 @@
     0 0 20px rgba($cyan-accent, 0.3),
     inset 0 2px 0 rgba(255, 255, 255, 0.1);
 
+  @media (max-width: 768px) {
+    width: 180px;
+    height: 70px;
+    font-size: 14px;
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -117,6 +153,10 @@
     color: $cyan-accent;
     text-shadow: 0 0 10px $cyan-accent;
     transition: all 0.3s ease;
+    
+    @media (max-width: 768px) {
+      font-size: 24px;
+    }
   }
 
   .nav-label {

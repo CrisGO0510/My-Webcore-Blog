@@ -6,65 +6,150 @@
     <h3 @click="goToHome">{{ translations.title }}</h3>
   </div>
 
-  <!-- BOTONES CYBERPUNK -->
-  <div class="header-profile-actions">
-    <!-- Botón Ankh -->
-    <q-icon name="fas fa-ankh" size="20px">
+  <div class="header-right-section">
+    <!-- Ankh - Elemento decorativo (SIEMPRE visible) -->
+    <q-icon name="fas fa-ankh" size="20px" class="ankh-icon">
       <q-tooltip class="custom-tooltip"
         >{{ translations.tooltips.ankh }}</q-tooltip
       >
     </q-icon>
 
-    <!-- Botón para desactivar animaciones -->
-    <q-toggle
-      size="80px"
-      v-model="animationEnable"
-      icon="animation"
-      class="cyberpunk-toggle"
-    />
+    <!-- BOTONES CYBERPUNK DESKTOP (se ocultan en mobile) -->
+    <div class="header-profile-actions desktop-actions">
+      <!-- Botón para desactivar animaciones -->
+      <q-toggle
+        size="80px"
+        v-model="animationEnable"
+        icon="animation"
+        class="cyberpunk-toggle"
+      />
 
-    <!-- Botón GitHub -->
-    <q-btn round size="md" class="action-btn github-btn" @click="openGitHub">
-      <q-icon name="fab fa-github" size="20px" />
-      <q-tooltip class="custom-tooltip"
-        >{{ translations.tooltips.github }}</q-tooltip
-      >
-    </q-btn>
+      <!-- Botón GitHub -->
+      <q-btn round size="md" class="action-btn github-btn" @click="openGitHub">
+        <q-icon name="fab fa-github" size="20px" />
+        <q-tooltip class="custom-tooltip"
+          >{{ translations.tooltips.github }}</q-tooltip
+        >
+      </q-btn>
 
-    <!-- Botón Instagram -->
-    <q-btn
-      round
-      size="md"
-      class="action-btn instagram-btn"
-      @click="openInstagram"
-    >
-      <q-icon name="fab fa-instagram" size="20px" />
-      <q-tooltip class="custom-tooltip"
-        >{{ translations.tooltips.instagram }}</q-tooltip
+      <!-- Botón Instagram -->
+      <q-btn
+        round
+        size="md"
+        class="action-btn instagram-btn"
+        @click="openInstagram"
       >
-    </q-btn>
+        <q-icon name="fab fa-instagram" size="20px" />
+        <q-tooltip class="custom-tooltip"
+          >{{ translations.tooltips.instagram }}</q-tooltip
+        >
+      </q-btn>
 
-    <!-- Select de Idioma CON CLASES PROPIAS -->
-    <q-select
-      v-model="selectedLanguage"
-      :options="languageOptions"
-      class="cyberpunk-select"
-      menu-class="cyberpunk-menu"
-      popup-content-class="cyberpunk-popup"
-      filled
-      dense
-      options-dense
-      emit-value
-      map-options
-      @update:model-value="changeLanguage"
-    >
-      <template v-slot:prepend>
-        <q-icon name="language" size="18px" />
-        <p class="language-label">{{ selectedLanguage }}</p>
-      </template>
-      <q-tooltip class="custom-tooltip"
-        >{{ translations.tooltips.language }}</q-tooltip
+      <!-- Select de Idioma CON CLASES PROPIAS -->
+      <q-select
+        v-model="selectedLanguage"
+        :options="languageOptions"
+        class="cyberpunk-select"
+        menu-class="cyberpunk-menu"
+        popup-content-class="cyberpunk-popup"
+        filled
+        dense
+        options-dense
+        emit-value
+        map-options
+        @update:model-value="changeLanguage"
       >
-    </q-select>
+        <template v-slot:prepend>
+          <q-icon name="language" size="18px" />
+        </template>
+        <q-tooltip class="custom-tooltip"
+          >{{ translations.tooltips.language }}</q-tooltip
+        >
+      </q-select>
+    </div>
+
+    <!-- MENÚ MÓVIL -->
+    <div class="mobile-menu-container">
+      <q-btn flat round icon="more_vert" class="mobile-menu-btn" size="md">
+        <q-menu
+          class="cyberpunk-mobile-menu"
+          anchor="bottom right"
+          self="top right"
+          :offset="[0, 8]"
+        >
+          <q-list class="mobile-menu-list">
+            <!-- Animation Toggle -->
+            <q-item class="menu-item">
+              <q-item-section avatar>
+                <q-icon name="animation" size="18px" />
+              </q-item-section>
+              <q-item-section>
+                <q-item-label class="menu-label">Animation</q-item-label>
+              </q-item-section>
+              <q-item-section side>
+                <q-toggle
+                  v-model="animationEnable"
+                  size="sm"
+                  class="mobile-toggle"
+                />
+              </q-item-section>
+            </q-item>
+
+            <q-separator spaced />
+
+            <!-- GitHub -->
+            <q-item clickable @click="openGitHub" class="menu-item">
+              <q-item-section avatar>
+                <q-icon name="fab fa-github" size="18px" />
+              </q-item-section>
+              <q-item-section>
+                <q-item-label class="menu-label">GitHub</q-item-label>
+              </q-item-section>
+              <q-item-section side>
+                <q-icon name="open_in_new" size="14px" class="external-icon" />
+              </q-item-section>
+            </q-item>
+
+            <!-- Instagram -->
+            <q-item clickable @click="openInstagram" class="menu-item">
+              <q-item-section avatar>
+                <q-icon name="fab fa-instagram" size="18px" />
+              </q-item-section>
+              <q-item-section>
+                <q-item-label class="menu-label">Instagram</q-item-label>
+              </q-item-section>
+              <q-item-section side>
+                <q-icon name="open_in_new" size="14px" class="external-icon" />
+              </q-item-section>
+            </q-item>
+
+            <q-separator spaced />
+
+            <!-- Language Selector -->
+            <q-item class="menu-item">
+              <q-item-section avatar>
+                <q-icon name="language" size="18px" />
+              </q-item-section>
+              <q-item-section>
+                <q-item-label class="menu-label">Language</q-item-label>
+              </q-item-section>
+              <q-item-section side>
+                <q-select
+                  v-model="selectedLanguage"
+                  :options="languageOptions"
+                  class="mobile-language-select"
+                  filled
+                  dense
+                  emit-value
+                  map-options
+                  @update:model-value="changeLanguage"
+                />
+              </q-item-section>
+            </q-item>
+          </q-list>
+        </q-menu>
+      </q-btn>
+    </div>
   </div>
+  <!-- Cierre de header-right-section -->
 </div>

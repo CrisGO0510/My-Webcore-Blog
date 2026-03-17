@@ -1,5 +1,6 @@
 @use "../../styles/variables" as *;
 @use "sass:color";
+@use "sass:map";
 
 $social-colors: (
   "ankh": #ffd700,
@@ -161,19 +162,10 @@ $social-colors: (
         }
       }
     }
-
-    &-actions {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      position: relative;
-      z-index: 10;
-      padding: 0 20px;
-    }
   }
 }
 
-.action-btn {
+.header-right-section .desktop-actions .action-btn {
   @include cyberpunk-bg;
   color: $text-color !important;
   box-shadow:
@@ -200,32 +192,8 @@ $social-colors: (
   }
 }
 
-.cyberpunk-select {
-  width: 130px;
-
-  .q-field__control {
-    @include cyberpunk-bg;
-    border-radius: 20px !important;
-    color: $text-color !important;
-    transition: box-shadow 0.3s ease;
-  }
-
-  .q-field__native,
-  .q-icon {
-    color: $text-color !important;
-  }
-
-  .q-icon {
-    color: $cyan-accent !important;
-  }
-
-  &:hover .q-field__control {
-    box-shadow: 0 0 15px rgba($cyan-accent, 0.6) !important;
-  }
-}
-
-// Estilos para el toggle de animaciones
-.cyberpunk-toggle {
+// Estilos para el toggle de animaciones con mayor especificidad
+.header-right-section .desktop-actions .cyberpunk-toggle {
   .q-toggle__track {
     @include cyberpunk-bg;
   }
@@ -256,162 +224,382 @@ $social-colors: (
       rgba($cyan-accent, 0.3)
     ) !important;
     box-shadow:
+      0 0 15px rgba($cyan-accent, 0.6),
+      inset 0 1px 0 rgba(255, 255, 255, 0.2) !important;
+  }
+
+  &:hover .q-toggle__icon {
+    color: #ffffff !important;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8) !important;
+  }
+}
+
+.header-right-section .desktop-actions .cyberpunk-select {
+  width: 130px;
+
+  .q-field__control {
+    @include cyberpunk-bg;
+    border-radius: 20px !important;
+    color: $text-color !important;
+    transition: box-shadow 0.3s ease;
+  }
+
+  .q-field__native,
+  .q-field__input {
+    color: $text-color !important;
+    font-family: "GothicByte", monospace !important;
+  }
+
+  .q-icon {
+    color: $cyan-accent !important;
+  }
+
+  &:hover .q-field__control {
+    box-shadow: 0 0 15px rgba($cyan-accent, 0.6) !important;
+  }
+}
+
+// Estilo específico para el ícono de Ankh con mayor especificidad
+.header-right-section .ankh-icon {
+  color: $text-color !important; // Blanco como el resto de iconos
+  text-shadow: 0 0 10px $text-color !important;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  margin-right: 8px; // Separación específica del primer botón
+
+  &:hover {
+    transform: scale(1.1);
+    color: $cyan-accent !important; // Cyan al hacer hover
+    text-shadow:
+      0 0 15px $cyan-accent,
+      0 0 25px rgba(0, 255, 255, 0.5) !important;
+  }
+}
+
+// Desktop: Mostrar acciones normales, ocultar menú móvil
+// Contenedor visual que agrupa Ankh + Actions
+.header-right-section {
+  display: flex;
+  align-items: center;
+  gap: 4px; // Ankh pegado a los actions
+
+  // Asegurar que los estilos se apliquen dentro del contenedor
+  .desktop-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    position: relative;
+    z-index: 10;
+    padding: 0 20px;
+
+    @media (max-width: 768px) {
+      display: none; // Solo se ocultan los actions, NO el Ankh
+    }
+  }
+}
+
+// Estilo específico para el ícono de Ankh con mayor especificidad
+.header-right-section .ankh-icon {
+  color: $text-color !important; // Blanco como el resto de iconos
+  text-shadow: 0 0 10px $text-color !important;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  margin-right: 8px; // Separación específica del primer botón
+
+  &:hover {
+    transform: scale(1.1);
+    color: $cyan-accent !important; // Cyan al hacer hover
+    text-shadow:
+      0 0 15px $cyan-accent,
+      0 0 25px rgba(0, 255, 255, 0.5) !important;
+  }
+}
+
+.mobile-menu-container {
+  display: none;
+  padding: 0 15px;
+
+  @media (max-width: 768px) {
+    display: block;
+  }
+}
+
+// ===============================
+// MOBILE MENU STYLES
+// ===============================
+.mobile-menu-btn {
+  @include cyberpunk-bg;
+  color: $text-color !important;
+  box-shadow:
+    0 0 15px rgba($cyan-accent, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1) !important;
+  transition: all 0.3s ease !important;
+
+  &:hover {
+    background: linear-gradient(
+      145deg,
+      rgba($purple-neon, 0.9),
+      rgba($cyan-accent, 0.3)
+    ) !important;
+    box-shadow:
       0 0 25px $cyan-accent,
       inset 0 1px 0 rgba(255, 255, 255, 0.2) !important;
     transform: scale(1.1) !important;
   }
 
-  &:hover .q-toggle__icon {
+  .q-icon {
+    color: $text-color !important;
+    transition: all 0.3s ease;
+  }
+
+  &:hover .q-icon {
     color: $cyan-accent !important;
     text-shadow: 0 0 10px $cyan-accent;
-    transform: scale(1.1) !important;
   }
 }
 
-:deep(.q-menu),
-.cyberpunk-menu {
+:deep(.cyberpunk-mobile-menu) {
   background: linear-gradient(
     145deg,
     rgba($purple-main, 0.95),
-    rgba($purple-neon, 0.8)
+    rgba($purple-neon, 0.85),
+    rgba($bg-dark, 0.9)
   ) !important;
   border: 2px solid $cyan-accent !important;
-  border-radius: 10px !important;
+  border-radius: 12px !important;
   box-shadow:
-    0 10px 30px rgba(0, 0, 0, 0.8),
-    0 0 20px rgba($cyan-accent, 0.4),
+    0 15px 35px rgba(0, 0, 0, 0.8),
+    0 0 25px rgba($cyan-accent, 0.4),
     inset 0 1px 0 rgba(255, 255, 255, 0.1) !important;
-  backdrop-filter: blur(10px) !important;
+  backdrop-filter: blur(15px) saturate(1.2) !important;
+  -webkit-backdrop-filter: blur(15px) saturate(1.2) !important;
+  min-width: 220px !important;
+  max-width: 250px !important;
+}
 
-  .q-item {
+// Múltiples selectores para mayor especificidad y compatibilidad
+.q-menu.cyberpunk-mobile-menu,
+:deep(.q-menu.cyberpunk-mobile-menu) {
+  background: linear-gradient(
+    145deg,
+    rgba($purple-main, 0.95) 0%,
+    rgba($purple-neon, 0.85) 50%,
+    rgba($bg-dark, 0.9) 100%
+  ) !important;
+  border: 2px solid $cyan-accent !important;
+  border-radius: 12px !important;
+}
+
+// Usar el selector global también
+.cyberpunk-mobile-menu {
+  background: linear-gradient(
+    145deg,
+    rgba($purple-main, 0.95),
+    rgba($purple-neon, 0.85), 
+    rgba($bg-dark, 0.9)
+  ) !important;
+  border: 2px solid $cyan-accent !important;
+  border-radius: 12px !important;
+
+  // Estilos para todos los items dentro del menú
+  .q-list {
+    padding: 8px !important;
+
+    .q-item {
+      color: $text-color !important;
+      font-family: "GothicByte", monospace !important;
+      padding: 12px 16px !important;
+      transition: all 0.3s ease !important;
+      border-radius: 8px !important;
+      margin-bottom: 4px !important;
+      min-height: 48px !important;
+      background: rgba($purple-main, 0.3) !important;
+      border: 1px solid rgba($cyan-accent, 0.2) !important;
+
+      &:hover {
+        background: linear-gradient(
+          90deg,
+          rgba($cyan-accent, 0.2),
+          rgba($purple-neon, 0.3),
+          rgba($cyan-accent, 0.1)
+        ) !important;
+        transform: translateX(4px) !important;
+        box-shadow:
+          0 4px 12px rgba($cyan-accent, 0.2) !important,
+          inset 0 1px 0 rgba($cyan-accent, 0.1) !important;
+      }
+    }
+  }
+
+  // Iconos dentro del menú
+  .q-icon {
+    color: $cyan-accent !important;
+    transition: all 0.3s ease !important;
+    text-shadow: 0 0 8px rgba($cyan-accent, 0.4) !important;
+  }
+
+  // Labels dentro del menú
+  .q-item__label,
+  .menu-label {
     color: $text-color !important;
     font-family: "GothicByte", monospace !important;
-    padding: 12px 16px !important;
-    transition: all 0.3s ease !important;
-    border-left: 3px solid transparent;
-    &:hover,
-    &.q-item--active {
-      color: $cyan-accent !important;
-      text-shadow: 0 0 10px $cyan-accent !important;
-      border-left-color: $cyan-accent;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+  }
+
+  // Toggle dentro del menú
+  .q-toggle {
+    .q-toggle__track {
+      background: rgba($purple-main, 0.8) !important;
+      border: 1px solid $cyan-accent !important;
+      border-radius: 12px !important;
     }
 
-    &:hover {
-      background: linear-gradient(
-        90deg,
-        rgba($cyan-accent, 0.2),
-        rgba($purple-neon, 0.3)
-      ) !important;
-      transform: translateX(4px);
-    }
-
-    &.q-item--active {
-      background: linear-gradient(
-        90deg,
-        rgba($cyan-accent, 0.3),
-        rgba($purple-neon, 0.4)
-      ) !important;
-      font-weight: bold;
-    }
-
-    &__label {
-      font-size: 14px !important;
-      letter-spacing: 0.5px !important;
+    .q-toggle__thumb {
+      background: $cyan-accent !important;
+      border: 1px solid rgba(255, 255, 255, 0.2) !important;
+      border-radius: 50% !important;
+      width: 20px !important;
+      height: 20px !important;
     }
   }
-}
 
-.language-label {
-  font-family: "GothicByte", monospace !important;
-  font-size: 14px;
-  font-weight: bold;
-  margin: 0 0 0 8px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  transition: all 0.3s ease;
-  will-change: text-shadow, transform;
+  // Select de idioma dentro del menú
+  .mobile-language-select {
+    .q-field__control {
+      background: rgba($purple-main, 0.6) !important;
+      border: 1px solid $cyan-accent !important;
+      border-radius: 8px !important;
+      color: $text-color !important;
+    }
 
-  animation: language-glow 2.5s ease-in-out infinite alternate;
-  @include text-glow($text-color, 0.8);
-
-  &:hover {
-    transform: scale(1.05);
-    text-shadow:
-      0 0 12px $cyan-accent,
-      0 0 18px rgba($purple-neon, 0.6),
-      1px 1px 0 color.scale($purple-main, $lightness: -50%);
+    .q-field__native {
+      color: $text-color !important;
+    }
   }
 }
 
-.custom-tooltip {
-  background: $purple-main !important;
-  color: $text-color !important;
-  border: 1px solid $cyan-accent !important;
-  font-family: "GothicByte", monospace !important;
-  box-shadow: 0 0 10px rgba($cyan-accent, 0.3);
-}
+// Mobile language select
+:deep(.mobile-language-select) {
+  .q-field__control {
+    background: linear-gradient(
+      145deg,
+      rgba($purple-main, 0.8),
+      rgba($purple-neon, 0.6)
+    ) !important;
+    border: 1px solid rgba($cyan-accent, 0.4) !important;
+    border-radius: 8px !important;
+    color: $text-color !important;
+    min-height: 32px !important;
+    height: 32px !important;
+  }
 
-@keyframes header-pulse {
-  0%,
-  100% {
-    box-shadow:
-      0 2px 20px rgba($purple-neon, 0.4),
-      inset 0 -2px 0 rgba(255, 255, 255, 0.1),
-      0 0 30px rgba($purple-main, 0.3);
+  .q-field__native,
+  .q-field__append {
+    color: $text-color !important;
+    font-size: 12px !important;
   }
-  50% {
-    box-shadow:
-      0 2px 25px rgba($purple-neon, 0.6),
-      inset 0 -2px 0 rgba(255, 255, 255, 0.2),
-      0 0 40px rgba($purple-main, 0.5);
-  }
-}
 
-@keyframes scan-header {
-  from {
-    transform: translateX(-100%);
+  .q-icon {
+    color: $cyan-accent !important;
   }
-  to {
-    transform: translateX(100%);
-  }
-}
 
-@keyframes text-glow {
-  0% {
-    @include text-glow($text-color, 1);
-  }
-  100% {
-    text-shadow:
-      0 0 15px $cyan-accent,
-      0 0 25px rgba($purple-neon, 0.7),
-      1px 1px 0 color.scale($purple-main, $lightness: -30%);
+  &:hover .q-field__control {
+    border-color: $cyan-accent !important;
+    box-shadow: 0 0 8px rgba($cyan-accent, 0.4) !important;
   }
 }
 
-@keyframes profile-glow {
-  0% {
-    box-shadow:
-      0 0 15px rgba($cyan-accent, 0.6),
-      inset 0 0 10px rgba($purple-main, 0.3);
-  }
-  100% {
-    box-shadow:
-      0 0 20px rgba($cyan-accent, 0.8),
-      inset 0 0 15px rgba($purple-main, 0.4);
+// Responsive header adjustments
+@media (max-width: 768px) {
+  .header {
+    height: 50px;
+    padding: 0 8px;
+
+    &-profile {
+      padding: 0 8px;
+      gap: 8px;
+
+      h3 {
+        font-size: 28px;
+      }
+
+      &-image {
+        img {
+          border-width: 1px;
+        }
+
+        &:hover {
+          transform: scale(3) translate(15px, 20px);
+        }
+      }
+    }
   }
 }
 
-@keyframes language-glow {
-  0% {
-    text-shadow:
-      0 0 8px $cyan-accent,
-      0 0 12px rgba($purple-neon, 0.4),
-      1px 1px 0 color.scale($purple-main, $lightness: -40%);
+@media (max-width: 480px) {
+  .header {
+    height: 45px;
+
+    &-profile {
+      padding: 0 5px;
+      gap: 6px;
+
+      h3 {
+        font-size: 24px;
+      }
+    }
   }
-  100% {
-    text-shadow:
-      0 0 12px $cyan-accent,
-      0 0 18px rgba($purple-neon, 0.6),
-      1px 1px 0 color.scale($purple-main, $lightness: -40%);
+
+  .cyberpunk-mobile-menu {
+    min-width: 200px;
   }
+
+  .mobile-menu-list .menu-item {
+    padding: 10px 12px !important;
+    min-height: 44px;
+
+    .menu-label {
+      font-size: 13px !important;
+    }
+  }
+}
+
+// REGLA GLOBAL PARA FORZAR BACKGROUND DEL MENÚ
+// Estos selectores tienen máxima prioridad  
+.cyberpunk-mobile-menu,
+.cyberpunk-mobile-menu.q-menu,
+div.cyberpunk-mobile-menu,
+div.q-menu.cyberpunk-mobile-menu {
+  background: linear-gradient(
+    145deg,
+    rgba(138, 43, 226, 0.95) 0%,  /* $purple-main */
+    rgba(186, 85, 211, 0.85) 50%, /* $purple-neon */  
+    rgba(11, 11, 23, 0.9) 100%    /* $bg-dark */
+  ) !important;
+  border: 2px solid #00ffff !important; /* $cyan-accent */
+  border-radius: 12px !important;
+  box-shadow:
+    0 15px 35px rgba(0, 0, 0, 0.8),
+    0 0 25px rgba(0, 255, 255, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1) !important;
+}
+
+// FORZAR TOGGLE CIRCULAR EN MENÚ MÓVIL
+.cyberpunk-mobile-menu .mobile-toggle .q-toggle__thumb,
+.mobile-menu-list .mobile-toggle .q-toggle__thumb,
+div.q-menu.cyberpunk-mobile-menu .q-toggle__thumb {
+  border-radius: 50% !important;
+  width: 20px !important;
+  height: 20px !important;
+  background: #00ffff !important; /* cyan */
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+}
+
+.cyberpunk-mobile-menu .mobile-toggle .q-toggle__track,
+.mobile-menu-list .mobile-toggle .q-toggle__track,
+div.q-menu.cyberpunk-mobile-menu .q-toggle__track {
+  border-radius: 12px !important;
+  background: rgba(138, 43, 226, 0.8) !important; /* purple */
+  border: 1px solid #00ffff !important; /* cyan */
 }

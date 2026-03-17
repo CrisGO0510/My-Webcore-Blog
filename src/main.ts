@@ -1,7 +1,7 @@
 import { createApp } from "vue";
 import { createPinia } from "pinia";
 import piniaPluginPersistedstate from "pinia-plugin-persistedstate";
-import { Quasar, QBtn, QIcon, QSelect, QTooltip, QInput, QToggle } from "quasar";
+import { Quasar, QBtn, QIcon, QSelect, QTooltip, QInput, QToggle, QMenu, QList, QItem, QItemSection, QSeparator, QBar, QSpace } from "quasar";
 import quasarLang from "quasar/lang/es";
 
 // Import icon libraries
@@ -35,6 +35,13 @@ myApp.use(Quasar, {
     QTooltip,
     QInput,
     QToggle,
+    QMenu,
+    QList,
+    QItem,
+    QItemSection,
+    QSeparator,
+    QBar,
+    QSpace,
   },
 });
 

@@ -2,8 +2,8 @@
 @use "variables" as *;
 @use "sass:color";
 
-/* OPCIÓN NUCLEAR - TODOS LOS Q-MENU */
-.q-menu {
+/* OPCIÓN ESPECÍFICA - SOLO MENÚS CYBERPUNK */
+.cyberpunk-menu {
   background: linear-gradient(
     145deg, 
     rgba($purple-main, 0.95), 
@@ -19,8 +19,8 @@
   backdrop-filter: blur(10px) !important;
 }
 
-/* TODOS LOS Q-ITEM DENTRO DE MENÚS */
-.q-menu .q-item {
+/* TODOS LOS Q-ITEM DENTRO DE MENÚS CYBERPUNK */
+.cyberpunk-menu .q-item {
   background: transparent !important;
   color: $text-color !important;
   font-family: "GothicByte", monospace !important;
