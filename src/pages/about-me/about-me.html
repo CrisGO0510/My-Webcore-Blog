@@ -70,8 +70,10 @@
       <div v-if="currentSection === 'presentation'" class="section-container">
         <h2 class="section-title">{{ translations.aboutMe.title }}</h2>
         <div class="text-block">
-          <div class="description-text" v-html="translations.aboutMe.description.replace(/\n/g, '<br>')"></div>
-          <p>Tearing down the family laptop since 2005...</p>
+          <div
+            class="description-text"
+            v-html="translations.aboutMe.description.replace(/\n/g, '<br>')"
+          ></div>
         </div>
       </div>
 

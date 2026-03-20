@@ -2,9 +2,9 @@
 @use "sass:color";
 
 .about-page {
-  min-height: 100vh;
+  height: 100%;
+  overflow: auto;
   display: flex;
-  align-items: center;
   justify-content: center;
   padding: 2rem;
   background:
@@ -25,7 +25,6 @@
   grid-template-columns: 280px 80px 1fr;
   max-width: 1200px;
   width: 100%;
-  min-height: 600px;
   background: linear-gradient(
     145deg,
     rgba($purple-main, 0.35),
@@ -355,7 +354,8 @@
 }
 
 .text-block {
-  p, .description-text {
+  p,
+  .description-text {
     color: $text-color;
     line-height: 1.7;
     margin-bottom: 1.2rem;
@@ -640,4 +640,3 @@
     opacity: 0.1;
   }
 }
-
