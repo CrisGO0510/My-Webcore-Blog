@@ -22,6 +22,12 @@ export default defineComponent({
     const { t } = useI18n();
 
     const currentSection = ref("presentation");
+    // Mobile stats collapse state - collapsed by default
+    const isStatsCollapsed = ref(true);
+    
+    const toggleStats = () => {
+      isStatsCollapsed.value = !isStatsCollapsed.value;
+    };
     const translations = computed(() => ({
       aboutMe: {
         title: t("aboutMe.title"),
@@ -62,6 +68,8 @@ export default defineComponent({
       apps,
       workspace,
       navigation,
+      isStatsCollapsed,
+      toggleStats,
     };
   },
 });

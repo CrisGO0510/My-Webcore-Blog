@@ -9,9 +9,28 @@
           alt="CrisGO"
           class="pixel-avatar"
         />
+
+        <!-- Mobile Stats Toggle Button -->
+        <button
+          class="mobile-stats-toggle"
+          @click="toggleStats"
+          :class="{ 'stats-expanded': !isStatsCollapsed }"
+        >
+          <span class="toggle-text"
+            >{{ isStatsCollapsed ? 'Show' : 'Hide' }} Stats</span
+          >
+          <q-icon
+            :name="isStatsCollapsed ? 'expand_more' : 'expand_less'"
+            size="18px"
+            class="toggle-icon"
+          />
+        </button>
       </div>
 
-      <div class="stats-table">
+      <div
+        class="stats-table"
+        :class="{ 'mobile-collapsed': isStatsCollapsed }"
+      >
         <div v-for="stat in characterStats" :key="stat.label" class="stat-row">
           <span class="stat-label">{{ stat.label }}</span>
           <span class="stat-separator">:</span>
