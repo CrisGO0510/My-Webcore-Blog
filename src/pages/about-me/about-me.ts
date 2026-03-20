@@ -4,6 +4,7 @@ import techIcons from "../../data/tech-icons.json";
 import appsData from "../../data/apps.json";
 import workspaceData from "../../data/workspace.json";
 import navigationData from "../../data/navigation.json";
+import pfpImage from "../../assets/fisheye-pfp.png";
 
 function calculateAge(): string {
   const birth = new Date(2005, 4, 10);
@@ -70,6 +71,7 @@ export default defineComponent({
       navigation,
       isStatsCollapsed,
       toggleStats,
+      pfpImage,
     };
   },
 });

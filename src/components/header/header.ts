@@ -5,6 +5,7 @@ import { PROFILE_LINKS } from "../../constants/profile-links";
 import { useGlobalLanguage } from "../../composables/useGlobalLanguage";
 import { useSettings } from "../../composables/useSettings";
 import type { HeaderTranslations } from "../../types/components";
+import pfpImage from "../../assets/fisheye-pfp.png";
 
 export default defineComponent({
   name: "Header",
@@ -14,7 +15,7 @@ export default defineComponent({
 
     console.log("🚀 Header Component Loaded...");
 
-    const pfpPath = "/src/assets/fisheye-pfp.png";
+    const pfpPath = pfpImage;
     const profileLinks = PROFILE_LINKS;
 
     // Estado para el hover simulado en mobile
