@@ -22,14 +22,24 @@
     "title": "Projects",
     "subtitle": "My projects and creations",
     "viewDemo": "View Demo",
-    "viewCode": "View Code"
+    "viewCode": "View Code",
+    "selectProject": "Select a project",
+    "noProjects": "No projects available",
+    "status": {
+      "completed": "Completed",
+      "in-progress": "In Progress",
+      "archived": "Archived"
+    }
   },
   "music": {
     "title": "Music",
     "subtitle": "My musical world",
-    "favoriteGenres": "Favorite Genres",
-    "currentlyListening": "Currently Listening",
-    "codingPlaylists": "Coding Playlists"
+    "myPlaylists": "My Playlists",
+    "tracks": "tracks",
+    "selectPlaylist": "Select a playlist",
+    "openInSpotify": "Open in Spotify",
+    "emptyPlaylist": "Empty playlist",
+    "noPlaylists": "No playlists available"
   },
   "games": {
     "title": "Games",

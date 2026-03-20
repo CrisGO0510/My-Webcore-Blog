@@ -1,156 +1,375 @@
 @use "../../styles/variables" as *;
+@use "sass:color";
 
-.page-container {
-  min-height: 100vh;
-}
-
-.main-content {
+.projects-page {
+  height: 100%;
+  overflow: auto;
+  display: flex;
+  justify-content: center;
   padding: 2rem;
-  max-width: 1400px;
-  margin: 0 auto;
+  background:
+    radial-gradient(
+      ellipse at center,
+      rgba($purple-main, 0.1) 0%,
+      transparent 50%
+    ),
+    linear-gradient(
+      135deg,
+      rgba($bg-dark, 0.8) 0%,
+      rgba($purple-main, 0.05) 100%
+    );
+
+  @media (max-width: 768px) {
+    padding: 0.5rem;
+    overflow: auto;
+  }
 }
 
-.page-header {
-  text-align: center;
-  margin: 2rem 0 3rem 0;
-}
-
-.page-title {
-  font-size: 3rem;
-  color: $cyan-accent;
-  text-shadow: 0 0 15px $cyan-accent;
-  font-family: "GothicByte", monospace;
-  margin-bottom: 1rem;
-  animation: title-glow 2s ease-in-out infinite alternate;
-}
-
-.page-subtitle {
-  color: $text-color;
-  font-size: 1.2rem;
-  opacity: 0.9;
-}
-
-.projects-grid {
+// ===============================
+// MAIN WINDOW
+// ===============================
+.projects-window {
   display: grid;
-  gap: 2.5rem;
-  
-  @media (min-width: 768px) {
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  }
-  
-  @media (min-width: 1200px) {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-.project-card {
+  grid-template-columns: 280px 1fr;
+  max-width: 1200px;
+  width: 100%;
   background: linear-gradient(
     145deg,
-    rgba($purple-main, 0.15),
-    rgba($purple-neon, 0.08)
+    rgba($purple-main, 0.35),
+    rgba($purple-neon, 0.25),
+    rgba($bg-dark, 0.95)
   );
-  border: 1px solid rgba($cyan-accent, 0.6);
-  border-radius: 15px;
-  padding: 2.5rem;
-  transition: all 0.3s ease;
-  position: relative;
+  border: 2px solid rgba($cyan-accent, 0.8);
+  border-radius: 4px;
   overflow: hidden;
+  position: relative;
+  backdrop-filter: blur(15px) saturate(1.2);
+  -webkit-backdrop-filter: blur(15px) saturate(1.2);
+  box-shadow:
+    0 0 50px rgba($cyan-accent, 0.4),
+    inset 0 0 30px rgba($purple-main, 0.3),
+    inset 0 0 80px rgba($bg-dark, 0.6);
 
+  // Scan lines
   &::before {
     content: "";
     position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
+    inset: 0;
+    background-image: linear-gradient(
+      transparent 50%,
+      rgba($cyan-accent, 0.02) 50%,
+      rgba($cyan-accent, 0.02) 52%,
+      transparent 52%
+    );
+    background-size: 100% 4px;
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  // Glitch flash
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
     background: linear-gradient(
       90deg,
-      transparent,
-      rgba($cyan-accent, 0.1),
-      transparent
+      transparent 0%,
+      rgba($cyan-accent, 0.1) 2%,
+      transparent 4%
     );
-    transition: left 0.6s ease;
+    pointer-events: none;
+    opacity: 0;
+    animation: glitch-flash 12s ease-in-out infinite;
+    z-index: 1;
   }
-  
-  &:hover {
-    border-color: $cyan-accent;
-    box-shadow: 
-      0 0 25px rgba($cyan-accent, 0.4),
-      inset 0 0 15px rgba($purple-main, 0.2);
-    transform: translateY(-8px);
 
-    &::before {
-      left: 100%;
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    overflow: auto;
+    border-radius: 0;
+    margin: 0;
+    border: none;
+    box-shadow: none;
+  }
+}
+
+// ===============================
+// PROJECTS LIST PANEL (LEFT)
+// ===============================
+.projects-list-panel {
+  background: linear-gradient(
+    180deg,
+    rgba($purple-main, 0.45),
+    rgba($purple-neon, 0.3),
+    rgba($bg-dark, 0.8)
+  );
+  border-right: 1px solid rgba($cyan-accent, 0.6);
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 2;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  overflow-y: auto;
+
+  &::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: rgba($purple-main, 0.2);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: rgba($cyan-accent, 0.4);
+    border-radius: 2px;
+  }
+
+  @media (max-width: 768px) {
+    border-right: none;
+    border-bottom: 1px solid rgba($cyan-accent, 0.4);
+    padding: 1rem;
+  }
+}
+
+.panel-title {
+  color: $cyan-accent;
+  font-family: "GothicByte", monospace;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 10px rgba($cyan-accent, 0.6);
+  text-align: center;
+  border-bottom: 1px solid rgba($cyan-accent, 0.3);
+  padding-bottom: 8px;
+
+  @media (max-width: 768px) {
+    font-size: 1rem;
+    margin-bottom: 8px;
+  }
+}
+
+.projects-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.project-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.15s ease-out;
+
+  &:hover {
+    background: linear-gradient(
+      145deg,
+      rgba($cyan-accent, 0.08),
+      rgba($purple-neon, 0.1)
+    );
+    border-color: rgba($cyan-accent, 0.3);
+    box-shadow: 0 0 8px rgba($cyan-accent, 0.15);
+    transform: translateX(4px);
+  }
+
+  &.active {
+    background: linear-gradient(
+      145deg,
+      rgba($cyan-accent, 0.15),
+      rgba($purple-neon, 0.2),
+      rgba($bg-dark, 0.8)
+    );
+    border-color: rgba($cyan-accent, 0.5);
+    box-shadow:
+      0 0 16px rgba($cyan-accent, 0.3),
+      inset 0 0 8px rgba($cyan-accent, 0.1);
+
+    .project-item-name {
+      color: $cyan-accent;
+      text-shadow: 0 0 8px rgba($cyan-accent, 0.4);
+    }
+
+    .project-icon {
+      color: $cyan-accent;
+      text-shadow: 0 0 8px rgba($cyan-accent, 0.6);
     }
   }
-  
-  h3 {
-    color: $cyan-accent;
-    margin-bottom: 1rem;
-    font-family: "GothicByte", monospace;
-    font-size: 1.4rem;
-    text-shadow: 0 0 10px rgba($cyan-accent, 0.5);
+}
+
+.project-icon {
+  color: $purple-neon;
+  flex-shrink: 0;
+  transition: all 0.15s ease-out;
+}
+
+.project-item-info {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.project-item-name {
+  color: $text-color;
+  font-family: "GothicByte", monospace;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: all 0.15s ease-out;
+}
+
+.project-item-tech {
+  color: $burn-dim;
+  font-family: "VT323", monospace;
+  font-size: 0.8rem;
+}
+
+// ===============================
+// PROJECT DETAIL PANEL (RIGHT)
+// ===============================
+.project-detail-panel {
+  background: linear-gradient(
+    135deg,
+    rgba($bg-dark, 0.9),
+    rgba($purple-main, 0.15),
+    rgba($purple-neon, 0.08)
+  );
+  padding: 2rem;
+  position: relative;
+  z-index: 2;
+  overflow-y: auto;
+  max-height: 700px;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+
+  &::-webkit-scrollbar {
+    width: 4px;
   }
-  
+
+  &::-webkit-scrollbar-track {
+    background: rgba($purple-main, 0.2);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: rgba($cyan-accent, 0.6);
+    border-radius: 2px;
+  }
+
+  @media (max-width: 768px) {
+    max-height: calc(100vh - 300px);
+    overflow-y: auto;
+    padding: 1rem;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+.section-title {
+  color: $cyan-accent;
+  font-family: "GothicByte", monospace;
+  font-size: 2rem;
+  margin: 0 0 1.5rem 0;
+  text-shadow: 0 0 15px rgba($cyan-accent, 0.6);
+  position: relative;
+
+  @media (max-width: 768px) {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 60px;
+    height: 2px;
+    background: linear-gradient(90deg, $cyan-accent, transparent);
+    box-shadow: 0 0 8px rgba($cyan-accent, 0.6);
+
+    @media (max-width: 768px) {
+      left: 50%;
+      transform: translateX(-50%);
+      width: 40px;
+    }
+  }
+}
+
+.detail-description {
+  margin-bottom: 2rem;
+
   p {
     color: $text-color;
-    line-height: 1.6;
-    margin-bottom: 1.5rem;
+    line-height: 1.7;
     font-size: 1.05rem;
+    opacity: 0.95;
+    margin: 0;
   }
+}
+
+.detail-label {
+  color: $purple-neon;
+  font-family: "GothicByte", monospace;
+  font-size: 1rem;
+  margin: 0 0 8px 0;
+  text-shadow: 0 0 8px rgba($purple-neon, 0.4);
+}
+
+.detail-tech {
+  margin-bottom: 2rem;
 }
 
 .tech-stack {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.6rem;
-  margin-bottom: 1.5rem;
+  gap: 8px;
 }
 
-.tech {
+.tech-tag {
   background: linear-gradient(
     145deg,
     rgba($purple-neon, 0.25),
     rgba($purple-main, 0.15)
   );
-  border: 1px solid rgba($purple-neon, 0.6);
+  border: 1px solid rgba($purple-neon, 0.3);
   color: $purple-neon;
-  padding: 0.4rem 1rem;
-  border-radius: 20px;
-  font-size: 0.85rem;
-  font-weight: 500;
-  transition: all 0.3s ease;
-  cursor: pointer;
+  padding: 4px 16px;
+  border-radius: 4px;
+  font-family: "VT323", monospace;
+  font-size: 0.95rem;
+  transition: all 0.15s ease-out;
 
   &:hover {
-    background: linear-gradient(
-      145deg,
-      rgba($purple-neon, 0.4),
-      rgba($purple-main, 0.3)
-    );
-    border-color: $purple-neon;
-    box-shadow: 0 0 10px rgba($purple-neon, 0.3);
-    transform: scale(1.05);
-    color: #ffffff;
-    text-shadow: 0 0 8px rgba($purple-neon, 0.6);
+    border-color: rgba($cyan-accent, 0.5);
+    box-shadow: 0 0 8px rgba($purple-neon, 0.3);
+    color: $cyan-accent;
   }
 }
 
-.project-actions {
+.detail-actions {
   display: flex;
-  gap: 1rem;
+  gap: 16px;
   flex-wrap: wrap;
+  margin-top: 8px;
 }
 
-.project-btn {
-  padding: 0.7rem 1.5rem;
-  border-radius: 25px;
+.action-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 24px;
+  border-radius: 4px;
   text-decoration: none;
-  font-weight: 600;
+  font-family: "GothicByte", monospace;
   font-size: 0.9rem;
-  transition: all 0.3s ease;
+  font-weight: 600;
+  transition: all 0.15s ease-out;
   border: 1px solid;
-  cursor: pointer;
   position: relative;
   overflow: hidden;
 
@@ -164,38 +383,33 @@
     transition: left 0.4s ease;
   }
 
+  &:hover::before {
+    left: 100%;
+  }
+
   &.demo-btn {
     background: linear-gradient(
       145deg,
       rgba($cyan-accent, 0.2),
       rgba($cyan-accent, 0.1)
     );
-    border-color: $cyan-accent;
+    border-color: rgba($cyan-accent, 0.4);
     color: $cyan-accent;
 
     &::before {
       background: linear-gradient(
         90deg,
         transparent,
-        rgba($cyan-accent, 0.3),
+        rgba($cyan-accent, 0.2),
         transparent
       );
     }
 
     &:hover {
-      background: linear-gradient(
-        145deg,
-        rgba($cyan-accent, 0.3),
-        rgba($cyan-accent, 0.2)
-      );
-      box-shadow: 0 0 15px rgba($cyan-accent, 0.4);
+      box-shadow: 0 0 16px rgba($cyan-accent, 0.4);
       transform: translateY(-2px);
-      color: #ffffff;
-      text-shadow: 0 0 10px rgba($cyan-accent, 0.8);
-
-      &::before {
-        left: 100%;
-      }
+      color: $text-color;
+      text-shadow: 0 0 8px rgba($cyan-accent, 0.6);
     }
   }
 
@@ -205,43 +419,140 @@
       rgba($purple-neon, 0.2),
       rgba($purple-neon, 0.1)
     );
-    border-color: $purple-neon;
+    border-color: rgba($purple-neon, 0.4);
     color: $purple-neon;
 
     &::before {
       background: linear-gradient(
         90deg,
         transparent,
-        rgba($purple-neon, 0.3),
+        rgba($purple-neon, 0.2),
         transparent
       );
     }
 
     &:hover {
-      background: linear-gradient(
-        145deg,
-        rgba($purple-neon, 0.3),
-        rgba($purple-neon, 0.2)
-      );
-      box-shadow: 0 0 15px rgba($purple-neon, 0.4);
+      box-shadow: 0 0 16px rgba($purple-neon, 0.4);
       transform: translateY(-2px);
-      color: #ffffff;
-      text-shadow: 0 0 10px rgba($purple-neon, 0.8);
-
-      &::before {
-        left: 100%;
-      }
+      color: $text-color;
+      text-shadow: 0 0 8px rgba($purple-neon, 0.6);
     }
   }
 }
 
-@keyframes title-glow {
-  0% {
-    text-shadow: 0 0 15px $cyan-accent;
+// ===============================
+// STATUS INDICATORS
+// ===============================
+.status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  margin-left: auto;
+
+  &.status-completed {
+    background: $signal-green;
+    box-shadow: 0 0 8px rgba($signal-green, 0.6);
   }
+
+  &.status-in-progress {
+    background: $cyan-accent;
+    box-shadow: 0 0 8px rgba($cyan-accent, 0.6);
+    animation: pulse-dot 2s ease-in-out infinite;
+  }
+
+  &.status-archived {
+    background: $burn-dim;
+    opacity: 0.5;
+  }
+}
+
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-family: "VT323", monospace;
+  font-size: 0.9rem;
+  border: 1px solid;
+  margin-top: 8px;
+
+  &.status-completed {
+    color: $signal-green;
+    border-color: rgba($signal-green, 0.3);
+    background: rgba($signal-green, 0.08);
+    text-shadow: 0 0 8px rgba($signal-green, 0.4);
+  }
+
+  &.status-in-progress {
+    color: $cyan-accent;
+    border-color: rgba($cyan-accent, 0.3);
+    background: rgba($cyan-accent, 0.08);
+    text-shadow: 0 0 8px rgba($cyan-accent, 0.4);
+
+    .q-icon {
+      animation: spin 2s linear infinite;
+    }
+  }
+
+  &.status-archived {
+    color: $burn-dim;
+    border-color: rgba($burn-dim, 0.2);
+    background: rgba($burn-dim, 0.05);
+    opacity: 0.7;
+  }
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+// ===============================
+// EMPTY STATE
+// ===============================
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 40px;
+  color: $burn-dim;
+  text-align: center;
+
+  .q-icon {
+    color: $purple-neon;
+    opacity: 0.5;
+  }
+
+  p {
+    font-family: "Space Mono", monospace;
+    font-size: 0.95rem;
+    margin: 0;
+  }
+}
+
+// ===============================
+// ANIMATIONS
+// ===============================
+@keyframes glitch-flash {
+  0%,
+  95%,
   100% {
-    text-shadow: 
-      0 0 20px $cyan-accent,
-      0 0 30px rgba($purple-neon, 0.6);
+    opacity: 0;
+  }
+  96%,
+  98% {
+    opacity: 0.3;
+  }
+  97% {
+    opacity: 0.1;
   }
 }

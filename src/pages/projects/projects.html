@@ -1,39 +1,90 @@
-<div class="page-container">
-  <main class="main-content">
-    <div class="page-header">
-      <h1 class="page-title">{{ translations.projects.title }}</h1>
-      <p class="page-subtitle">{{ translations.projects.subtitle }}</p>
-    </div>
+<div class="projects-page">
+  <div class="projects-window" v-if="projects.length > 0">
+    <!-- LADO IZQUIERDO: LISTA DE PROYECTOS -->
+    <aside class="projects-list-panel">
+      <h2 class="panel-title">{{ translations.projects.title }}</h2>
+      <div class="projects-list">
+        <div
+          v-for="project in projects"
+          :key="project.id"
+          class="project-item"
+          :class="{ active: selectedProject?.id === project.id }"
+          @click="selectProject(project)"
+        >
+          <div class="project-icon">
+            <q-icon name="terminal" size="1.5rem" />
+          </div>
+          <div class="project-item-info">
+            <span class="project-item-name">{{ project.name }}</span>
+            <span class="project-item-tech" v-if="project.technologies.length">{{ project.technologies[0] }}</span>
+          </div>
+          <span class="status-dot" :class="'status-' + project.status"></span>
+        </div>
+      </div>
+    </aside>
 
-    <div class="projects-grid">
-      <div v-for="project in projects" :key="project.id" class="project-card">
-        <h3>{{ project.name }}</h3>
-        <p>{{ project.description }}</p>
-        <div class="tech-stack">
-          <span v-for="tech in project.technologies" :key="tech" class="tech">
-            {{ tech }}
+    <!-- LADO DERECHO: DETALLE DEL PROYECTO -->
+    <section class="project-detail-panel">
+      <template v-if="selectedProject">
+        <div class="detail-header">
+          <h2 class="section-title">{{ selectedProject.name }}</h2>
+          <span class="status-badge" :class="'status-' + selectedProject.status">
+            <q-icon :name="getStatusConfig(selectedProject.status).icon" size="0.9rem" />
+            {{ translations.projects.status[selectedProject.status] }}
           </span>
         </div>
-        <div class="project-actions" v-if="project.link || project.github">
+
+        <div class="detail-description" v-if="selectedProject.description">
+          <p>{{ selectedProject.description }}</p>
+        </div>
+
+        <div class="detail-tech" v-if="selectedProject.technologies.length > 0">
+          <h3 class="detail-label">Stack</h3>
+          <div class="tech-stack">
+            <span
+              v-for="tech in selectedProject.technologies"
+              :key="tech"
+              class="tech-tag"
+            >
+              {{ tech }}
+            </span>
+          </div>
+        </div>
+
+        <div class="detail-actions">
           <a
-            v-if="project.link"
-            :href="project.link"
+            v-if="selectedProject.link"
+            :href="selectedProject.link"
             target="_blank"
-            class="project-btn demo-btn"
+            rel="noopener noreferrer"
+            class="action-btn demo-btn"
           >
+            <q-icon name="open_in_new" size="1rem" />
             {{ translations.projects.viewDemo }}
           </a>
           <a
-            v-if="project.github"
-            :href="project.github"
+            v-if="selectedProject.github"
+            :href="selectedProject.github"
             target="_blank"
-            class="project-btn code-btn"
+            rel="noopener noreferrer"
+            class="action-btn code-btn"
           >
+            <q-icon name="code" size="1rem" />
             {{ translations.projects.viewCode }}
           </a>
         </div>
-      </div>
-    </div>
-  </main>
-</div>
+      </template>
 
+      <div class="empty-state" v-else>
+        <q-icon name="folder_open" size="3rem" />
+        <p>{{ translations.projects.selectProject }}</p>
+      </div>
+    </section>
+  </div>
+
+  <!-- No projects -->
+  <div class="empty-state" v-else>
+    <q-icon name="folder_off" size="4rem" />
+    <p>{{ translations.projects.noProjects }}</p>
+  </div>
+</div>

@@ -1,64 +1,106 @@
-<div class="page-container">
-  <main class="main-content">
-    <div class="page-header">
-      <h1 class="page-title">{{ translations.music.title }}</h1>
-      <p class="page-subtitle">{{ translations.music.subtitle }}</p>
-    </div>
-
-    <div class="music-content">
-      <div class="playlist-section">
-        <h2>{{ translations.music.favoriteGenres }}</h2>
-        <div class="genre-cards">
-          <div v-for="genre in genres" :key="genre.id" class="genre-card">
-            <q-icon :name="genre.icon" size="3rem" />
-            <h3>{{ genre.name }}</h3>
-            <p>{{ genre.description }}</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="now-playing">
-        <h2>{{ translations.music.currentlyListening }}</h2>
-        <div class="player-mock">
-          <q-icon
-            :name="currentTrack.isPlaying ? 'pause_circle' : 'play_circle'"
-            size="4rem"
-            @click="togglePlay"
-            class="play-btn"
-          />
-          <div class="track-info">
-            <h4>{{ currentTrack.title }}</h4>
-            <p>{{ currentTrack.artist }}</p>
-            <div class="track-progress">
-              <div
-                class="progress-bar"
-                :style="{ width: currentTrack.progress + '%' }"
-              ></div>
+<div class="music-page">
+  <div class="music-window" v-if="playlists.length > 0">
+    <!-- LADO IZQUIERDO: PLAYLISTS -->
+    <aside class="playlists-panel">
+      <h2 class="panel-title">{{ translations.music.myPlaylists }}</h2>
+      <div class="playlists-list">
+        <div
+          v-for="playlist in playlists"
+          :key="playlist.id"
+          class="playlist-item"
+          :class="{ active: selectedPlaylist?.id === playlist.id }"
+          @click="selectPlaylist(playlist)"
+        >
+          <div class="playlist-thumb">
+            <img
+              v-if="playlist.image"
+              :src="playlist.image"
+              :alt="playlist.name"
+              loading="lazy"
+            />
+            <div v-else class="playlist-thumb-placeholder">
+              <q-icon name="music_note" size="1.5rem" />
             </div>
           </div>
+          <div class="playlist-info">
+            <span class="playlist-name">{{ playlist.name }}</span>
+            <span class="playlist-count">{{ playlist.totalTracks }} {{ translations.music.tracks }}</span>
+          </div>
         </div>
       </div>
+    </aside>
 
-      <div class="playlists-section">
-        <h2>{{ translations.music.codingPlaylists }}</h2>
-        <div class="playlists-grid">
+    <!-- LADO DERECHO: TRACKS -->
+    <section class="tracks-panel">
+      <template v-if="selectedPlaylist">
+        <div class="tracks-header">
+          <div class="tracks-header-cover">
+            <img
+              v-if="selectedPlaylist.image"
+              :src="selectedPlaylist.image"
+              :alt="selectedPlaylist.name"
+            />
+            <div v-else class="tracks-header-placeholder">
+              <q-icon name="music_note" size="3rem" />
+            </div>
+          </div>
+          <div class="tracks-header-info">
+            <h2 class="section-title">{{ selectedPlaylist.name }}</h2>
+            <p v-if="selectedPlaylist.description" class="playlist-description">{{ selectedPlaylist.description }}</p>
+            <span class="track-count-label">{{ selectedPlaylist.totalTracks }} {{ translations.music.tracks }}</span>
+            <a
+              :href="selectedPlaylist.url"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="spotify-link"
+            >
+              <q-icon name="open_in_new" size="1rem" />
+              {{ translations.music.openInSpotify }}
+            </a>
+          </div>
+        </div>
+
+        <div class="tracks-list" v-if="selectedPlaylist.tracks.length > 0">
           <div
-            v-for="playlist in playlists"
-            :key="playlist.id"
-            class="playlist-card"
-            @click="selectPlaylist(playlist)"
+            v-for="(track, index) in selectedPlaylist.tracks"
+            :key="index"
+            class="track-item"
           >
-            <div class="playlist-cover">
-              <q-icon :name="playlist.icon" size="2.5rem" />
+            <span class="track-number">{{ index + 1 }}</span>
+            <img
+              v-if="track.image"
+              :src="track.image"
+              :alt="track.album"
+              class="track-cover"
+              loading="lazy"
+            />
+            <div v-else class="track-cover-placeholder">
+              <q-icon name="album" size="1.2rem" />
             </div>
-            <div class="playlist-info">
-              <h4>{{ playlist.name }}</h4>
-              <p>{{ playlist.tracks }} tracks • {{ playlist.mood }}</p>
+            <div class="track-info">
+              <a :href="track.url" target="_blank" rel="noopener noreferrer" class="track-name">{{ track.name }}</a>
+              <span class="track-artist">{{ track.artist }}</span>
             </div>
+            <span class="track-duration">{{ track.duration }}</span>
           </div>
         </div>
-      </div>
-    </div>
-  </main>
-</div>
 
+        <div class="empty-state" v-else>
+          <q-icon name="music_off" size="3rem" />
+          <p>{{ translations.music.emptyPlaylist }}</p>
+        </div>
+      </template>
+
+      <div class="empty-state" v-else>
+        <q-icon name="queue_music" size="3rem" />
+        <p>{{ translations.music.selectPlaylist }}</p>
+      </div>
+    </section>
+  </div>
+
+  <!-- No playlists -->
+  <div class="empty-state" v-else>
+    <q-icon name="music_off" size="4rem" />
+    <p>{{ translations.music.noPlaylists }}</p>
+  </div>
+</div>

@@ -1,6 +1,31 @@
-import { computed, defineComponent } from "vue";
+import { computed, defineComponent, ref } from "vue";
 import { useI18n } from "vue-i18n";
 import Header from "../../components/header/header.vue";
+import projectsData from "../../data/projects.json";
+
+const ProjectStatus = {
+  Completed: "completed",
+  InProgress: "in-progress",
+  Archived: "archived",
+} as const;
+
+type ProjectStatusValue = typeof ProjectStatus[keyof typeof ProjectStatus];
+
+interface Project {
+  id: string;
+  name: string;
+  description: string;
+  technologies: string[];
+  status: ProjectStatusValue;
+  github: string | null;
+  link: string | null;
+}
+
+const statusConfig: Record<ProjectStatusValue, { icon: string }> = {
+  [ProjectStatus.Completed]: { icon: "check_circle" },
+  [ProjectStatus.InProgress]: { icon: "autorenew" },
+  [ProjectStatus.Archived]: { icon: "inventory_2" },
+};
 
 export default defineComponent({
   name: "Projects",
@@ -8,9 +33,12 @@ export default defineComponent({
     Header,
   },
   setup() {
-    console.log("Projects Component Loaded...");
-
     const { t } = useI18n();
+
+    const projects = projectsData as Project[];
+    const selectedProject = ref<Project | null>(
+      projects.length > 0 ? projects[0] ?? null : null
+    );
 
     const translations = computed(() => ({
       projects: {
@@ -18,48 +46,28 @@ export default defineComponent({
         subtitle: t("projects.subtitle"),
         viewDemo: t("projects.viewDemo"),
         viewCode: t("projects.viewCode"),
+        selectProject: t("projects.selectProject"),
+        noProjects: t("projects.noProjects"),
+        status: {
+          [ProjectStatus.Completed]: t("projects.status.completed"),
+          [ProjectStatus.InProgress]: t("projects.status.in-progress"),
+          [ProjectStatus.Archived]: t("projects.status.archived"),
+        },
       },
     }));
 
-    // Projects data - puede venir de una API o ser estático
-    const projects = [
-      {
-        id: 1,
-        name: "Vue.js Dashboard",
-        description: "Dashboard administrativo con Vue 3 y TypeScript",
-        technologies: ["Vue.js", "TypeScript", "Quasar", "Pinia"],
-        link: "https://example.com/vue-dashboard",
-        github: "https://github.com/crisgo/vue-dashboard"
-      },
-      {
-        id: 2,
-        name: "Angular CRM",
-        description: "Sistema CRM empresarial con Angular y .NET",
-        technologies: ["Angular", "C#", ".NET Core", "SQL Server"],
-        link: null,
-        github: "https://github.com/crisgo/angular-crm"
-      },
-      {
-        id: 3,
-        name: "Cyberpunk Blog",
-        description: "Este blog con temática cyberpunk y efectos visuales",
-        technologies: ["Vue.js", "Three.js", "SCSS", "TypeScript"],
-        link: window.location.origin,
-        github: "https://github.com/crisgo/cyberpunk-blog"
-      },
-      {
-        id: 4,
-        name: "Microservices Architecture",
-        description: "Arquitectura de microservicios con Docker y Kubernetes",
-        technologies: ["Node.js", "Docker", "Kubernetes", "Redis"],
-        link: null,
-        github: "https://github.com/crisgo/microservices-arch"
-      }
-    ];
+    const selectProject = (project: Project) => {
+      selectedProject.value = project;
+    };
 
-    return { 
+    const getStatusConfig = (status: ProjectStatusValue) => statusConfig[status] ?? statusConfig[ProjectStatus.Archived];
+
+    return {
       translations,
-      projects 
+      projects,
+      selectedProject,
+      selectProject,
+      getStatusConfig,
     };
   },
 });

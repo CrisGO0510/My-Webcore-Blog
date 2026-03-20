@@ -1,0 +1,20 @@
+[
+  {
+    "id": "my-webcore-blog",
+    "name": "My Webcore Blog",
+    "description": "Portfolio personal con estética cyberpunk, efectos 3D con Three.js, eye-tracking interactivo y integración con Spotify",
+    "technologies": ["Vue.js", "TypeScript", "Quasar", "Three.js", "SCSS"],
+    "status": "completed",
+    "github": "https://github.com/CrisGO0510/My-Webcore-Blog",
+    "link": null
+  },
+  {
+    "id": "icarapp",
+    "name": "IcarApp",
+    "description": "App móvil para registro de entrenamiento y nutrición diaria. Seguimiento de rutinas, series, repeticiones, macros y calorías con visualización de progreso",
+    "technologies": ["Vue.js", "TypeScript", "Quasar", "PWA"],
+    "status": "in-progress",
+    "github": "https://github.com/CrisGO0510/IcarApp",
+    "link": null
+  }
+]

@@ -1,322 +1,570 @@
 @use "../../styles/variables" as *;
+@use "sass:color";
 
-.page-container {
-  min-height: 100vh;
-}
-
-.main-content {
+.music-page {
+  height: 100%;
+  overflow: auto;
+  display: flex;
+  justify-content: center;
   padding: 2rem;
-  max-width: 1400px;
-  margin: 0 auto;
-}
+  background:
+    radial-gradient(
+      ellipse at center,
+      rgba($purple-main, 0.1) 0%,
+      transparent 50%
+    ),
+    linear-gradient(
+      135deg,
+      rgba($bg-dark, 0.8) 0%,
+      rgba($purple-main, 0.05) 100%
+    );
 
-.page-header {
-  text-align: center;
-  margin: 2rem 0 3rem 0;
-}
-
-.page-title {
-  font-size: 3rem;
-  color: $cyan-accent;
-  text-shadow: 0 0 15px $cyan-accent;
-  font-family: "GothicByte", monospace;
-  margin-bottom: 1rem;
-  animation: title-glow 2s ease-in-out infinite alternate;
-}
-
-.page-subtitle {
-  color: $text-color;
-  font-size: 1.2rem;
-  opacity: 0.9;
-}
-
-.music-content {
-  display: grid;
-  gap: 4rem;
-}
-
-.playlist-section h2,
-.now-playing h2,
-.playlists-section h2 {
-  color: $purple-neon;
-  font-family: "GothicByte", monospace;
-  margin-bottom: 2rem;
-  text-align: center;
-  font-size: 1.8rem;
-  text-shadow: 0 0 10px rgba($purple-neon, 0.6);
-}
-
-.genre-cards {
-  display: grid;
-  gap: 1.5rem;
-  
-  @media (min-width: 768px) {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  
-  @media (min-width: 1024px) {
-    grid-template-columns: repeat(4, 1fr);
+  @media (max-width: 768px) {
+    padding: 0.5rem;
+    overflow: auto;
   }
 }
 
-.genre-card {
+// ===============================
+// MAIN WINDOW (same as about-me)
+// ===============================
+.music-window {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  max-width: 1200px;
+  width: 100%;
   background: linear-gradient(
     145deg,
-    rgba($purple-main, 0.15),
-    rgba($purple-neon, 0.08)
+    rgba($purple-main, 0.35),
+    rgba($purple-neon, 0.25),
+    rgba($bg-dark, 0.95)
   );
-  border: 1px solid rgba($purple-neon, 0.6);
-  border-radius: 15px;
-  padding: 2rem;
-  text-align: center;
-  transition: all 0.3s ease;
-  position: relative;
+  border: 2px solid rgba($cyan-accent, 0.8);
+  border-radius: 4px;
   overflow: hidden;
-  cursor: pointer;
+  position: relative;
+  backdrop-filter: blur(15px) saturate(1.2);
+  -webkit-backdrop-filter: blur(15px) saturate(1.2);
+  box-shadow:
+    0 0 50px rgba($cyan-accent, 0.4),
+    inset 0 0 30px rgba($purple-main, 0.3),
+    inset 0 0 80px rgba($bg-dark, 0.6);
 
+  // Scan lines
   &::before {
     content: "";
     position: absolute;
     top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(
+      transparent 50%,
+      rgba($cyan-accent, 0.02) 50%,
+      rgba($cyan-accent, 0.02) 52%,
+      transparent 52%
+    );
+    background-size: 100% 4px;
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  // Glitch flash
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     background: linear-gradient(
       90deg,
-      transparent,
-      rgba($purple-neon, 0.1),
-      transparent
+      transparent 0%,
+      rgba($cyan-accent, 0.1) 2%,
+      transparent 4%
     );
-    transition: left 0.6s ease;
+    pointer-events: none;
+    opacity: 0;
+    animation: glitch-flash 12s ease-in-out infinite;
+    z-index: 1;
   }
-  
-  &:hover {
-    border-color: $cyan-accent;
-    box-shadow: 
-      0 0 25px rgba($purple-neon, 0.4),
-      inset 0 0 15px rgba($purple-main, 0.2);
-    transform: translateY(-8px) scale(1.02);
 
-    &::before {
-      left: 100%;
-    }
-
-    .q-icon {
-      transform: scale(1.1);
-      color: $cyan-accent;
-      text-shadow: 0 0 15px $cyan-accent;
-    }
-  }
-  
-  .q-icon {
-    color: $purple-neon;
-    margin-bottom: 1rem;
-    transition: all 0.3s ease;
-    text-shadow: 0 0 10px rgba($purple-neon, 0.6);
-  }
-  
-  h3 {
-    color: $cyan-accent;
-    margin-bottom: 0.5rem;
-    font-family: "GothicByte", monospace;
-    font-size: 1.2rem;
-  }
-  
-  p {
-    color: $text-color;
-    font-size: 0.95rem;
-    opacity: 0.9;
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    overflow: auto;
+    border-radius: 0;
+    margin: 0;
+    border: none;
+    box-shadow: none;
   }
 }
 
-.now-playing {
-  text-align: center;
-}
-
-.player-mock {
+// ===============================
+// PLAYLISTS PANEL (LEFT)
+// ===============================
+.playlists-panel {
   background: linear-gradient(
-    145deg,
-    rgba($purple-main, 0.2),
-    rgba($purple-neon, 0.1)
+    180deg,
+    rgba($purple-main, 0.45),
+    rgba($purple-neon, 0.3),
+    rgba($bg-dark, 0.8)
   );
-  border: 2px solid rgba($cyan-accent, 0.7);
-  border-radius: 20px;
-  padding: 2.5rem;
+  border-right: 1px solid rgba($cyan-accent, 0.6);
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 2;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  overflow-y: auto;
+  max-height: 700px;
+
+  &::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: rgba($purple-main, 0.2);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: rgba($cyan-accent, 0.4);
+    border-radius: 2px;
+  }
+
+  @media (max-width: 768px) {
+    border-right: none;
+    border-bottom: 1px solid rgba($cyan-accent, 0.4);
+    padding: 1rem;
+    max-height: 280px;
+  }
+}
+
+.panel-title {
+  color: $cyan-accent;
+  font-family: "GothicByte", monospace;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 10px rgba($cyan-accent, 0.6);
+  text-align: center;
+  border-bottom: 1px solid rgba($cyan-accent, 0.3);
+  padding-bottom: 8px;
+
+  @media (max-width: 768px) {
+    font-size: 1rem;
+    margin-bottom: 8px;
+  }
+}
+
+.playlists-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.playlist-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.15s ease-out;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+
+  &:hover {
+    background: linear-gradient(
+      145deg,
+      rgba($cyan-accent, 0.08),
+      rgba($purple-neon, 0.1)
+    );
+    border-color: rgba($cyan-accent, 0.3);
+    box-shadow: 0 0 8px rgba($cyan-accent, 0.15);
+    transform: translateX(4px);
+  }
+
+  &.active {
+    background: linear-gradient(
+      145deg,
+      rgba($cyan-accent, 0.15),
+      rgba($purple-neon, 0.2),
+      rgba($bg-dark, 0.8)
+    );
+    border-color: rgba($cyan-accent, 0.5);
+    box-shadow:
+      0 0 16px rgba($cyan-accent, 0.3),
+      inset 0 0 8px rgba($cyan-accent, 0.1);
+
+    .playlist-name {
+      color: $cyan-accent;
+      text-shadow: 0 0 8px rgba($cyan-accent, 0.4);
+    }
+  }
+}
+
+.playlist-thumb {
+  width: 48px;
+  height: 48px;
+  border-radius: 4px;
+  overflow: hidden;
+  flex-shrink: 0;
+  box-shadow: 0 0 8px rgba($purple-main, 0.3);
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.9) saturate(1.1);
+  }
+
+  .active & img {
+    filter: brightness(1.05) saturate(1.3);
+  }
+
+  @media (max-width: 768px) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.playlist-thumb-placeholder {
+  width: 100%;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 2rem;
-  max-width: 600px;
-  margin: 0 auto;
-  position: relative;
-  overflow: hidden;
+  background: rgba($purple-main, 0.4);
+  color: $purple-neon;
+}
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -100%;
+.playlist-info {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.playlist-name {
+  color: $text-color;
+  font-family: "GothicByte", monospace;
+  font-size: 0.85rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: all 0.15s ease-out;
+}
+
+.playlist-count {
+  color: $burn-dim;
+  font-family: "VT323", monospace;
+  font-size: 0.8rem;
+}
+
+// ===============================
+// TRACKS PANEL (RIGHT)
+// ===============================
+.tracks-panel {
+  background: linear-gradient(
+    135deg,
+    rgba($bg-dark, 0.9),
+    rgba($purple-main, 0.15),
+    rgba($purple-neon, 0.08)
+  );
+  padding: 2rem;
+  position: relative;
+  z-index: 2;
+  overflow-y: auto;
+  max-height: 700px;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+
+  &::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: rgba($purple-main, 0.2);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: rgba($cyan-accent, 0.6);
+    border-radius: 2px;
+  }
+
+  @media (max-width: 768px) {
+    max-height: calc(100vh - 400px);
+    overflow-y: auto;
+    padding: 1rem;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+.tracks-header {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 24px;
+
+  @media (max-width: 480px) {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.tracks-header-cover {
+  flex-shrink: 0;
+  width: 120px;
+  height: 120px;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow:
+    0 0 20px rgba($purple-neon, 0.4),
+    0 0 8px rgba($cyan-accent, 0.2);
+
+  img {
     width: 100%;
     height: 100%;
-    background: linear-gradient(
-      90deg,
-      transparent,
-      rgba($cyan-accent, 0.1),
-      transparent
-    );
-    transition: left 0.8s ease;
+    object-fit: cover;
   }
 
-  &:hover::before {
-    left: 100%;
+  @media (max-width: 768px) {
+    width: 80px;
+    height: 80px;
   }
-  
-  .play-btn {
+}
+
+.tracks-header-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba($purple-main, 0.4);
+  color: $purple-neon;
+}
+
+.tracks-header-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+}
+
+.section-title {
+  color: $cyan-accent;
+  font-family: "GothicByte", monospace;
+  font-size: 1.8rem;
+  margin: 0 0 4px 0;
+  text-shadow: 0 0 15px rgba($cyan-accent, 0.6);
+  position: relative;
+
+  @media (max-width: 768px) {
+    font-size: 1.3rem;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 60px;
+    height: 2px;
+    background: linear-gradient(90deg, $cyan-accent, transparent);
+    box-shadow: 0 0 8px rgba($cyan-accent, 0.6);
+
+    @media (max-width: 480px) {
+      left: 50%;
+      transform: translateX(-50%);
+      width: 40px;
+    }
+  }
+}
+
+.playlist-description {
+  color: $text-color;
+  font-size: 0.85rem;
+  opacity: 0.8;
+  margin: 4px 0 0 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.track-count-label {
+  color: $burn-dim;
+  font-family: "VT323", monospace;
+  font-size: 0.9rem;
+  margin-top: 4px;
+}
+
+.spotify-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: $signal-green;
+  font-family: "Space Mono", monospace;
+  font-size: 0.8rem;
+  text-decoration: none;
+  margin-top: 4px;
+  transition: all 0.15s ease-out;
+
+  &:hover {
     color: $cyan-accent;
-    text-shadow: 0 0 15px $cyan-accent;
-    cursor: pointer;
-    transition: all 0.3s ease;
-
-    &:hover {
-      transform: scale(1.1);
-      color: #ffffff;
-      text-shadow: 0 0 20px $cyan-accent;
-    }
+    text-shadow: 0 0 8px rgba($cyan-accent, 0.6);
   }
-  
-  .track-info {
-    text-align: left;
-    flex: 1;
-    
-    h4 {
+}
+
+// ===============================
+// TRACK LIST
+// ===============================
+.tracks-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.track-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 4px;
+  border-bottom: 1px solid rgba($purple-main, 0.15);
+  transition: all 0.15s ease-out;
+
+  &:hover {
+    background: rgba($cyan-accent, 0.04);
+    border-bottom-color: rgba($cyan-accent, 0.15);
+
+    .track-name {
       color: $cyan-accent;
-      margin: 0 0 0.5rem 0;
-      font-family: "GothicByte", monospace;
-      font-size: 1.3rem;
     }
-    
-    p {
-      color: $text-color;
-      margin: 0 0 1rem 0;
-      font-size: 1rem;
-      opacity: 0.9;
-    }
+  }
 
-    .track-progress {
-      width: 100%;
-      height: 4px;
-      background: rgba($purple-main, 0.3);
-      border-radius: 2px;
-      overflow: hidden;
-
-      .progress-bar {
-        height: 100%;
-        background: linear-gradient(90deg, $cyan-accent, $purple-neon);
-        transition: width 0.3s ease;
-        box-shadow: 0 0 8px rgba($cyan-accent, 0.6);
-      }
-    }
+  &:last-child {
+    border-bottom: none;
   }
 }
 
-.playlists-section {
-  .playlists-grid {
-    display: grid;
-    gap: 1.5rem;
-    
-    @media (min-width: 768px) {
-      grid-template-columns: repeat(2, 1fr);
-    }
-    
-    @media (min-width: 1024px) {
-      grid-template-columns: repeat(4, 1fr);
-    }
-  }
+.track-number {
+  color: $burn-dim;
+  font-family: "VT323", monospace;
+  font-size: 0.9rem;
+  width: 24px;
+  text-align: right;
+  flex-shrink: 0;
+}
 
-  .playlist-card {
-    background: linear-gradient(
-      145deg,
-      rgba($purple-main, 0.1),
-      rgba($purple-neon, 0.05)
-    );
-    border: 1px solid rgba($cyan-accent, 0.4);
-    border-radius: 15px;
-    padding: 1.5rem;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    position: relative;
-    overflow: hidden;
+.track-cover {
+  width: 40px;
+  height: 40px;
+  border-radius: 2px;
+  object-fit: cover;
+  flex-shrink: 0;
 
-    &::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: -100%;
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(
-        90deg,
-        transparent,
-        rgba($cyan-accent, 0.1),
-        transparent
-      );
-      transition: left 0.5s ease;
-    }
-
-    &:hover {
-      border-color: $cyan-accent;
-      box-shadow: 0 0 20px rgba($cyan-accent, 0.3);
-      transform: translateY(-5px);
-
-      &::before {
-        left: 100%;
-      }
-
-      .playlist-cover .q-icon {
-        transform: scale(1.1);
-        color: $cyan-accent;
-      }
-    }
-
-    .playlist-cover {
-      display: flex;
-      justify-content: center;
-      margin-bottom: 1rem;
-
-      .q-icon {
-        color: $purple-neon;
-        transition: all 0.3s ease;
-        text-shadow: 0 0 10px rgba($purple-neon, 0.6);
-      }
-    }
-
-    .playlist-info {
-      text-align: center;
-
-      h4 {
-        color: $cyan-accent;
-        margin: 0 0 0.5rem 0;
-        font-family: "GothicByte", monospace;
-        font-size: 1.1rem;
-      }
-
-      p {
-        color: $text-color;
-        margin: 0;
-        font-size: 0.85rem;
-        opacity: 0.8;
-      }
-    }
+  @media (max-width: 480px) {
+    width: 32px;
+    height: 32px;
   }
 }
 
-@keyframes title-glow {
-  0% {
-    text-shadow: 0 0 15px $cyan-accent;
+.track-cover-placeholder {
+  width: 40px;
+  height: 40px;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba($purple-main, 0.2);
+  color: $burn-dim;
+  flex-shrink: 0;
+
+  @media (max-width: 480px) {
+    width: 32px;
+    height: 32px;
   }
+}
+
+.track-info {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.track-name {
+  color: $text-color;
+  font-family: "Space Mono", monospace;
+  font-size: 0.85rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-decoration: none;
+  transition: color 0.15s ease-out;
+
+  &:hover {
+    text-shadow: 0 0 4px rgba($cyan-accent, 0.3);
+  }
+}
+
+.track-artist {
+  color: $burn-dim;
+  font-family: "Space Mono", monospace;
+  font-size: 0.75rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.track-duration {
+  color: $burn-dim;
+  font-family: "VT323", monospace;
+  font-size: 0.85rem;
+  flex-shrink: 0;
+}
+
+// ===============================
+// EMPTY STATE
+// ===============================
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 40px;
+  color: $burn-dim;
+  text-align: center;
+
+  .q-icon {
+    color: $purple-neon;
+    opacity: 0.5;
+  }
+
+  p {
+    font-family: "Space Mono", monospace;
+    font-size: 0.95rem;
+    margin: 0;
+  }
+}
+
+// ===============================
+// ANIMATIONS
+// ===============================
+@keyframes glitch-flash {
+  0%,
+  95%,
   100% {
-    text-shadow: 
-      0 0 20px $cyan-accent,
-      0 0 30px rgba($purple-neon, 0.6);
+    opacity: 0;
+  }
+  96%,
+  98% {
+    opacity: 0.3;
+  }
+  97% {
+    opacity: 0.1;
   }
 }
