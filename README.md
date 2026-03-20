@@ -1,5 +1,44 @@
-# Vue 3 + TypeScript + Vite
+# CrisGO's Core
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Portfolio personal con estética cyberpunk, efectos 3D interactivos e integración con Spotify.
 
-Learn more about the recommended Project Setup and IDE Support in the [Vue Docs TypeScript Guide](https://vuejs.org/guide/typescript/overview.html#project-setup).
+**[Ver en vivo](https://crisgo0510.github.io/My-Webcore-Blog/)**
+
+## Stack
+
+- **Vue 3** + TypeScript + Composition API
+- **Quasar Framework** — componentes UI
+- **Three.js** — corazones 3D wireframe
+- **SCSS** — estilos con variables cyberpunk
+- **Pinia** — estado global persistente
+- **vue-i18n** — español / inglés
+
+## Secciones
+
+- **Home** — hub de navegación con eye-tracker interactivo
+- **About Me** — bio, herramientas, apps y workspace
+- **Projects** — proyectos con estado (en proceso / finalizado / archivado)
+- **Music** — playlists y canciones desde Spotify (datos estáticos generados por script)
+- **Games** — juegos favoritos organizados por género
+
+## Desarrollo
+
+```bash
+npm install
+npm run dev
+```
+
+## Spotify
+
+Los datos de música se generan con un script que conecta con la API de Spotify:
+
+```bash
+# Configurar .env con SPOTIFY_CLIENT_ID, SPOTIFY_CLIENT_SECRET, SPOTIFY_REFRESH_TOKEN
+npx tsx scripts/fetch-spotify.ts
+```
+
+Un GitHub Action actualiza los datos automáticamente cada semana.
+
+## Licencia
+
+[MIT](./LICENSE)
