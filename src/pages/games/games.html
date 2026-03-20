@@ -1,6 +1,6 @@
 <div class="games-page">
   <div class="games-window">
-    <!-- LADO IZQUIERDO: STATS -->
+    <!-- LADO IZQUIERDO: STATS (hidden on mobile) -->
     <aside class="stats-panel">
       <div class="gaming-avatar">
         <div class="controller-icon">🎮</div>
@@ -20,8 +20,11 @@
       </div>
     </aside>
 
-    <!-- NAVEGACIÓN CENTRAL -->
+    <!-- NAVEGACIÓN: avatar + filtros en mobile -->
     <nav class="nav-rail">
+      <div class="mobile-avatar">
+        <div class="controller-icon">🎮</div>
+      </div>
       <button
         :class="{ active: viewMode === 'favorites' }"
         @click="setViewMode('favorites')"
