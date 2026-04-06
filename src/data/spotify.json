@@ -6,7 +6,7 @@
       "description": "",
       "image": "https://mosaic.scdn.co/640/ab67616d00001e023975b6b899eed4af577f7ba6ab67616d00001e02926efc8389e226405fff006cab67616d00001e0296bc7d5bd0b6488de76598abab67616d00001e02b395acedffa5fa8e7696aea2",
       "url": "https://open.spotify.com/playlist/18rGaItsvzl4AM2UNUaBzB",
-      "totalTracks": 30,
+      "totalTracks": 31,
       "tracks": [
         {
           "name": "Homage",
@@ -247,6 +247,14 @@
           "duration": "2:41",
           "image": "https://i.scdn.co/image/ab67616d0000b27369d1fb33044a581470cb7758",
           "url": "https://open.spotify.com/track/6CKlCWBY885ja7Fz2EQjdE"
+        },
+        {
+          "name": "Stupid Love Story",
+          "artist": "Canserbero, Apache",
+          "album": "Apa y Can",
+          "duration": "4:46",
+          "image": "https://i.scdn.co/image/ab67616d0000b2733697bf2a43bed1e72c768452",
+          "url": "https://open.spotify.com/track/1r5mgtowxhqse44YVzCk6x"
         }
       ]
     },
@@ -693,7 +701,7 @@
       "id": "4EdpqHgnDOnIqom2tkFjmO",
       "name": "deathrock🦇",
       "description": "",
-      "image": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da8411d683e895431343ae1464c4",
+      "image": "https://image-cdn-fa.spotifycdn.com/image/ab67706c0000da8411d683e895431343ae1464c4",
       "url": "https://open.spotify.com/playlist/4EdpqHgnDOnIqom2tkFjmO",
       "totalTracks": 0,
       "tracks": []
@@ -3033,20 +3041,28 @@
           "url": "https://open.spotify.com/track/24SkzbH7hGhUvqIaKlJ1TY"
         },
         {
-          "name": "Dentro de Ti",
-          "artist": "Franco \"El Gorilla\", Anonimus, Eloy, Bryant Myers",
-          "album": "Dentro de Ti",
-          "duration": "3:58",
-          "image": "https://i.scdn.co/image/ab67616d0000b2733da7ce098a64662da7c4b6ff",
-          "url": "https://open.spotify.com/track/6iymzYcu9eadPGSp1PRFBv"
-        },
-        {
           "name": "LA VILLA",
           "artist": "Ryan Castro, Kapo, Gangsta",
           "album": "LA VILLA",
           "duration": "3:12",
           "image": "https://i.scdn.co/image/ab67616d0000b27326d18a5ac713d07e5ac3bb63",
           "url": "https://open.spotify.com/track/6YkGw5op7PeyP2gmMMMrfJ"
+        },
+        {
+          "name": "Animal",
+          "artist": "Eladio Carrion, Bryant Myers",
+          "album": "Animal",
+          "duration": "3:37",
+          "image": "https://i.scdn.co/image/ab67616d0000b27307118d1ce9bee805ecaf5844",
+          "url": "https://open.spotify.com/track/2ALcaaW3YYMo08fotltKHC"
+        },
+        {
+          "name": "Dentro de Ti",
+          "artist": "Franco \"El Gorilla\", Anonimus, Eloy, Bryant Myers",
+          "album": "Dentro de Ti",
+          "duration": "3:58",
+          "image": "https://i.scdn.co/image/ab67616d0000b2733da7ce098a64662da7c4b6ff",
+          "url": "https://open.spotify.com/track/6iymzYcu9eadPGSp1PRFBv"
         },
         {
           "name": "Talento",
@@ -3095,14 +3111,6 @@
           "duration": "6:52",
           "image": "https://i.scdn.co/image/ab67616d0000b273da715f86aef7d0e7d716ef94",
           "url": "https://open.spotify.com/track/2wgDAPgBhFA7pnIbm0YOhP"
-        },
-        {
-          "name": "Animal",
-          "artist": "Eladio Carrion, Bryant Myers",
-          "album": "Animal",
-          "duration": "3:37",
-          "image": "https://i.scdn.co/image/ab67616d0000b27307118d1ce9bee805ecaf5844",
-          "url": "https://open.spotify.com/track/2ALcaaW3YYMo08fotltKHC"
         },
         {
           "name": "SUTRA",
@@ -3634,7 +3642,7 @@
       "description": "",
       "image": "https://mosaic.scdn.co/640/ab67616d00001e0233d1fc9841aa9b33dac06ac1ab67616d00001e02500f7d0243735942de6043c1ab67616d00001e02ba9af9de79c8b8fef7e8ba6cab67616d00001e02bcc30c5fa48fca3218c3ffa4",
       "url": "https://open.spotify.com/playlist/7Jmdux2Nwytm9tkUCO40LR",
-      "totalTracks": 110,
+      "totalTracks": 112,
       "tracks": [
         {
           "name": "Sin Miedo",
@@ -6066,7 +6074,7 @@
       "description": "",
       "image": "https://mosaic.scdn.co/640/ab67616d00001e0207031a0d94b5340aeb77e824ab67616d00001e0275ce3e12a916f36d44a6ef76ab67616d00001e02eb30f2df01fe768eca881c51ab67616d00001e02f421d294e9eb94e809defe72",
       "url": "https://open.spotify.com/playlist/17aFxLpI0QVSndRFa4xdTT",
-      "totalTracks": 69,
+      "totalTracks": 70,
       "tracks": [
         {
           "name": "Conteo Regresivo - Salsa Version",
@@ -6619,6 +6627,14 @@
           "duration": "4:55",
           "image": "https://i.scdn.co/image/ab67616d0000b2737fdfdda1a314357a115b129e",
           "url": "https://open.spotify.com/track/6WV4V9kERm2ICeRj5web9O"
+        },
+        {
+          "name": "Los Charcos",
+          "artist": "Fruko Y Sus Tesos, Wilson Saoko",
+          "album": "Fruko El Grande",
+          "duration": "5:00",
+          "image": "https://i.scdn.co/image/ab67616d0000b273ad23373736a2f03402e5612e",
+          "url": "https://open.spotify.com/track/0Wi8YRIGyAi8VnPmn7yTSv"
         }
       ]
     },
@@ -7963,14 +7979,6 @@
           "url": "https://open.spotify.com/track/6hWU8LrnjLyYHShDyNWFZj"
         },
         {
-          "name": "Your Idol",
-          "artist": "Saja Boys, Andrew Choi, Neckwav, Danny Chung, KEVIN WOO, samUIL Lee, KPop Demon Hunters Cast",
-          "album": "KPop Demon Hunters (Soundtrack from the Netflix Film)",
-          "duration": "3:11",
-          "image": "https://i.scdn.co/image/ab67616d0000b2734dcb6c5df15cf74596ab25a4",
-          "url": "https://open.spotify.com/track/1I37Zz2g3hk9eWxaNkj031"
-        },
-        {
           "name": "MY JEALOUSY",
           "artist": "vivi baby, ovg!",
           "album": "MY JEALOUSY",
@@ -7985,6 +7993,14 @@
           "duration": "4:03",
           "image": "https://i.scdn.co/image/ab67616d0000b2735e78b0e461c31729c636730b",
           "url": "https://open.spotify.com/track/0HKYeAArIodGWKWwaQieJL"
+        },
+        {
+          "name": "Your Idol",
+          "artist": "Saja Boys, Andrew Choi, Neckwav, Danny Chung, KEVIN WOO, samUIL Lee, KPop Demon Hunters Cast",
+          "album": "KPop Demon Hunters (Soundtrack from the Netflix Film)",
+          "duration": "3:11",
+          "image": "https://i.scdn.co/image/ab67616d0000b2734dcb6c5df15cf74596ab25a4",
+          "url": "https://open.spotify.com/track/1I37Zz2g3hk9eWxaNkj031"
         }
       ]
     },
@@ -9635,5 +9651,5 @@
       ]
     }
   ],
-  "fetchedAt": "2026-03-30T23:26:00.227Z"
+  "fetchedAt": "2026-04-06T06:30:15.399Z"
 }
