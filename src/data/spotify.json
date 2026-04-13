@@ -1,6 +1,15 @@
 {
   "playlists": [
     {
+      "id": "1lVmBtuOxK8KPB858CYzD8",
+      "name": "Salsa",
+      "description": "",
+      "image": "https://mosaic.scdn.co/640/ab67616d00001e020806a24e30a1ec0bfb2cd014ab67616d00001e0216e2be1a3b55280f693cf248ab67616d00001e02ad0533ad77f14a78fc1afd5dab67616d00001e02d491f41e91b73ce634436194",
+      "url": "https://open.spotify.com/playlist/1lVmBtuOxK8KPB858CYzD8",
+      "totalTracks": 0,
+      "tracks": []
+    },
+    {
       "id": "18rGaItsvzl4AM2UNUaBzB",
       "name": "J",
       "description": "",
@@ -273,7 +282,7 @@
       "description": "",
       "image": "https://mosaic.scdn.co/640/ab67616d00001e021803c98c3f86a87718bfe5ceab67616d00001e02b40a991c477e0a049ecfd018ab67616d00001e02ca1c97db7747854b55ed59d5ab67616d00001e02cf14c3d0fc711996bace3db1",
       "url": "https://open.spotify.com/playlist/187YsbetUtlGhNII6Iq8jj",
-      "totalTracks": 6,
+      "totalTracks": 7,
       "tracks": [
         {
           "name": "(Bee)n Stalking Jack",
@@ -322,6 +331,14 @@
           "duration": "2:51",
           "image": "https://i.scdn.co/image/ab67616d0000b273c6d32bc219a2236bf4b67f97",
           "url": "https://open.spotify.com/track/0vwATyxxwdoo4khq4FL790"
+        },
+        {
+          "name": "The Love I Lost",
+          "artist": "Fried By Fluoride",
+          "album": "The Love I Lost",
+          "duration": "1:52",
+          "image": "https://i.scdn.co/image/ab67616d0000b273171594cf1622219dac3087ee",
+          "url": "https://open.spotify.com/track/7tlbZCr7a3BLXCSlwvWMCA"
         }
       ]
     },
@@ -437,7 +454,7 @@
       "description": "",
       "image": "https://mosaic.scdn.co/640/ab67616d00001e020ede2432093661d62c27f7b8ab67616d00001e029707815827b1c2f0092ff7b3ab67616d00001e029cbac53234d165cffdda872dab67616d00001e02ae09634bb2be7a0842c40357",
       "url": "https://open.spotify.com/playlist/3GaOqHeLUkSOFIjeh8Dria",
-      "totalTracks": 32,
+      "totalTracks": 34,
       "tracks": [
         {
           "name": "Me Cago en Mi Puta Vida Por Eyaculación Post Mortem",
@@ -694,6 +711,22 @@
           "duration": "1:53",
           "image": "https://i.scdn.co/image/ab67616d0000b273d093cef99730d159b4951312",
           "url": "https://open.spotify.com/track/7jxs64gfu7IqOByEpp8yDL"
+        },
+        {
+          "name": "Toxic love",
+          "artist": "EDIONDO",
+          "album": "TOXIC LOVE",
+          "duration": "3:21",
+          "image": "https://i.scdn.co/image/ab67616d0000b273e1e3c2e92703e1ba2ff0e9e9",
+          "url": "https://open.spotify.com/track/3nL8jVVBcD595SxyQHS2bl"
+        },
+        {
+          "name": "Volverás a quererme mañana",
+          "artist": "Perfecto Miserable",
+          "album": "Volverás a quererme mañana",
+          "duration": "4:28",
+          "image": "https://i.scdn.co/image/ab67616d0000b2737065e19cf8f1982c180cf6c6",
+          "url": "https://open.spotify.com/track/28v3RMx2WoWDjV2QO4zBoo"
         }
       ]
     },
@@ -2702,7 +2735,7 @@
       "description": "",
       "image": "https://mosaic.scdn.co/640/ab67616d00001e026b98dbf13791547e637e322fab67616d00001e02b0dd6a5cd1dec96c4119c262ab67616d00001e02b298538481c52f7e217ed000ab67616d00001e02d0bbfea6226b5c3707de92ed",
       "url": "https://open.spotify.com/playlist/3mdKZLxagfVqGDpgr9LCZ1",
-      "totalTracks": 59,
+      "totalTracks": 58,
       "tracks": [
         {
           "name": "You Right - Extended",
@@ -2983,14 +3016,6 @@
           "duration": "3:43",
           "image": "https://i.scdn.co/image/ab67616d0000b27314b7b2a920a41166d53ddd49",
           "url": "https://open.spotify.com/track/0CsR9Y9SnC6ZWmekmVqSHz"
-        },
-        {
-          "name": "...Baby One More Time",
-          "artist": "Britney Spears",
-          "album": "...Baby One More Time (Digital Deluxe Version)",
-          "duration": "3:31",
-          "image": "https://i.scdn.co/image/ab67616d0000b27336cf58e3e7cf36a145b1da18",
-          "url": "https://open.spotify.com/track/3MjUtNVVq3C8Fn0MP3zhXa"
         },
         {
           "name": "Superman",
@@ -3642,7 +3667,7 @@
       "description": "",
       "image": "https://mosaic.scdn.co/640/ab67616d00001e0233d1fc9841aa9b33dac06ac1ab67616d00001e02500f7d0243735942de6043c1ab67616d00001e02ba9af9de79c8b8fef7e8ba6cab67616d00001e02bcc30c5fa48fca3218c3ffa4",
       "url": "https://open.spotify.com/playlist/7Jmdux2Nwytm9tkUCO40LR",
-      "totalTracks": 112,
+      "totalTracks": 113,
       "tracks": [
         {
           "name": "Sin Miedo",
@@ -4452,7 +4477,7 @@
       "description": "",
       "image": "https://mosaic.scdn.co/640/ab67616d00001e0200eb533f941bc5ff1dad080aab67616d00001e02281532657f0c4174572ad7e3ab67616d00001e0287e7d0f29787bf25ee10ab2cab67616d00001e02c771f7401307f639d0272f68",
       "url": "https://open.spotify.com/playlist/0K9Q3HuLtLsgPcb3ivCLl1",
-      "totalTracks": 128,
+      "totalTracks": 130,
       "tracks": [
         {
           "name": "BRAZILIAN DANÇA PHONK",
@@ -5262,7 +5287,7 @@
       "description": "",
       "image": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da84e2d7ed05e574dc4a05130a75",
       "url": "https://open.spotify.com/playlist/5sXtWNyd9sFCeclulbZSDi",
-      "totalTracks": 87,
+      "totalTracks": 90,
       "tracks": [
         {
           "name": "Love",
@@ -5959,6 +5984,30 @@
           "duration": "3:39",
           "image": "https://i.scdn.co/image/ab67616d0000b2730cc7c67845778447805c156c",
           "url": "https://open.spotify.com/track/16J6wH4Evm97ta1hDQIYQC"
+        },
+        {
+          "name": "Vas a Bailar",
+          "artist": "Ciro y los Persas",
+          "album": "Espejos",
+          "duration": "5:00",
+          "image": "https://i.scdn.co/image/ab67616d0000b27346f8c609d3f83ffcc24b2fd2",
+          "url": "https://open.spotify.com/track/6Ew4raE2TqVLWjWspybOFt"
+        },
+        {
+          "name": "Como Eran Las Cosas",
+          "artist": "Babasonicos",
+          "album": "Mucho",
+          "duration": "4:00",
+          "image": "https://i.scdn.co/image/ab67616d0000b273894cafe63e54743a07ece9d3",
+          "url": "https://open.spotify.com/track/61qPUnazSdkvua4wgA4L8C"
+        },
+        {
+          "name": "Suna",
+          "artist": "Mar de Copas",
+          "album": "Todos los Singles 1993-2006",
+          "duration": "4:04",
+          "image": "https://i.scdn.co/image/ab67616d0000b273574d9b54c9d5765aeccd0569",
+          "url": "https://open.spotify.com/track/4udGuDY6x5WzWdMiVe3yea"
         }
       ]
     },
@@ -6074,7 +6123,7 @@
       "description": "",
       "image": "https://mosaic.scdn.co/640/ab67616d00001e0207031a0d94b5340aeb77e824ab67616d00001e0275ce3e12a916f36d44a6ef76ab67616d00001e02eb30f2df01fe768eca881c51ab67616d00001e02f421d294e9eb94e809defe72",
       "url": "https://open.spotify.com/playlist/17aFxLpI0QVSndRFa4xdTT",
-      "totalTracks": 70,
+      "totalTracks": 71,
       "tracks": [
         {
           "name": "Conteo Regresivo - Salsa Version",
@@ -6635,6 +6684,14 @@
           "duration": "5:00",
           "image": "https://i.scdn.co/image/ab67616d0000b273ad23373736a2f03402e5612e",
           "url": "https://open.spotify.com/track/0Wi8YRIGyAi8VnPmn7yTSv"
+        },
+        {
+          "name": "Corazón Embustero",
+          "artist": "Carlos Nuño La Grande de Madrid",
+          "album": "Para Puerto Rico y El Mundo",
+          "duration": "6:07",
+          "image": "https://i.scdn.co/image/ab67616d0000b273dad99297b4338de7d46512cd",
+          "url": "https://open.spotify.com/track/19ii4ZuKvAqz7gyShAP3LO"
         }
       ]
     },
@@ -9651,5 +9708,5 @@
       ]
     }
   ],
-  "fetchedAt": "2026-04-06T06:30:15.399Z"
+  "fetchedAt": "2026-04-13T06:36:37.987Z"
 }
