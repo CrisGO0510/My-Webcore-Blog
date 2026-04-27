@@ -1,6 +1,128 @@
 {
   "playlists": [
     {
+      "id": "6NOonfWLbNaymxPPTW4l93",
+      "name": "Bachata",
+      "description": "",
+      "image": "https://mosaic.scdn.co/640/ab67616d00001e021a9d42dbbfa5a0b440654321ab67616d00001e02791d6daf3d05cde2a646c3cdab67616d00001e02c28a6d0f6ed7b540f8208543ab67616d00001e02e0e4b48b060715c9aa7fca18",
+      "url": "https://open.spotify.com/playlist/6NOonfWLbNaymxPPTW4l93",
+      "totalTracks": 14,
+      "tracks": [
+        {
+          "name": "Amigo",
+          "artist": "Romeo Santos",
+          "album": "Fórmula, Vol. 2 (Deluxe Edition)",
+          "duration": "3:51",
+          "image": "https://i.scdn.co/image/ab67616d0000b273e0e4b48b060715c9aa7fca18",
+          "url": "https://open.spotify.com/track/4n82bvvKnaCSbM0pXWbR1S"
+        },
+        {
+          "name": "El Perdedor",
+          "artist": "Aventura",
+          "album": "K.O.B. Live",
+          "duration": "3:35",
+          "image": "https://i.scdn.co/image/ab67616d0000b273c28a6d0f6ed7b540f8208543",
+          "url": "https://open.spotify.com/track/27ze5t5tIDPlVits0KRbxT"
+        },
+        {
+          "name": "Odio (feat. Drake)",
+          "artist": "Romeo Santos, Drake",
+          "album": "Fórmula, Vol. 2 (Deluxe Edition)",
+          "duration": "3:45",
+          "image": "https://i.scdn.co/image/ab67616d0000b273e0e4b48b060715c9aa7fca18",
+          "url": "https://open.spotify.com/track/1iLv1ieT9BZ3qsti9yTCnG"
+        },
+        {
+          "name": "Yo Quisiera Amarla",
+          "artist": "Aventura",
+          "album": "The Last",
+          "duration": "5:06",
+          "image": "https://i.scdn.co/image/ab67616d0000b273791d6daf3d05cde2a646c3cd",
+          "url": "https://open.spotify.com/track/7Ln0OEpEiFDMwxHfEMP5aM"
+        },
+        {
+          "name": "Inocente",
+          "artist": "Romeo Santos",
+          "album": "Fórmula, Vol. 2 (Deluxe Edition)",
+          "duration": "3:56",
+          "image": "https://i.scdn.co/image/ab67616d0000b273e0e4b48b060715c9aa7fca18",
+          "url": "https://open.spotify.com/track/6rXvMpWJbTyhSrVWye7jPE"
+        },
+        {
+          "name": "Te Robaré",
+          "artist": "Prince Royce",
+          "album": "Soy el Mismo",
+          "duration": "3:39",
+          "image": "https://i.scdn.co/image/ab67616d0000b2731a9d42dbbfa5a0b440654321",
+          "url": "https://open.spotify.com/track/3fPMRb2gcFTZcYmR0bXnDc"
+        },
+        {
+          "name": "Un Beso",
+          "artist": "Aventura",
+          "album": "God's Project",
+          "duration": "4:23",
+          "image": "https://i.scdn.co/image/ab67616d0000b2737ccd22cc18d53dd443c69d43",
+          "url": "https://open.spotify.com/track/1SaEt8dwTuLDzenUu5BqI6"
+        },
+        {
+          "name": "Hilito",
+          "artist": "Romeo Santos",
+          "album": "Fórmula, Vol. 2 (Deluxe Edition)",
+          "duration": "3:54",
+          "image": "https://i.scdn.co/image/ab67616d0000b273e0e4b48b060715c9aa7fca18",
+          "url": "https://open.spotify.com/track/6CKlQHQIxhWtq7MnEJ6QCz"
+        },
+        {
+          "name": "Su Veneno",
+          "artist": "Aventura",
+          "album": "The Last",
+          "duration": "4:00",
+          "image": "https://i.scdn.co/image/ab67616d0000b273791d6daf3d05cde2a646c3cd",
+          "url": "https://open.spotify.com/track/709hAukJxapqTU9VhsiQm0"
+        },
+        {
+          "name": "Te Quiero Igual Que Ayer - Bachata",
+          "artist": "Monchy & Alexandra",
+          "album": "Confesiones",
+          "duration": "4:19",
+          "image": "https://i.scdn.co/image/ab67616d0000b2731b50f57eea931bc230912f23",
+          "url": "https://open.spotify.com/track/1R86zyuubq0Q1GV1OfweIj"
+        },
+        {
+          "name": "Todavia Me Amas",
+          "artist": "Aventura",
+          "album": "We Broke The Rules",
+          "duration": "4:45",
+          "image": "https://i.scdn.co/image/ab67616d0000b273e1afa83bd73aa80c0ff0ee34",
+          "url": "https://open.spotify.com/track/0wJTj7BfrMEJ30x63A1lh4"
+        },
+        {
+          "name": "7 Días",
+          "artist": "Romeo Santos",
+          "album": "Fórmula, Vol. 2 (Deluxe Edition)",
+          "duration": "4:13",
+          "image": "https://i.scdn.co/image/ab67616d0000b273e0e4b48b060715c9aa7fca18",
+          "url": "https://open.spotify.com/track/3sTVMGhTdyyLM67WyYhYMB"
+        },
+        {
+          "name": "Imitadora",
+          "artist": "Romeo Santos",
+          "album": "Golden",
+          "duration": "3:54",
+          "image": "https://i.scdn.co/image/ab67616d0000b273a676aa01533e6cf5c40b99b6",
+          "url": "https://open.spotify.com/track/6r46lnXFbE9fr2d3KNaGbe"
+        },
+        {
+          "name": "Dardos",
+          "artist": "Romeo Santos, Prince Royce",
+          "album": "Better Late Than Never",
+          "duration": "4:03",
+          "image": "https://i.scdn.co/image/ab67616d0000b27391750ed467a5ecc14beaa03f",
+          "url": "https://open.spotify.com/track/5SudOD9R1Of6CsJVWZy6CQ"
+        }
+      ]
+    },
+    {
       "id": "1lVmBtuOxK8KPB858CYzD8",
       "name": "Salsa",
       "description": "",
@@ -270,7 +392,7 @@
     {
       "id": "6hrVNJvFJ5VepMrrOm1tkP",
       "name": "The BEST PSYCHOBILLY",
-      "description": "666% pure psychobilly music.",
+      "description": "666% pure psychobilly music. &lt;a href=&quot;https:&#x2F;&#x2F;dailyplaylists.com&#x2F;playlists&#x2F;6hrVNJvFJ5VepMrrOm1tkP&quot;&gt;SUBMIT HERE&lt;&#x2F;a&gt; . ",
       "image": "https://image-cdn-fa.spotifycdn.com/image/ab67706c0000da84d32493567f92a955b3562aa4",
       "url": "https://open.spotify.com/playlist/6hrVNJvFJ5VepMrrOm1tkP",
       "totalTracks": 0,
@@ -282,7 +404,7 @@
       "description": "",
       "image": "https://mosaic.scdn.co/640/ab67616d00001e021803c98c3f86a87718bfe5ceab67616d00001e02b40a991c477e0a049ecfd018ab67616d00001e02ca1c97db7747854b55ed59d5ab67616d00001e02cf14c3d0fc711996bace3db1",
       "url": "https://open.spotify.com/playlist/187YsbetUtlGhNII6Iq8jj",
-      "totalTracks": 7,
+      "totalTracks": 8,
       "tracks": [
         {
           "name": "(Bee)n Stalking Jack",
@@ -339,6 +461,14 @@
           "duration": "1:52",
           "image": "https://i.scdn.co/image/ab67616d0000b273171594cf1622219dac3087ee",
           "url": "https://open.spotify.com/track/7tlbZCr7a3BLXCSlwvWMCA"
+        },
+        {
+          "name": "Teenage Dirtbag",
+          "artist": "Wheatus",
+          "album": "Wheatus",
+          "duration": "4:01",
+          "image": "https://i.scdn.co/image/ab67616d0000b2730a3740efa638f10f14fabc46",
+          "url": "https://open.spotify.com/track/25FTMokYEbEWHEdss5JLZS"
         }
       ]
     },
@@ -454,7 +584,7 @@
       "description": "",
       "image": "https://mosaic.scdn.co/640/ab67616d00001e020ede2432093661d62c27f7b8ab67616d00001e029707815827b1c2f0092ff7b3ab67616d00001e029cbac53234d165cffdda872dab67616d00001e02ae09634bb2be7a0842c40357",
       "url": "https://open.spotify.com/playlist/3GaOqHeLUkSOFIjeh8Dria",
-      "totalTracks": 34,
+      "totalTracks": 51,
       "tracks": [
         {
           "name": "Me Cago en Mi Puta Vida Por Eyaculación Post Mortem",
@@ -727,6 +857,142 @@
           "duration": "4:28",
           "image": "https://i.scdn.co/image/ab67616d0000b2737065e19cf8f1982c180cf6c6",
           "url": "https://open.spotify.com/track/28v3RMx2WoWDjV2QO4zBoo"
+        },
+        {
+          "name": "uzumaki",
+          "artist": "sistema de entretenimiento",
+          "album": "sistema de entretenimiento",
+          "duration": "1:46",
+          "image": "https://i.scdn.co/image/ab67616d0000b273ae09634bb2be7a0842c40357",
+          "url": "https://open.spotify.com/track/3NBtH0cWS9SsF0hgFcoQmJ"
+        },
+        {
+          "name": "Resiste",
+          "artist": "La Texana",
+          "album": "Resiste",
+          "duration": "3:50",
+          "image": "https://i.scdn.co/image/ab67616d0000b27373a3aeaf0754e212cae6627e",
+          "url": "https://open.spotify.com/track/2eq154QEu8NquYjx0hbDz2"
+        },
+        {
+          "name": "Generación Perdida, Diversión Prohibida",
+          "artist": "Depresión Sonora",
+          "album": "Historias Tristes para Dormir Bien",
+          "duration": "3:21",
+          "image": "https://i.scdn.co/image/ab67616d0000b2738a31df0af077e34bcf101e77",
+          "url": "https://open.spotify.com/track/6HNBKSdmLoB6v5vszsiszt"
+        },
+        {
+          "name": "Por qué tan solo y triste",
+          "artist": "Estamos Perdidos",
+          "album": "Por qué tan solo y triste",
+          "duration": "2:04",
+          "image": "https://i.scdn.co/image/ab67616d0000b273ea40346aa92492fe28722b76",
+          "url": "https://open.spotify.com/track/5PRKsAuv20FvOgfXBinVf8"
+        },
+        {
+          "name": "Cayendo",
+          "artist": "Distimia Agorafóbica",
+          "album": "Afugias",
+          "duration": "4:06",
+          "image": "https://i.scdn.co/image/ab67616d0000b273f7232b3688152a49f414cd6c",
+          "url": "https://open.spotify.com/track/55kIcnwYlAMdJKkscKQGUg"
+        },
+        {
+          "name": "No sé qué me pasó",
+          "artist": "La Texana",
+          "album": "Morro",
+          "duration": "3:42",
+          "image": "https://i.scdn.co/image/ab67616d0000b27399b2584c7ad9f2cb9ce268c2",
+          "url": "https://open.spotify.com/track/6iKL4gD9foE8qeHwyVlDxt"
+        },
+        {
+          "name": "Siempre me cuesta regresar",
+          "artist": "La Texana",
+          "album": "Siempre me cuesta regresar",
+          "duration": "4:00",
+          "image": "https://i.scdn.co/image/ab67616d0000b2733a77d02034260494b7b66ecb",
+          "url": "https://open.spotify.com/track/3GqlpyhEowg4RKNWTnc9tq"
+        },
+        {
+          "name": "Ya No Hay Verano",
+          "artist": "Depresión Sonora",
+          "album": "Depresión Sonora",
+          "duration": "2:54",
+          "image": "https://i.scdn.co/image/ab67616d0000b2730fc0d02cfecb3b9acd16ba2d",
+          "url": "https://open.spotify.com/track/2VyMyqR2ona9yAFk7WsJNW"
+        },
+        {
+          "name": "Como todo el Mundo",
+          "artist": "Depresión Sonora",
+          "album": "El Arte de Morir muy Despacio",
+          "duration": "3:51",
+          "image": "https://i.scdn.co/image/ab67616d0000b2731c42f8929d7085610638c69f",
+          "url": "https://open.spotify.com/track/2N7QCU3QVT72B9sQIWXPHr"
+        },
+        {
+          "name": "Veo tan Dentro",
+          "artist": "Depresión Sonora",
+          "album": "El Arte de Morir muy Despacio",
+          "duration": "3:59",
+          "image": "https://i.scdn.co/image/ab67616d0000b2731c42f8929d7085610638c69f",
+          "url": "https://open.spotify.com/track/72iP5oCnYyN3unguw4wMD1"
+        },
+        {
+          "name": "Gasolina y Mechero",
+          "artist": "Depresión Sonora",
+          "album": "Gasolina y Mechero",
+          "duration": "2:32",
+          "image": "https://i.scdn.co/image/ab67616d0000b273b262534f23968579d2324c38",
+          "url": "https://open.spotify.com/track/3M0yRNYZ3GIjHYSNPHazOh"
+        },
+        {
+          "name": "desorden del sueño",
+          "artist": "Ghouljaboy, Depresión Sonora",
+          "album": "dreamcore",
+          "duration": "2:26",
+          "image": "https://i.scdn.co/image/ab67616d0000b273913c3d87273ffa04813347d6",
+          "url": "https://open.spotify.com/track/51erfwglBmv4QcRc3ayenI"
+        },
+        {
+          "name": "La Novedad",
+          "artist": "Margarita Siempre Viva, Depresión Sonora",
+          "album": "La Novedad",
+          "duration": "3:31",
+          "image": "https://i.scdn.co/image/ab67616d0000b273e4283cb65ac655f5d57051fe",
+          "url": "https://open.spotify.com/track/2upHYVNdcEuk7pnTPsPfDN"
+        },
+        {
+          "name": "Soy Lo Peor",
+          "artist": "Depresión Sonora, Bb trickz",
+          "album": "DepresionTrickz",
+          "duration": "1:53",
+          "image": "https://i.scdn.co/image/ab67616d0000b273b669a0ab6ece8427f71870e5",
+          "url": "https://open.spotify.com/track/3gddoedYU7FMPAZnLUbzkO"
+        },
+        {
+          "name": "Terapia",
+          "artist": "lázaro suplika dopamina",
+          "album": "Terapia",
+          "duration": "3:23",
+          "image": "https://i.scdn.co/image/ab67616d0000b273d37db34d1652727a8c837bce",
+          "url": "https://open.spotify.com/track/39bS3YWo6EuLFVbHvdbjau"
+        },
+        {
+          "name": "Siesta Freestyle",
+          "artist": "Lewis OfMan, Alicia te quiero",
+          "album": "Dancy Party",
+          "duration": "3:14",
+          "image": "https://i.scdn.co/image/ab67616d0000b2730dfde54ca58fa9c1c5fa2d93",
+          "url": "https://open.spotify.com/track/6ZHKeoIOkvmYUIfxHLtE2Z"
+        },
+        {
+          "name": "Tu Vienes de Negro (Stigmatroz Rmx)",
+          "artist": "Eyaculación Post Mortem",
+          "album": "Viva la Muerte",
+          "duration": "4:20",
+          "image": "https://i.scdn.co/image/ab67616d0000b27307b4fe32586f38f1cd560163",
+          "url": "https://open.spotify.com/track/4sks4DmK72BhgMqJHV16zT"
         }
       ]
     },
@@ -745,7 +1011,7 @@
       "description": "",
       "image": "https://mosaic.scdn.co/640/ab67616d00001e0270e9e75b39a45a7a806d4464ab67616d00001e028f147e0af424cd7c6f91e9f2ab67616d00001e02d6cbefc7132fbaa8b9c81f41ab67616d00001e02d736b2c5f252f84ad45d5be6",
       "url": "https://open.spotify.com/playlist/5x8L3Gjlef8MoLM8MHUYBI",
-      "totalTracks": 90,
+      "totalTracks": 79,
       "tracks": [
         {
           "name": "Skeleton Kids",
@@ -1092,108 +1358,12 @@
           "url": "https://open.spotify.com/track/4n5iJyEYeDwTLJWO1t5VZH"
         },
         {
-          "name": "Cayendo",
-          "artist": "Distimia Agorafóbica",
-          "album": "Afugias",
-          "duration": "4:06",
-          "image": "https://i.scdn.co/image/ab67616d0000b273f7232b3688152a49f414cd6c",
-          "url": "https://open.spotify.com/track/55kIcnwYlAMdJKkscKQGUg"
-        },
-        {
-          "name": "Anti Sol",
-          "artist": "Píldora Letal",
-          "album": "Horror en el Trópico",
-          "duration": "2:53",
-          "image": "https://i.scdn.co/image/ab67616d0000b273f0773cac526020663ccfb215",
-          "url": "https://open.spotify.com/track/6NMF7IIrbjMiD7h09UHFzK"
-        },
-        {
           "name": "Mi Pecho Agoniza",
           "artist": "Píldora Letal",
           "album": "Gusanos",
           "duration": "2:38",
           "image": "https://i.scdn.co/image/ab67616d0000b27319101959eda47caefad523f6",
           "url": "https://open.spotify.com/track/3rH2Sem0GA7x5VniRiEE2H"
-        },
-        {
-          "name": "No sé qué me pasó",
-          "artist": "La Texana",
-          "album": "Morro",
-          "duration": "3:42",
-          "image": "https://i.scdn.co/image/ab67616d0000b27399b2584c7ad9f2cb9ce268c2",
-          "url": "https://open.spotify.com/track/6iKL4gD9foE8qeHwyVlDxt"
-        },
-        {
-          "name": "Siempre me cuesta regresar",
-          "artist": "La Texana",
-          "album": "Siempre me cuesta regresar",
-          "duration": "4:00",
-          "image": "https://i.scdn.co/image/ab67616d0000b2733a77d02034260494b7b66ecb",
-          "url": "https://open.spotify.com/track/3GqlpyhEowg4RKNWTnc9tq"
-        },
-        {
-          "name": "Ya No Hay Verano",
-          "artist": "Depresión Sonora",
-          "album": "Depresión Sonora",
-          "duration": "2:54",
-          "image": "https://i.scdn.co/image/ab67616d0000b2730fc0d02cfecb3b9acd16ba2d",
-          "url": "https://open.spotify.com/track/2VyMyqR2ona9yAFk7WsJNW"
-        },
-        {
-          "name": "Como todo el Mundo",
-          "artist": "Depresión Sonora",
-          "album": "El Arte de Morir muy Despacio",
-          "duration": "3:51",
-          "image": "https://i.scdn.co/image/ab67616d0000b2731c42f8929d7085610638c69f",
-          "url": "https://open.spotify.com/track/2N7QCU3QVT72B9sQIWXPHr"
-        },
-        {
-          "name": "Veo tan Dentro",
-          "artist": "Depresión Sonora",
-          "album": "El Arte de Morir muy Despacio",
-          "duration": "3:59",
-          "image": "https://i.scdn.co/image/ab67616d0000b2731c42f8929d7085610638c69f",
-          "url": "https://open.spotify.com/track/72iP5oCnYyN3unguw4wMD1"
-        },
-        {
-          "name": "Gasolina y Mechero",
-          "artist": "Depresión Sonora",
-          "album": "Gasolina y Mechero",
-          "duration": "2:32",
-          "image": "https://i.scdn.co/image/ab67616d0000b273b262534f23968579d2324c38",
-          "url": "https://open.spotify.com/track/3M0yRNYZ3GIjHYSNPHazOh"
-        },
-        {
-          "name": "desorden del sueño",
-          "artist": "Ghouljaboy, Depresión Sonora",
-          "album": "dreamcore",
-          "duration": "2:26",
-          "image": "https://i.scdn.co/image/ab67616d0000b273913c3d87273ffa04813347d6",
-          "url": "https://open.spotify.com/track/51erfwglBmv4QcRc3ayenI"
-        },
-        {
-          "name": "La Novedad",
-          "artist": "Margarita Siempre Viva, Depresión Sonora",
-          "album": "La Novedad",
-          "duration": "3:31",
-          "image": "https://i.scdn.co/image/ab67616d0000b273e4283cb65ac655f5d57051fe",
-          "url": "https://open.spotify.com/track/2upHYVNdcEuk7pnTPsPfDN"
-        },
-        {
-          "name": "Soy Lo Peor",
-          "artist": "Depresión Sonora, Bb trickz",
-          "album": "DepresionTrickz",
-          "duration": "1:53",
-          "image": "https://i.scdn.co/image/ab67616d0000b273b669a0ab6ece8427f71870e5",
-          "url": "https://open.spotify.com/track/3gddoedYU7FMPAZnLUbzkO"
-        },
-        {
-          "name": "Siesta Freestyle",
-          "artist": "Lewis OfMan, Alicia te quiero",
-          "album": "Dancy Party",
-          "duration": "3:14",
-          "image": "https://i.scdn.co/image/ab67616d0000b2730dfde54ca58fa9c1c5fa2d93",
-          "url": "https://open.spotify.com/track/6ZHKeoIOkvmYUIfxHLtE2Z"
         },
         {
           "name": "Join Me In Death",
@@ -1452,20 +1622,28 @@
           "url": "https://open.spotify.com/track/0yDkOJJaasLNoJJNB85b4A"
         },
         {
-          "name": "Tu Vienes de Negro (Stigmatroz Rmx)",
-          "artist": "Eyaculación Post Mortem",
-          "album": "Viva la Muerte",
-          "duration": "4:20",
-          "image": "https://i.scdn.co/image/ab67616d0000b27307b4fe32586f38f1cd560163",
-          "url": "https://open.spotify.com/track/4sks4DmK72BhgMqJHV16zT"
-        },
-        {
           "name": "Just Like Heaven - Remastered 2006",
           "artist": "The Cure",
           "album": "Kiss Me Kiss Me Kiss Me (Remastered 2006)",
           "duration": "3:32",
           "image": "https://i.scdn.co/image/ab67616d0000b273754d6cc8630ff4e76279fa7b",
           "url": "https://open.spotify.com/track/4NnWuGQujzWUEg0uZokO5M"
+        },
+        {
+          "name": "Anti Sol",
+          "artist": "Píldora Letal",
+          "album": "Horror en el Trópico",
+          "duration": "2:53",
+          "image": "https://i.scdn.co/image/ab67616d0000b273f0773cac526020663ccfb215",
+          "url": "https://open.spotify.com/track/6NMF7IIrbjMiD7h09UHFzK"
+        },
+        {
+          "name": "Nadie Es Leal",
+          "artist": "VVV [Trippin'you]",
+          "album": "Turboviolencia",
+          "duration": "2:18",
+          "image": "https://i.scdn.co/image/ab67616d0000b27358e06caaa559f2e0aee3ce6f",
+          "url": "https://open.spotify.com/track/1kTMe7VPlUt2gby7NqWzoi"
         }
       ]
     },
@@ -3209,7 +3387,7 @@
       "description": "",
       "image": "https://mosaic.scdn.co/640/ab67616d00001e021b0d9e321e064ef34b722c6cab67616d00001e02b797e813e868977b38d8e612ab67616d00001e02bd1532c825e0c52a58e63513ab67616d00001e02c72cc9992ebfbf3887c7ea65",
       "url": "https://open.spotify.com/playlist/5rIGWjSYgQDZGwHkxuveka",
-      "totalTracks": 57,
+      "totalTracks": 58,
       "tracks": [
         {
           "name": "La Indiferencia - En vivo",
@@ -3666,6 +3844,14 @@
           "duration": "4:34",
           "image": "https://i.scdn.co/image/ab67616d0000b273c350f45e197de9a11bf8b0cb",
           "url": "https://open.spotify.com/track/4Bw3xc1FRVk1Hoy7vybYPW"
+        },
+        {
+          "name": "El Terremoto",
+          "artist": "El Gran Martín Elías, Rolando Ochoa",
+          "album": "El Terremoto Musical",
+          "duration": "4:40",
+          "image": "https://i.scdn.co/image/ab67616d0000b273046d8dcf8737cfa4d51fffcc",
+          "url": "https://open.spotify.com/track/1W7CMs1bSqQvdEBvkaUexF"
         }
       ]
     },
@@ -3675,7 +3861,7 @@
       "description": "",
       "image": "https://mosaic.scdn.co/640/ab67616d00001e0233d1fc9841aa9b33dac06ac1ab67616d00001e02500f7d0243735942de6043c1ab67616d00001e02ba9af9de79c8b8fef7e8ba6cab67616d00001e02bcc30c5fa48fca3218c3ffa4",
       "url": "https://open.spotify.com/playlist/7Jmdux2Nwytm9tkUCO40LR",
-      "totalTracks": 114,
+      "totalTracks": 116,
       "tracks": [
         {
           "name": "Sin Miedo",
@@ -6131,7 +6317,7 @@
       "description": "",
       "image": "https://mosaic.scdn.co/640/ab67616d00001e0207031a0d94b5340aeb77e824ab67616d00001e0275ce3e12a916f36d44a6ef76ab67616d00001e02eb30f2df01fe768eca881c51ab67616d00001e02f421d294e9eb94e809defe72",
       "url": "https://open.spotify.com/playlist/17aFxLpI0QVSndRFa4xdTT",
-      "totalTracks": 76,
+      "totalTracks": 73,
       "tracks": [
         {
           "name": "Conteo Regresivo - Salsa Version",
@@ -6508,30 +6694,6 @@
           "duration": "6:58",
           "image": "https://i.scdn.co/image/ab67616d0000b273e8a478139db55e6a250e7ff1",
           "url": "https://open.spotify.com/track/3AJz1s6k4VwboMobnrVJD3"
-        },
-        {
-          "name": "La Cita",
-          "artist": "Galy Galiano",
-          "album": "Solo Salsa",
-          "duration": "4:50",
-          "image": "https://i.scdn.co/image/ab67616d0000b27316e5246b005aaeae2a3b4f70",
-          "url": "https://open.spotify.com/track/0XQzw53uo8V4GErre45Az1"
-        },
-        {
-          "name": "Mi Sueno",
-          "artist": "Willie Colón",
-          "album": "Fantasmas",
-          "duration": "6:36",
-          "image": "https://i.scdn.co/image/ab67616d0000b273186e7156c40869c2579462d7",
-          "url": "https://open.spotify.com/track/7L1SGKE5a8GeCY03uY4XUS"
-        },
-        {
-          "name": "Nuestro Sueño",
-          "artist": "Grupo Niche",
-          "album": "Tapando el Hueco",
-          "duration": "5:32",
-          "image": "https://i.scdn.co/image/ab67616d0000b2731244cf5bc529b51008e7bfc6",
-          "url": "https://open.spotify.com/track/4kYp3RGJXg2aNZbFnH3oVH"
         },
         {
           "name": "¿De Qué Tamaño Es Tu Amor?",
@@ -7769,7 +7931,7 @@
       "description": "",
       "image": "https://mosaic.scdn.co/640/ab67616d00001e0215a57856f31a311e7538aa38ab67616d00001e023391d1c0bb9a0c1310950249ab67616d00001e02453d37c5539da97758914872ab67616d00001e02e0f347d200b819386969884f",
       "url": "https://open.spotify.com/playlist/4Ugpm1NmRk3JUXdtZfPBFD",
-      "totalTracks": 43,
+      "totalTracks": 49,
       "tracks": [
         {
           "name": "Toy",
@@ -8114,6 +8276,54 @@
           "duration": "2:43",
           "image": "https://i.scdn.co/image/ab67616d0000b273d57c7753b0dfcf244c226bc8",
           "url": "https://open.spotify.com/track/4pBsmktr55rBxprHFXIFy8"
+        },
+        {
+          "name": "NOT CUTE ANYMORE",
+          "artist": "ILLIT",
+          "album": "NOT CUTE ANYMORE",
+          "duration": "2:11",
+          "image": "https://i.scdn.co/image/ab67616d0000b2733d09075f6c7fabe9a7234cb3",
+          "url": "https://open.spotify.com/track/1k0JAiH11gHL9dc5dfQjQr"
+        },
+        {
+          "name": "러시안 룰렛 Russian Roulette",
+          "artist": "Red Velvet",
+          "album": "Russian Roulette - The 3rd Mini Album",
+          "duration": "3:31",
+          "image": "https://i.scdn.co/image/ab67616d0000b2733f30a062dafcdbc1a8fad842",
+          "url": "https://open.spotify.com/track/5HiSc2ZCGn8L3cH3qSwzBT"
+        },
+        {
+          "name": "Tell Me",
+          "artist": "Wonder Girls",
+          "album": "The Wonder Years",
+          "duration": "3:37",
+          "image": "https://i.scdn.co/image/ab67616d0000b273ba5baf00d793695d029648ec",
+          "url": "https://open.spotify.com/track/2UuKZDzjZ7cVMOvpmuAMYj"
+        },
+        {
+          "name": "Tick-Tack",
+          "artist": "ILLIT",
+          "album": "I'LL LIKE YOU",
+          "duration": "2:09",
+          "image": "https://i.scdn.co/image/ab67616d0000b273fc2fffae3025fbc540b98f34",
+          "url": "https://open.spotify.com/track/0znsc67nMhP4X9hjhvoyeP"
+        },
+        {
+          "name": "Zenbu",
+          "artist": "OTO MAYUMI",
+          "album": "Zenbu",
+          "duration": "3:03",
+          "image": "https://i.scdn.co/image/ab67616d0000b27390eb76bad02570343c9ec164",
+          "url": "https://open.spotify.com/track/5tLj14tJyFZffMWJejJLjP"
+        },
+        {
+          "name": "Kagami mite goran",
+          "artist": "OTO MAYUMI",
+          "album": "Good and Bad Shades",
+          "duration": "2:56",
+          "image": "https://i.scdn.co/image/ab67616d0000b2735fde761639d5f5ee05b0ca2e",
+          "url": "https://open.spotify.com/track/3ExY27kMRnjHrJzHHmHST1"
         }
       ]
     },
@@ -8572,7 +8782,7 @@
           "artist": "Jarabe De Palo",
           "album": "La Flaca",
           "duration": "4:21",
-          "image": "https://i.scdn.co/image/ab67616d0000b27347a83522c634e84f937a897e",
+          "image": "https://i.scdn.co/image/ab67616d0000b27348de952267002dbeffe048ad",
           "url": "https://open.spotify.com/track/2LsbizbOeNa4x6qsi2jAMb"
         },
         {
@@ -9772,5 +9982,5 @@
       ]
     }
   ],
-  "fetchedAt": "2026-04-20T06:37:41.669Z"
+  "fetchedAt": "2026-04-27T06:45:37.016Z"
 }
