@@ -2913,7 +2913,7 @@
       "description": "",
       "image": "https://mosaic.scdn.co/640/ab67616d00001e026b98dbf13791547e637e322fab67616d00001e02b0dd6a5cd1dec96c4119c262ab67616d00001e02b298538481c52f7e217ed000ab67616d00001e02d0bbfea6226b5c3707de92ed",
       "url": "https://open.spotify.com/playlist/3mdKZLxagfVqGDpgr9LCZ1",
-      "totalTracks": 58,
+      "totalTracks": 60,
       "tracks": [
         {
           "name": "You Right - Extended",
@@ -3378,6 +3378,22 @@
           "duration": "3:19",
           "image": "https://i.scdn.co/image/ab67616d0000b273c00ce62eeefe679fee27764c",
           "url": "https://open.spotify.com/track/3yidFe42tke37g3KP7wzZr"
+        },
+        {
+          "name": "Hotel Room",
+          "artist": "FLVCKKA, Sleezy O, Maury",
+          "album": "Hotel Room",
+          "duration": "2:53",
+          "image": "https://i.scdn.co/image/ab67616d0000b2739d483a96d65f3a8a5a04b641",
+          "url": "https://open.spotify.com/track/7sSDJUkOWcNyDMPs8Epg6t"
+        },
+        {
+          "name": "NOTYPE",
+          "artist": "FLVCKKA, angely2k",
+          "album": "Porque Quise DELUXE",
+          "duration": "2:30",
+          "image": "https://i.scdn.co/image/ab67616d0000b273139de7b1b1db1c23d7fd629f",
+          "url": "https://open.spotify.com/track/4ZRtXnyW2BPAxsAVpe42Fy"
         }
       ]
     },
@@ -4671,7 +4687,7 @@
       "description": "",
       "image": "https://mosaic.scdn.co/640/ab67616d00001e0200eb533f941bc5ff1dad080aab67616d00001e02281532657f0c4174572ad7e3ab67616d00001e0287e7d0f29787bf25ee10ab2cab67616d00001e02c771f7401307f639d0272f68",
       "url": "https://open.spotify.com/playlist/0K9Q3HuLtLsgPcb3ivCLl1",
-      "totalTracks": 132,
+      "totalTracks": 133,
       "tracks": [
         {
           "name": "BRAZILIAN DANÇA PHONK",
@@ -6756,7 +6772,7 @@
           "artist": "Joe Arroyo, La Verdad",
           "album": "Fuego En Mi Mente",
           "duration": "5:11",
-          "image": "https://i.scdn.co/image/ab67616d0000b27368b648dde574756e3012997b",
+          "image": "https://i.scdn.co/image/ab67616d0000b273d9c8475e89f2e815c6a61fed",
           "url": "https://open.spotify.com/track/1dgErvUNtR2UUcsY3Ecf0T"
         },
         {
@@ -9982,5 +9998,5 @@
       ]
     }
   ],
-  "fetchedAt": "2026-04-27T06:45:37.016Z"
+  "fetchedAt": "2026-05-04T06:53:37.385Z"
 }
