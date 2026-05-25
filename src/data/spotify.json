@@ -145,7 +145,7 @@
       "description": "",
       "image": "https://mosaic.scdn.co/640/ab67616d00001e023975b6b899eed4af577f7ba6ab67616d00001e02926efc8389e226405fff006cab67616d00001e0296bc7d5bd0b6488de76598abab67616d00001e02b395acedffa5fa8e7696aea2",
       "url": "https://open.spotify.com/playlist/18rGaItsvzl4AM2UNUaBzB",
-      "totalTracks": 31,
+      "totalTracks": 34,
       "tracks": [
         {
           "name": "Homage",
@@ -394,13 +394,37 @@
           "duration": "4:46",
           "image": "https://i.scdn.co/image/ab67616d0000b2733697bf2a43bed1e72c768452",
           "url": "https://open.spotify.com/track/1r5mgtowxhqse44YVzCk6x"
+        },
+        {
+          "name": "Harvey",
+          "artist": "Her's",
+          "album": "Invitation to Her's",
+          "duration": "3:31",
+          "image": "https://i.scdn.co/image/ab67616d0000b273280a001e43c93792dd1e27c7",
+          "url": "https://open.spotify.com/track/1zFbBrZmJr1Z49HYe84dBg"
+        },
+        {
+          "name": "Stress Relief",
+          "artist": "late night drive home",
+          "album": "Am I sinking or Am I swimming?",
+          "duration": "3:25",
+          "image": "https://i.scdn.co/image/ab67616d0000b27377c339de2168c8b893a64407",
+          "url": "https://open.spotify.com/track/7xLfmCx9jcZNgzlIK7NupN"
+        },
+        {
+          "name": "My Kind of Woman",
+          "artist": "Mac DeMarco",
+          "album": "2",
+          "duration": "3:10",
+          "image": "https://i.scdn.co/image/ab67616d0000b2739d377496c6bc8724b521222d",
+          "url": "https://open.spotify.com/track/6jgkEbmQ2F2onEqsEhiliL"
         }
       ]
     },
     {
       "id": "6hrVNJvFJ5VepMrrOm1tkP",
       "name": "The BEST PSYCHOBILLY",
-      "description": "666% pure psychobilly music. &lt;a href=&quot;https:&#x2F;&#x2F;dailyplaylists.com&#x2F;playlists&#x2F;6hrVNJvFJ5VepMrrOm1tkP&quot;&gt;SUBMIT HERE&lt;&#x2F;a&gt; . ",
+      "description": "666% pure psychobilly music. https:&#x2F;&#x2F;dailyplaylists.com&#x2F;playlists&#x2F;6hrVNJvFJ5VepMrrOm1tkP . ",
       "image": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000d72cd32493567f92a955b3562aa4",
       "url": "https://open.spotify.com/playlist/6hrVNJvFJ5VepMrrOm1tkP",
       "totalTracks": 0,
@@ -2921,7 +2945,7 @@
       "description": "",
       "image": "https://mosaic.scdn.co/640/ab67616d00001e026b98dbf13791547e637e322fab67616d00001e02b0dd6a5cd1dec96c4119c262ab67616d00001e02b298538481c52f7e217ed000ab67616d00001e02d0bbfea6226b5c3707de92ed",
       "url": "https://open.spotify.com/playlist/3mdKZLxagfVqGDpgr9LCZ1",
-      "totalTracks": 60,
+      "totalTracks": 58,
       "tracks": [
         {
           "name": "You Right - Extended",
@@ -3252,14 +3276,6 @@
           "url": "https://open.spotify.com/track/24SkzbH7hGhUvqIaKlJ1TY"
         },
         {
-          "name": "LA VILLA",
-          "artist": "Ryan Castro, Kapo, Gangsta",
-          "album": "LA VILLA",
-          "duration": "3:12",
-          "image": "https://i.scdn.co/image/ab67616d0000b27326d18a5ac713d07e5ac3bb63",
-          "url": "https://open.spotify.com/track/6YkGw5op7PeyP2gmMMMrfJ"
-        },
-        {
           "name": "Animal",
           "artist": "Eladio Carrion, Bryant Myers",
           "album": "Animal",
@@ -3274,14 +3290,6 @@
           "duration": "3:58",
           "image": "https://i.scdn.co/image/ab67616d0000b2733da7ce098a64662da7c4b6ff",
           "url": "https://open.spotify.com/track/6iymzYcu9eadPGSp1PRFBv"
-        },
-        {
-          "name": "Talento",
-          "artist": "Yan Block, Panda Black",
-          "album": "Talento",
-          "duration": "2:30",
-          "image": "https://i.scdn.co/image/ab67616d0000b273a858c8f0dbd738907c98fb22",
-          "url": "https://open.spotify.com/track/7sChwC2NZjGc2Kdni3hlDg"
         },
         {
           "name": "Asesina",
@@ -4803,7 +4811,7 @@
         },
         {
           "name": "Parado no Bailão",
-          "artist": "MC L da Vinte, MC Gury",
+          "artist": "MC L da Vinte, MC Gury, DJ Swat",
           "album": "Parado no Bailão",
           "duration": "2:51",
           "image": "https://i.scdn.co/image/ab67616d0000b273b05904e1f9b5c426da85e098",
@@ -6318,7 +6326,7 @@
           "url": "https://open.spotify.com/track/1fcR9f13hKGpC2u9r0iHQT"
         },
         {
-          "name": "The Nutcracker, Op. 71, TH 14, Act II: No. 14c, Var. II. Dance of the Sugar-Plum Fairy",
+          "name": "No. 14c, Var. II. Dance of the Sugar-Plum Fairy",
           "artist": "Pyotr Ilyich Tchaikovsky, Russian National Orchestra, Mikhail Pletnev",
           "album": "Tchaikovsky: The Nutcracker, Op. 71, TH 14",
           "duration": "2:21",
@@ -6333,7 +6341,7 @@
       "description": "",
       "image": "https://mosaic.scdn.co/640/ab67616d00001e0207031a0d94b5340aeb77e824ab67616d00001e0275ce3e12a916f36d44a6ef76ab67616d00001e02eb30f2df01fe768eca881c51ab67616d00001e02f421d294e9eb94e809defe72",
       "url": "https://open.spotify.com/playlist/17aFxLpI0QVSndRFa4xdTT",
-      "totalTracks": 74,
+      "totalTracks": 75,
       "tracks": [
         {
           "name": "Conteo Regresivo - Salsa Version",
@@ -6858,9 +6866,9 @@
         {
           "name": "Los Charcos",
           "artist": "Fruko Y Sus Tesos, Wilson Saoko",
-          "album": "Fruko El Grande",
+          "album": "Fruko, El Grande",
           "duration": "5:00",
-          "image": "https://i.scdn.co/image/ab67616d0000b273ad23373736a2f03402e5612e",
+          "image": "https://i.scdn.co/image/ab67616d0000b2736e65fb781aec0732cbb9b800",
           "url": "https://open.spotify.com/track/0Wi8YRIGyAi8VnPmn7yTSv"
         },
         {
@@ -6926,6 +6934,14 @@
           "duration": "5:02",
           "image": "https://i.scdn.co/image/ab67616d0000b27347630f2de67c96c9f34ecf42",
           "url": "https://open.spotify.com/track/3WLXf7K7mIGEBtFq41afce"
+        },
+        {
+          "name": "La Muerte",
+          "artist": "El Gran Combo De Puerto Rico",
+          "album": "20th Anniversary",
+          "duration": "4:24",
+          "image": "https://i.scdn.co/image/ab67616d0000b27397612c672578defda5eb849c",
+          "url": "https://open.spotify.com/track/7LW0MY3daXOPbu43Ukw1Bc"
         }
       ]
     },
@@ -6935,7 +6951,7 @@
       "description": "",
       "image": "https://mosaic.scdn.co/640/ab67616d00001e0242cb382726e956058bf73ed3ab67616d00001e02926efc8389e226405fff006cab67616d00001e02c428f67b4a9b7e1114dfc117ab67616d00001e02e90db8983ebd43b776694179",
       "url": "https://open.spotify.com/playlist/0HVyWsfWfkD0VpTtuhbVwX",
-      "totalTracks": 72,
+      "totalTracks": 71,
       "tracks": [
         {
           "name": "Your Best American Girl",
@@ -7352,14 +7368,6 @@
           "duration": "3:34",
           "image": "https://i.scdn.co/image/ab67616d0000b273373c63a4666fb7193febc167",
           "url": "https://open.spotify.com/track/3be9ACTxtcL6Zm4vJRUiPG"
-        },
-        {
-          "name": "My Kind of Woman",
-          "artist": "Mac DeMarco",
-          "album": "2",
-          "duration": "3:10",
-          "image": "https://i.scdn.co/image/ab67616d0000b2739d377496c6bc8724b521222d",
-          "url": "https://open.spotify.com/track/6jgkEbmQ2F2onEqsEhiliL"
         },
         {
           "name": "Fool",
@@ -10006,5 +10014,5 @@
       ]
     }
   ],
-  "fetchedAt": "2026-05-18T07:11:59.684Z"
+  "fetchedAt": "2026-05-25T07:22:53.248Z"
 }
