@@ -1,6 +1,15 @@
 {
   "playlists": [
     {
+      "id": "5Z6J7jqK6oF7upv8KhZuds",
+      "name": "Clásicos del Rock en Español 80's y 90's Top 100",
+      "description": "",
+      "image": "https://mosaic.scdn.co/640/ab67616d00001e0208aef4057b0b7b2a3405b39fab67616d00001e0258cb4a7703f916ff5b3318dfab67616d00001e02b49b1b486de0d62e8b4cade3ab67616d00001e02c451ed28353639e79b4d97d9",
+      "url": "https://open.spotify.com/playlist/5Z6J7jqK6oF7upv8KhZuds",
+      "totalTracks": 0,
+      "tracks": []
+    },
+    {
       "id": "6NOonfWLbNaymxPPTW4l93",
       "name": "Bachata",
       "description": "",
@@ -425,7 +434,7 @@
       "id": "6hrVNJvFJ5VepMrrOm1tkP",
       "name": "The BEST PSYCHOBILLY",
       "description": "666% pure psychobilly music. https:&#x2F;&#x2F;dailyplaylists.com&#x2F;playlists&#x2F;6hrVNJvFJ5VepMrrOm1tkP . ",
-      "image": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000d72cd32493567f92a955b3562aa4",
+      "image": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da84d32493567f92a955b3562aa4",
       "url": "https://open.spotify.com/playlist/6hrVNJvFJ5VepMrrOm1tkP",
       "totalTracks": 0,
       "tracks": []
@@ -1032,7 +1041,7 @@
       "id": "4EdpqHgnDOnIqom2tkFjmO",
       "name": "deathrock🦇",
       "description": "",
-      "image": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da8411d683e895431343ae1464c4",
+      "image": "https://image-cdn-fa.spotifycdn.com/image/ab67706c0000da8411d683e895431343ae1464c4",
       "url": "https://open.spotify.com/playlist/4EdpqHgnDOnIqom2tkFjmO",
       "totalTracks": 0,
       "tracks": []
@@ -3885,7 +3894,7 @@
       "description": "",
       "image": "https://mosaic.scdn.co/640/ab67616d00001e0233d1fc9841aa9b33dac06ac1ab67616d00001e02500f7d0243735942de6043c1ab67616d00001e02ba9af9de79c8b8fef7e8ba6cab67616d00001e02bcc30c5fa48fca3218c3ffa4",
       "url": "https://open.spotify.com/playlist/7Jmdux2Nwytm9tkUCO40LR",
-      "totalTracks": 116,
+      "totalTracks": 117,
       "tracks": [
         {
           "name": "Sin Miedo",
@@ -7502,7 +7511,7 @@
           "artist": "Miraidempa",
           "album": "Unslept",
           "duration": "2:10",
-          "image": "https://i.scdn.co/image/ab67616d0000b273c91175393cd17e6bc3a947c5",
+          "image": "https://i.scdn.co/image/ab67616d0000b27345947e9903dc49140aff766b",
           "url": "https://open.spotify.com/track/1JMvajCm93H7ppK5sboii0"
         },
         {
@@ -10014,5 +10023,5 @@
       ]
     }
   ],
-  "fetchedAt": "2026-05-25T07:22:53.248Z"
+  "fetchedAt": "2026-06-01T07:33:43.840Z"
 }
