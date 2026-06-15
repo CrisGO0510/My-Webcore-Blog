@@ -15,7 +15,7 @@
       "description": "",
       "image": "https://mosaic.scdn.co/640/ab67616d00001e021a9d42dbbfa5a0b440654321ab67616d00001e02791d6daf3d05cde2a646c3cdab67616d00001e02c28a6d0f6ed7b540f8208543ab67616d00001e02e0e4b48b060715c9aa7fca18",
       "url": "https://open.spotify.com/playlist/6NOonfWLbNaymxPPTW4l93",
-      "totalTracks": 15,
+      "totalTracks": 16,
       "tracks": [
         {
           "name": "Amigo",
@@ -136,6 +136,14 @@
           "duration": "3:11",
           "image": "https://i.scdn.co/image/ab67616d0000b273552ae7f465c58a22f295fe5b",
           "url": "https://open.spotify.com/track/6IfMD01z39P15HKezjdaMP"
+        },
+        {
+          "name": "El Amor Que Perdimos",
+          "artist": "Prince Royce",
+          "album": "Prince Royce",
+          "duration": "4:05",
+          "image": "https://i.scdn.co/image/ab67616d0000b273a484690118ec2c7a2e2ae124",
+          "url": "https://open.spotify.com/track/06EgH8BdWW9QRrlI6ZVQhW"
         }
       ]
     },
@@ -152,7 +160,7 @@
       "id": "18rGaItsvzl4AM2UNUaBzB",
       "name": "J",
       "description": "",
-      "image": "https://mosaic.scdn.co/640/ab67616d00001e023975b6b899eed4af577f7ba6ab67616d00001e02926efc8389e226405fff006cab67616d00001e0296bc7d5bd0b6488de76598abab67616d00001e02b395acedffa5fa8e7696aea2",
+      "image": "https://mosaic.scdn.co/640/ab67616d00001e023975b6b899eed4af577f7ba6ab67616d00001e0296bc7d5bd0b6488de76598abab67616d00001e029d377496c6bc8724b521222dab67616d00001e02b395acedffa5fa8e7696aea2",
       "url": "https://open.spotify.com/playlist/18rGaItsvzl4AM2UNUaBzB",
       "totalTracks": 34,
       "tracks": [
@@ -171,6 +179,14 @@
           "duration": "2:27",
           "image": "https://i.scdn.co/image/ab67616d0000b2733975b6b899eed4af577f7ba6",
           "url": "https://open.spotify.com/track/7EkWXAI1wn8Ii883ecd9xr"
+        },
+        {
+          "name": "My Kind of Woman",
+          "artist": "Mac DeMarco",
+          "album": "2",
+          "duration": "3:10",
+          "image": "https://i.scdn.co/image/ab67616d0000b2739d377496c6bc8724b521222d",
+          "url": "https://open.spotify.com/track/6jgkEbmQ2F2onEqsEhiliL"
         },
         {
           "name": "No Other Heart",
@@ -419,14 +435,6 @@
           "duration": "3:25",
           "image": "https://i.scdn.co/image/ab67616d0000b27377c339de2168c8b893a64407",
           "url": "https://open.spotify.com/track/7xLfmCx9jcZNgzlIK7NupN"
-        },
-        {
-          "name": "My Kind of Woman",
-          "artist": "Mac DeMarco",
-          "album": "2",
-          "duration": "3:10",
-          "image": "https://i.scdn.co/image/ab67616d0000b2739d377496c6bc8724b521222d",
-          "url": "https://open.spotify.com/track/6jgkEbmQ2F2onEqsEhiliL"
         }
       ]
     },
@@ -856,7 +864,7 @@
           "artist": "Finale",
           "album": "Visión de Futuro",
           "duration": "1:53",
-          "image": "https://i.scdn.co/image/ab67616d0000b273d093cef99730d159b4951312",
+          "image": "https://i.scdn.co/image/ab67616d0000b273297dfd363f4158773d70731d",
           "url": "https://open.spotify.com/track/7jxs64gfu7IqOByEpp8yDL"
         },
         {
@@ -3450,7 +3458,7 @@
       "id": "5rIGWjSYgQDZGwHkxuveka",
       "name": "V",
       "description": "",
-      "image": "https://mosaic.scdn.co/640/ab67616d00001e021b0d9e321e064ef34b722c6cab67616d00001e02b797e813e868977b38d8e612ab67616d00001e02bd1532c825e0c52a58e63513ab67616d00001e02c72cc9992ebfbf3887c7ea65",
+      "image": "https://mosaic.scdn.co/640/ab67616d00001e021b0d9e321e064ef34b722c6cab67616d00001e025823ff0e64c79463ec3c7481ab67616d00001e02b797e813e868977b38d8e612ab67616d00001e02c72cc9992ebfbf3887c7ea65",
       "url": "https://open.spotify.com/playlist/5rIGWjSYgQDZGwHkxuveka",
       "totalTracks": 57,
       "tracks": [
@@ -3918,7 +3926,7 @@
       "description": "",
       "image": "https://mosaic.scdn.co/640/ab67616d00001e0233d1fc9841aa9b33dac06ac1ab67616d00001e02500f7d0243735942de6043c1ab67616d00001e02ba9af9de79c8b8fef7e8ba6cab67616d00001e02bcc30c5fa48fca3218c3ffa4",
       "url": "https://open.spotify.com/playlist/7Jmdux2Nwytm9tkUCO40LR",
-      "totalTracks": 117,
+      "totalTracks": 118,
       "tracks": [
         {
           "name": "Sin Miedo",
@@ -8012,7 +8020,7 @@
       "description": "",
       "image": "https://mosaic.scdn.co/640/ab67616d00001e0215a57856f31a311e7538aa38ab67616d00001e023391d1c0bb9a0c1310950249ab67616d00001e02453d37c5539da97758914872ab67616d00001e02e0f347d200b819386969884f",
       "url": "https://open.spotify.com/playlist/4Ugpm1NmRk3JUXdtZfPBFD",
-      "totalTracks": 49,
+      "totalTracks": 53,
       "tracks": [
         {
           "name": "Toy",
@@ -8405,6 +8413,38 @@
           "duration": "2:56",
           "image": "https://i.scdn.co/image/ab67616d0000b2735fde761639d5f5ee05b0ca2e",
           "url": "https://open.spotify.com/track/3ExY27kMRnjHrJzHHmHST1"
+        },
+        {
+          "name": "Magnetic",
+          "artist": "ILLIT",
+          "album": "SUPER REAL ME",
+          "duration": "2:40",
+          "image": "https://i.scdn.co/image/ab67616d0000b273f037c5fb9de6c78726cb8e2c",
+          "url": "https://open.spotify.com/track/1aKvZDoLGkNMxoRYgkckZG"
+        },
+        {
+          "name": "The Feels",
+          "artist": "TWICE",
+          "album": "Formula of Love: O+T=<3",
+          "duration": "3:18",
+          "image": "https://i.scdn.co/image/ab67616d0000b273d1961ecb307c9e05ec8f7e82",
+          "url": "https://open.spotify.com/track/308Ir17KlNdlrbVLHWhlLe"
+        },
+        {
+          "name": "TT",
+          "artist": "TWICE",
+          "album": "Twicecoaster: Lane 1",
+          "duration": "3:32",
+          "image": "https://i.scdn.co/image/ab67616d0000b273387444ab2fc1f08dfe7915ab",
+          "url": "https://open.spotify.com/track/60jFaQV7Z4boGC4ob5B5c6"
+        },
+        {
+          "name": "IYKYK (If You Know You Know)",
+          "artist": "ILLIT",
+          "album": "I'LL LIKE YOU",
+          "duration": "2:24",
+          "image": "https://i.scdn.co/image/ab67616d0000b273fc2fffae3025fbc540b98f34",
+          "url": "https://open.spotify.com/track/31UtyhPu6vu9LJBzoygDiQ"
         }
       ]
     },
@@ -10063,5 +10103,5 @@
       ]
     }
   ],
-  "fetchedAt": "2026-06-08T07:29:44.048Z"
+  "fetchedAt": "2026-06-15T07:44:42.581Z"
 }
