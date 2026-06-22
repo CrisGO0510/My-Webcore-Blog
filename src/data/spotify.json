@@ -644,6 +644,14 @@
           "url": "https://open.spotify.com/track/4MyIarnwn3A9SJGCT2Gycx"
         },
         {
+          "name": "uzumaki",
+          "artist": "sistema de entretenimiento",
+          "album": "sistema de entretenimiento",
+          "duration": "1:46",
+          "image": "https://i.scdn.co/image/ab67616d0000b273ae09634bb2be7a0842c40357",
+          "url": "https://open.spotify.com/track/3NBtH0cWS9SsF0hgFcoQmJ"
+        },
+        {
           "name": "¿Qué Esperas de Mí?",
           "artist": "Sailor Punk",
           "album": "Abstracta Obsolescencia",
@@ -882,14 +890,6 @@
           "duration": "4:28",
           "image": "https://i.scdn.co/image/ab67616d0000b2737065e19cf8f1982c180cf6c6",
           "url": "https://open.spotify.com/track/28v3RMx2WoWDjV2QO4zBoo"
-        },
-        {
-          "name": "uzumaki",
-          "artist": "sistema de entretenimiento",
-          "album": "sistema de entretenimiento",
-          "duration": "1:46",
-          "image": "https://i.scdn.co/image/ab67616d0000b273ae09634bb2be7a0842c40357",
-          "url": "https://open.spotify.com/track/3NBtH0cWS9SsF0hgFcoQmJ"
         },
         {
           "name": "Resiste",
@@ -2970,7 +2970,7 @@
       "description": "",
       "image": "https://mosaic.scdn.co/640/ab67616d00001e026b98dbf13791547e637e322fab67616d00001e02b0dd6a5cd1dec96c4119c262ab67616d00001e02b298538481c52f7e217ed000ab67616d00001e02d0bbfea6226b5c3707de92ed",
       "url": "https://open.spotify.com/playlist/3mdKZLxagfVqGDpgr9LCZ1",
-      "totalTracks": 60,
+      "totalTracks": 61,
       "tracks": [
         {
           "name": "You Right - Extended",
@@ -3451,6 +3451,14 @@
           "duration": "2:14",
           "image": "https://i.scdn.co/image/ab67616d0000b2736ee8f4a9117911c3200620a3",
           "url": "https://open.spotify.com/track/2EUEWf8u5fHL0GiOQNcnxW"
+        },
+        {
+          "name": "Mi Cama",
+          "artist": "KAROL G",
+          "album": "Mi Cama",
+          "duration": "2:31",
+          "image": "https://i.scdn.co/image/ab67616d0000b273444b2dff2fee6318bca7279d",
+          "url": "https://open.spotify.com/track/7sFYVcKSb24qg0dAkqLEFj"
         }
       ]
     },
@@ -3458,7 +3466,7 @@
       "id": "5rIGWjSYgQDZGwHkxuveka",
       "name": "V",
       "description": "",
-      "image": "https://mosaic.scdn.co/640/ab67616d00001e021b0d9e321e064ef34b722c6cab67616d00001e025823ff0e64c79463ec3c7481ab67616d00001e02b797e813e868977b38d8e612ab67616d00001e02c72cc9992ebfbf3887c7ea65",
+      "image": "https://mosaic.scdn.co/640/ab67616d00001e021b0d9e321e064ef34b722c6cab67616d00001e024cdca2a74d79f885f8b5cadcab67616d00001e02b797e813e868977b38d8e612ab67616d00001e02c72cc9992ebfbf3887c7ea65",
       "url": "https://open.spotify.com/playlist/5rIGWjSYgQDZGwHkxuveka",
       "totalTracks": 57,
       "tracks": [
@@ -4736,7 +4744,7 @@
       "description": "",
       "image": "https://mosaic.scdn.co/640/ab67616d00001e0200eb533f941bc5ff1dad080aab67616d00001e02281532657f0c4174572ad7e3ab67616d00001e0287e7d0f29787bf25ee10ab2cab67616d00001e02c771f7401307f639d0272f68",
       "url": "https://open.spotify.com/playlist/0K9Q3HuLtLsgPcb3ivCLl1",
-      "totalTracks": 135,
+      "totalTracks": 136,
       "tracks": [
         {
           "name": "BRAZILIAN DANÇA PHONK",
@@ -5546,7 +5554,7 @@
       "description": "",
       "image": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da84e2d7ed05e574dc4a05130a75",
       "url": "https://open.spotify.com/playlist/5sXtWNyd9sFCeclulbZSDi",
-      "totalTracks": 90,
+      "totalTracks": 93,
       "tracks": [
         {
           "name": "Love",
@@ -6267,6 +6275,30 @@
           "duration": "4:04",
           "image": "https://i.scdn.co/image/ab67616d0000b273574d9b54c9d5765aeccd0569",
           "url": "https://open.spotify.com/track/4udGuDY6x5WzWdMiVe3yea"
+        },
+        {
+          "name": "Mi Enfermedad - Version 96",
+          "artist": "Los Rodriguez",
+          "album": "Completo",
+          "duration": "3:33",
+          "image": "https://i.scdn.co/image/ab67616d0000b2731a242642520465ef5a9c1b68",
+          "url": "https://open.spotify.com/track/4TGLC4nSVOHO45xbCrjHz6"
+        },
+        {
+          "name": "Bohemio",
+          "artist": "Andrés Calamaro",
+          "album": "Bohemio",
+          "duration": "3:14",
+          "image": "https://i.scdn.co/image/ab67616d0000b273f634328d7f9d0f10b4b06cbe",
+          "url": "https://open.spotify.com/track/1EOm4quqIz2IhJNFsUP6Yj"
+        },
+        {
+          "name": "Sin documentos",
+          "artist": "Los Rodriguez",
+          "album": "Sin Documentos",
+          "duration": "4:45",
+          "image": "https://i.scdn.co/image/ab67616d0000b273139d10e0ae979a7b4a811140",
+          "url": "https://open.spotify.com/track/6eOT73H5zfEwTCe1Y0FDCc"
         }
       ]
     },
@@ -6379,7 +6411,7 @@
           "artist": "Neil Black",
           "album": "Violín Fantástico, Vol. 2",
           "duration": "2:28",
-          "image": "https://i.scdn.co/image/ab67616d0000b273ad40b0ac032910b97221aa62",
+          "image": "https://i.scdn.co/image/ab67616d0000b2736d7c45bbbc35b98ddbfad5fe",
           "url": "https://open.spotify.com/track/23dfxiHSG6isNOUyZzOqOU"
         },
         {
@@ -6398,7 +6430,7 @@
       "description": "",
       "image": "https://mosaic.scdn.co/640/ab67616d00001e0207031a0d94b5340aeb77e824ab67616d00001e0275ce3e12a916f36d44a6ef76ab67616d00001e02eb30f2df01fe768eca881c51ab67616d00001e02f421d294e9eb94e809defe72",
       "url": "https://open.spotify.com/playlist/17aFxLpI0QVSndRFa4xdTT",
-      "totalTracks": 75,
+      "totalTracks": 76,
       "tracks": [
         {
           "name": "Conteo Regresivo - Salsa Version",
@@ -6999,6 +7031,14 @@
           "duration": "4:24",
           "image": "https://i.scdn.co/image/ab67616d0000b27397612c672578defda5eb849c",
           "url": "https://open.spotify.com/track/7LW0MY3daXOPbu43Ukw1Bc"
+        },
+        {
+          "name": "Todo Tiene Su Final",
+          "artist": "Willie Colón, Héctor Lavoe",
+          "album": "Lo Mato",
+          "duration": "5:03",
+          "image": "https://i.scdn.co/image/ab67616d0000b273d401ded855f7fd747f0de19f",
+          "url": "https://open.spotify.com/track/7r0ckjpJUZwOASD1VLJgS7"
         }
       ]
     },
@@ -8020,7 +8060,7 @@
       "description": "",
       "image": "https://mosaic.scdn.co/640/ab67616d00001e0215a57856f31a311e7538aa38ab67616d00001e023391d1c0bb9a0c1310950249ab67616d00001e02453d37c5539da97758914872ab67616d00001e02e0f347d200b819386969884f",
       "url": "https://open.spotify.com/playlist/4Ugpm1NmRk3JUXdtZfPBFD",
-      "totalTracks": 53,
+      "totalTracks": 56,
       "tracks": [
         {
           "name": "Toy",
@@ -8303,6 +8343,14 @@
           "url": "https://open.spotify.com/track/3zhbXKFjUDw40pTYyCgt1Y"
         },
         {
+          "name": "Kawaikute Gomen",
+          "artist": "Ado",
+          "album": "Ado's Utattemita Album",
+          "duration": "3:39",
+          "image": "https://i.scdn.co/image/ab67616d0000b273f5912abed0ea22e746552771",
+          "url": "https://open.spotify.com/track/1gdZIt42CKuP5MjHbVW4T7"
+        },
+        {
           "name": "ETA",
           "artist": "NewJeans",
           "album": "NewJeans 2nd EP 'Get Up'",
@@ -8319,12 +8367,28 @@
           "url": "https://open.spotify.com/track/0bMoNdAnxNR0OuQbGDovrr"
         },
         {
+          "name": "Crime And Punishment",
+          "artist": "Ado",
+          "album": "Ado's Utattemita Album",
+          "duration": "4:50",
+          "image": "https://i.scdn.co/image/ab67616d0000b273f5912abed0ea22e746552771",
+          "url": "https://open.spotify.com/track/7r46PpiDGgW7cQwXMHS5lU"
+        },
+        {
           "name": "SIGNAL",
           "artist": "TWICE",
           "album": "SIGNAL",
           "duration": "3:16",
           "image": "https://i.scdn.co/image/ab67616d0000b273cd73a6412b7618e3f9164b55",
           "url": "https://open.spotify.com/track/15rX80MpEJ2OqW3dPunQvI"
+        },
+        {
+          "name": "Zenbu",
+          "artist": "OTO MAYUMI",
+          "album": "Zenbu",
+          "duration": "3:03",
+          "image": "https://i.scdn.co/image/ab67616d0000b27390eb76bad02570343c9ec164",
+          "url": "https://open.spotify.com/track/5tLj14tJyFZffMWJejJLjP"
         },
         {
           "name": "Wife",
@@ -8357,6 +8421,14 @@
           "duration": "3:11",
           "image": "https://i.scdn.co/image/ab67616d0000b2734dcb6c5df15cf74596ab25a4",
           "url": "https://open.spotify.com/track/1I37Zz2g3hk9eWxaNkj031"
+        },
+        {
+          "name": "Golden",
+          "artist": "HUNTR/X, EJAE, AUDREY NUNA, REI AMI, KPop Demon Hunters Cast",
+          "album": "Golden (from the Netflix film KPop Demon Hunters)",
+          "duration": "3:14",
+          "image": "https://i.scdn.co/image/ab67616d0000b273333392a83a4514ae635ed982",
+          "url": "https://open.spotify.com/track/5Cp75TUMrHF6c8xbhdligS"
         },
         {
           "name": "Demente - Spanish Version",
@@ -8397,14 +8469,6 @@
           "duration": "2:09",
           "image": "https://i.scdn.co/image/ab67616d0000b273fc2fffae3025fbc540b98f34",
           "url": "https://open.spotify.com/track/0znsc67nMhP4X9hjhvoyeP"
-        },
-        {
-          "name": "Zenbu",
-          "artist": "OTO MAYUMI",
-          "album": "Zenbu",
-          "duration": "3:03",
-          "image": "https://i.scdn.co/image/ab67616d0000b27390eb76bad02570343c9ec164",
-          "url": "https://open.spotify.com/track/5tLj14tJyFZffMWJejJLjP"
         },
         {
           "name": "Kagami mite goran",
@@ -10009,7 +10073,7 @@
           "artist": "My Chemical Romance",
           "album": "The Black Parade",
           "duration": "2:41",
-          "image": "https://i.scdn.co/image/ab67616d0000b27317f77fab7e8f18d5f9fee4a1",
+          "image": "https://i.scdn.co/image/ab67616d0000b273663b6ce496144fa5c3670ac0",
           "url": "https://open.spotify.com/track/7j31rVgGX9Q2blT92VBEA0"
         },
         {
@@ -10103,5 +10167,5 @@
       ]
     }
   ],
-  "fetchedAt": "2026-06-15T07:44:42.581Z"
+  "fetchedAt": "2026-06-22T07:46:42.877Z"
 }
