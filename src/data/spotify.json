@@ -442,7 +442,7 @@
       "id": "6hrVNJvFJ5VepMrrOm1tkP",
       "name": "The BEST PSYCHOBILLY",
       "description": "666% pure psychobilly music. https:&#x2F;&#x2F;dailyplaylists.com&#x2F;playlists&#x2F;6hrVNJvFJ5VepMrrOm1tkP . ",
-      "image": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da84d32493567f92a955b3562aa4",
+      "image": "https://image-cdn-fa.spotifycdn.com/image/ab67706c0000da84d32493567f92a955b3562aa4",
       "url": "https://open.spotify.com/playlist/6hrVNJvFJ5VepMrrOm1tkP",
       "totalTracks": 0,
       "tracks": []
@@ -3934,7 +3934,7 @@
       "description": "",
       "image": "https://mosaic.scdn.co/640/ab67616d00001e0233d1fc9841aa9b33dac06ac1ab67616d00001e02500f7d0243735942de6043c1ab67616d00001e02ba9af9de79c8b8fef7e8ba6cab67616d00001e02bcc30c5fa48fca3218c3ffa4",
       "url": "https://open.spotify.com/playlist/7Jmdux2Nwytm9tkUCO40LR",
-      "totalTracks": 118,
+      "totalTracks": 121,
       "tracks": [
         {
           "name": "Sin Miedo",
@@ -4042,10 +4042,10 @@
         },
         {
           "name": "Daga Adicta",
-          "artist": "Luigi 21 Plus",
+          "artist": "Luigi 21 Plus, J Alvarez",
           "album": "El Patán",
           "duration": "3:56",
-          "image": "https://i.scdn.co/image/ab67616d0000b273961d83a1718bdd5ae9f4783f",
+          "image": "https://i.scdn.co/image/ab67616d0000b27395e991eec4c3ff45a9473aff",
           "url": "https://open.spotify.com/track/1BvoLDKmotg5dqfVW8y8KR"
         },
         {
@@ -5591,7 +5591,7 @@
         {
           "name": "Un violinista en tu tejado",
           "artist": "Melendi",
-          "album": "Un Violinista En Tu Tejado",
+          "album": "Un violinista en tu tejado",
           "duration": "3:42",
           "image": "https://i.scdn.co/image/ab67616d0000b273d6bd49f51391fbe0dc3f0718",
           "url": "https://open.spotify.com/track/12MZRMXbJYQyorNxv8IRZ6"
@@ -6777,14 +6777,6 @@
           "url": "https://open.spotify.com/track/1chkHVbHvQO2kQegAWUABB"
         },
         {
-          "name": "Uno Se Cura",
-          "artist": "Raulin Rosendo",
-          "album": "El Sonero Quel El Pueblo Prefiere",
-          "duration": "5:32",
-          "image": "https://i.scdn.co/image/ab67616d0000b273ce7f59a1fdae4c90f95d560e",
-          "url": "https://open.spotify.com/track/2jIeTDKCMcpyEzR3KCnIfW"
-        },
-        {
           "name": "Escombros",
           "artist": "La Suprema Corte",
           "album": "Escombros",
@@ -6799,6 +6791,14 @@
           "duration": "5:37",
           "image": "https://i.scdn.co/image/ab67616d0000b273bde5a7675c3050204cd55f27",
           "url": "https://open.spotify.com/track/752aNrC43L3ZCIuPoK8YTK"
+        },
+        {
+          "name": "Uno Se Cura",
+          "artist": "Raulin Rosendo",
+          "album": "El Sonero Quel El Pueblo Prefiere",
+          "duration": "5:32",
+          "image": "https://i.scdn.co/image/ab67616d0000b273ce7f59a1fdae4c90f95d560e",
+          "url": "https://open.spotify.com/track/2jIeTDKCMcpyEzR3KCnIfW"
         },
         {
           "name": "Lágrimas",
@@ -10167,5 +10167,5 @@
       ]
     }
   ],
-  "fetchedAt": "2026-06-22T07:46:42.877Z"
+  "fetchedAt": "2026-06-29T07:29:29.062Z"
 }
