@@ -15,7 +15,7 @@
       "description": "",
       "image": "https://mosaic.scdn.co/640/ab67616d00001e021a9d42dbbfa5a0b440654321ab67616d00001e02791d6daf3d05cde2a646c3cdab67616d00001e02c28a6d0f6ed7b540f8208543ab67616d00001e02e0e4b48b060715c9aa7fca18",
       "url": "https://open.spotify.com/playlist/6NOonfWLbNaymxPPTW4l93",
-      "totalTracks": 16,
+      "totalTracks": 18,
       "tracks": [
         {
           "name": "Amigo",
@@ -144,6 +144,22 @@
           "duration": "4:05",
           "image": "https://i.scdn.co/image/ab67616d0000b273a484690118ec2c7a2e2ae124",
           "url": "https://open.spotify.com/track/06EgH8BdWW9QRrlI6ZVQhW"
+        },
+        {
+          "name": "Mi Corazoncito",
+          "artist": "Aventura",
+          "album": "K.O.B. Live",
+          "duration": "3:54",
+          "image": "https://i.scdn.co/image/ab67616d0000b273c28a6d0f6ed7b540f8208543",
+          "url": "https://open.spotify.com/track/5I76YtdZkFQReVgKppRd78"
+        },
+        {
+          "name": "Sobredosis (feat. Ozuna)",
+          "artist": "Romeo Santos, Ozuna",
+          "album": "Golden",
+          "duration": "3:18",
+          "image": "https://i.scdn.co/image/ab67616d0000b273a676aa01533e6cf5c40b99b6",
+          "url": "https://open.spotify.com/track/1WbXIpiGBJkCiv3hn40iPB"
         }
       ]
     },
@@ -442,7 +458,7 @@
       "id": "6hrVNJvFJ5VepMrrOm1tkP",
       "name": "The BEST PSYCHOBILLY",
       "description": "666% pure psychobilly music. https:&#x2F;&#x2F;dailyplaylists.com&#x2F;playlists&#x2F;6hrVNJvFJ5VepMrrOm1tkP . ",
-      "image": "https://image-cdn-fa.spotifycdn.com/image/ab67706c0000da84d32493567f92a955b3562aa4",
+      "image": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da84d32493567f92a955b3562aa4",
       "url": "https://open.spotify.com/playlist/6hrVNJvFJ5VepMrrOm1tkP",
       "totalTracks": 0,
       "tracks": []
@@ -2978,7 +2994,7 @@
       "description": "",
       "image": "https://mosaic.scdn.co/640/ab67616d00001e026b98dbf13791547e637e322fab67616d00001e02b0dd6a5cd1dec96c4119c262ab67616d00001e02b298538481c52f7e217ed000ab67616d00001e02d0bbfea6226b5c3707de92ed",
       "url": "https://open.spotify.com/playlist/3mdKZLxagfVqGDpgr9LCZ1",
-      "totalTracks": 61,
+      "totalTracks": 62,
       "tracks": [
         {
           "name": "You Right - Extended",
@@ -3467,6 +3483,14 @@
           "duration": "2:31",
           "image": "https://i.scdn.co/image/ab67616d0000b273444b2dff2fee6318bca7279d",
           "url": "https://open.spotify.com/track/7sFYVcKSb24qg0dAkqLEFj"
+        },
+        {
+          "name": "YOGURCITO REMIX (feat. Kris R., ROA)",
+          "artist": "Blessd, Anuel AA, Yan Block, Luar La L, Kris R., ROA",
+          "album": "EL MEJOR HOMBRE DEL MUNDO",
+          "duration": "6:15",
+          "image": "https://i.scdn.co/image/ab67616d0000b27338f4012b4bfa54fd54d2b61b",
+          "url": "https://open.spotify.com/track/3jqk4fue7CILssCv8UpJe0"
         }
       ]
     },
@@ -3942,7 +3966,7 @@
       "description": "",
       "image": "https://mosaic.scdn.co/640/ab67616d00001e0233d1fc9841aa9b33dac06ac1ab67616d00001e02500f7d0243735942de6043c1ab67616d00001e02ba9af9de79c8b8fef7e8ba6cab67616d00001e02bcc30c5fa48fca3218c3ffa4",
       "url": "https://open.spotify.com/playlist/7Jmdux2Nwytm9tkUCO40LR",
-      "totalTracks": 121,
+      "totalTracks": 122,
       "tracks": [
         {
           "name": "Sin Miedo",
@@ -5562,7 +5586,7 @@
       "description": "",
       "image": "https://image-cdn-fa.spotifycdn.com/image/ab67706c0000da84e2d7ed05e574dc4a05130a75",
       "url": "https://open.spotify.com/playlist/5sXtWNyd9sFCeclulbZSDi",
-      "totalTracks": 93,
+      "totalTracks": 96,
       "tracks": [
         {
           "name": "Love",
@@ -6307,6 +6331,30 @@
           "duration": "4:45",
           "image": "https://i.scdn.co/image/ab67616d0000b273139d10e0ae979a7b4a811140",
           "url": "https://open.spotify.com/track/6eOT73H5zfEwTCe1Y0FDCc"
+        },
+        {
+          "name": "Soy tuyo",
+          "artist": "Andrés Calamaro",
+          "album": "La lengua popular",
+          "duration": "3:15",
+          "image": "https://i.scdn.co/image/ab67616d0000b273557e06d39588819e7a322817",
+          "url": "https://open.spotify.com/track/1d4fWuxcszsjBBm5rlvRuX"
+        },
+        {
+          "name": "Paloma",
+          "artist": "Andrés Calamaro",
+          "album": "Honestidad Brutal",
+          "duration": "4:56",
+          "image": "https://i.scdn.co/image/ab67616d0000b273ff005a174a4100e63335624c",
+          "url": "https://open.spotify.com/track/4XnPyINNc5ODYP1aoos7Um"
+        },
+        {
+          "name": "Bye Bye",
+          "artist": "Vilma Palma e Vampiros",
+          "album": "La Pachanga",
+          "duration": "5:49",
+          "image": "https://i.scdn.co/image/ab67616d0000b2730457ded975a6693ce8fc4392",
+          "url": "https://open.spotify.com/track/2FSYfKAApea3U42phhBOIc"
         }
       ]
     },
@@ -6438,7 +6486,7 @@
       "description": "",
       "image": "https://mosaic.scdn.co/640/ab67616d00001e0207031a0d94b5340aeb77e824ab67616d00001e0275ce3e12a916f36d44a6ef76ab67616d00001e02eb30f2df01fe768eca881c51ab67616d00001e02f421d294e9eb94e809defe72",
       "url": "https://open.spotify.com/playlist/17aFxLpI0QVSndRFa4xdTT",
-      "totalTracks": 76,
+      "totalTracks": 77,
       "tracks": [
         {
           "name": "Conteo Regresivo - Salsa Version",
@@ -7047,6 +7095,14 @@
           "duration": "5:03",
           "image": "https://i.scdn.co/image/ab67616d0000b273d401ded855f7fd747f0de19f",
           "url": "https://open.spotify.com/track/7r0ckjpJUZwOASD1VLJgS7"
+        },
+        {
+          "name": "Te Acordaras De Mi",
+          "artist": "Carlos Nuño La Grande de Madrid",
+          "album": "Salsa y Más...",
+          "duration": "4:55",
+          "image": "https://i.scdn.co/image/ab67616d0000b2737fdfdda1a314357a115b129e",
+          "url": "https://open.spotify.com/track/6WV4V9kERm2ICeRj5web9O"
         }
       ]
     },
@@ -7471,7 +7527,7 @@
           "artist": "yung kai",
           "album": "blue",
           "duration": "3:34",
-          "image": "https://i.scdn.co/image/ab67616d0000b273373c63a4666fb7193febc167",
+          "image": "https://i.scdn.co/image/ab67616d0000b273e3c060bdd41fed06a866c494",
           "url": "https://open.spotify.com/track/3be9ACTxtcL6Zm4vJRUiPG"
         },
         {
@@ -8068,7 +8124,7 @@
       "description": "",
       "image": "https://mosaic.scdn.co/640/ab67616d00001e0215a57856f31a311e7538aa38ab67616d00001e023391d1c0bb9a0c1310950249ab67616d00001e02453d37c5539da97758914872ab67616d00001e02e0f347d200b819386969884f",
       "url": "https://open.spotify.com/playlist/4Ugpm1NmRk3JUXdtZfPBFD",
-      "totalTracks": 57,
+      "totalTracks": 61,
       "tracks": [
         {
           "name": "Toy",
@@ -8395,7 +8451,7 @@
           "artist": "OTO MAYUMI",
           "album": "Zenbu",
           "duration": "3:03",
-          "image": "https://i.scdn.co/image/ab67616d0000b27390eb76bad02570343c9ec164",
+          "image": "https://i.scdn.co/image/ab67616d0000b273a8e8d7146ae6fa34d9bb3fcf",
           "url": "https://open.spotify.com/track/5tLj14tJyFZffMWJejJLjP"
         },
         {
@@ -8483,7 +8539,7 @@
           "artist": "OTO MAYUMI",
           "album": "Good and Bad Shades",
           "duration": "2:56",
-          "image": "https://i.scdn.co/image/ab67616d0000b2735fde761639d5f5ee05b0ca2e",
+          "image": "https://i.scdn.co/image/ab67616d0000b2736d7a12bb3f7cd45de9fe4267",
           "url": "https://open.spotify.com/track/3ExY27kMRnjHrJzHHmHST1"
         },
         {
@@ -8525,6 +8581,38 @@
           "duration": "4:00",
           "image": "https://i.scdn.co/image/ab67616d0000b273d5d11b6ac4242aaa41c8be69",
           "url": "https://open.spotify.com/track/6TBJkXHPhu3EsMk1bshwuI"
+        },
+        {
+          "name": "jellyous",
+          "artist": "ILLIT",
+          "album": "jellyous (Feat. Sophie Powers)",
+          "duration": "2:43",
+          "image": "https://i.scdn.co/image/ab67616d0000b273d3f0c1aaebe2b11b0b984251",
+          "url": "https://open.spotify.com/track/51pREVFJeAJGvhJ1rYCKZH"
+        },
+        {
+          "name": "Still With You",
+          "artist": "Jung Kook",
+          "album": "Still With You",
+          "duration": "3:59",
+          "image": "https://i.scdn.co/image/ab67616d0000b273a7f42c375578df426b37638d",
+          "url": "https://open.spotify.com/track/0eFMbKCRw8KByXyWBw8WO7"
+        },
+        {
+          "name": "H.S.K.T. (feat. Wonstein)",
+          "artist": "LEEHI, Wonstein",
+          "album": "4 ONLY",
+          "duration": "3:24",
+          "image": "https://i.scdn.co/image/ab67616d0000b273d5d11b6ac4242aaa41c8be69",
+          "url": "https://open.spotify.com/track/39382sUtIOwIXftX0i76do"
+        },
+        {
+          "name": "love.",
+          "artist": "wave to earth",
+          "album": "0.1 flaws and all.",
+          "duration": "5:07",
+          "image": "https://i.scdn.co/image/ab67616d0000b27324f8c3ad20b7c6cfecb5832e",
+          "url": "https://open.spotify.com/track/5mtTAScDytxMMqZj14NmlN"
         }
       ]
     },
@@ -9474,7 +9562,7 @@
       "description": "",
       "image": "https://mosaic.scdn.co/640/ab67616d00001e0207bc7d2a745636c356b4d0aaab67616d00001e027ee6a22e663bab03232fd5c1ab67616d00001e02c65f8d04502eeddbdd61fa71ab67616d00001e02f5e7b2e5adaa87430a3eccff",
       "url": "https://open.spotify.com/playlist/30HKBjmYhY9zCshaimr8GY",
-      "totalTracks": 88,
+      "totalTracks": 90,
       "tracks": [
         {
           "name": "Chop Suey!",
@@ -10179,9 +10267,25 @@
           "duration": "3:12",
           "image": "https://i.scdn.co/image/ab67616d0000b273884bdc59a674418d971f9b38",
           "url": "https://open.spotify.com/track/76d3TnopVLuy4dNduEdBeP"
+        },
+        {
+          "name": "This Love",
+          "artist": "Pantera",
+          "album": "Vulgar Display of Power",
+          "duration": "6:33",
+          "image": "https://i.scdn.co/image/ab67616d0000b273347c0a40c1e3f0c890a6d9d6",
+          "url": "https://open.spotify.com/track/0Yfpc5zHc9pElVCQ1bPlF4"
+        },
+        {
+          "name": "Angel",
+          "artist": "Massive Attack, Horace Andy",
+          "album": "Mezzanine",
+          "duration": "6:19",
+          "image": "https://i.scdn.co/image/ab67616d0000b2732fcb0a3c7a66e516b11cd26e",
+          "url": "https://open.spotify.com/track/7uv632EkfwYhXoqf8rhYrg"
         }
       ]
     }
   ],
-  "fetchedAt": "2026-07-06T07:22:33.200Z"
+  "fetchedAt": "2026-07-13T08:38:59.240Z"
 }
