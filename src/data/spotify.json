@@ -178,7 +178,7 @@
       "description": "",
       "image": "https://mosaic.scdn.co/640/ab67616d00001e023975b6b899eed4af577f7ba6ab67616d00001e0296bc7d5bd0b6488de76598abab67616d00001e029d377496c6bc8724b521222dab67616d00001e02b395acedffa5fa8e7696aea2",
       "url": "https://open.spotify.com/playlist/18rGaItsvzl4AM2UNUaBzB",
-      "totalTracks": 34,
+      "totalTracks": 33,
       "tracks": [
         {
           "name": "Homage",
@@ -251,14 +251,6 @@
           "duration": "3:31",
           "image": "https://i.scdn.co/image/ab67616d0000b27326da2f3b75f84c4c1d10730a",
           "url": "https://open.spotify.com/track/6qtDW5A9dgCyjhQZSGRlcu"
-        },
-        {
-          "name": "Mirada Helada",
-          "artist": "Isla Iglú",
-          "album": "Perfecta Pieza",
-          "duration": "3:23",
-          "image": "https://i.scdn.co/image/ab67616d0000b273a8bb17ebbff1d1ac1d207d3a",
-          "url": "https://open.spotify.com/track/4gRWUK0uHUXadlRnsAD1hi"
         },
         {
           "name": "te odio",
@@ -458,7 +450,7 @@
       "id": "6hrVNJvFJ5VepMrrOm1tkP",
       "name": "The BEST PSYCHOBILLY",
       "description": "666% pure psychobilly music. https:&#x2F;&#x2F;dailyplaylists.com&#x2F;playlists&#x2F;6hrVNJvFJ5VepMrrOm1tkP . ",
-      "image": "https://image-cdn-fa.spotifycdn.com/image/ab67706c0000da84d32493567f92a955b3562aa4",
+      "image": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da84d32493567f92a955b3562aa4",
       "url": "https://open.spotify.com/playlist/6hrVNJvFJ5VepMrrOm1tkP",
       "totalTracks": 0,
       "tracks": []
@@ -884,6 +876,14 @@
           "url": "https://open.spotify.com/track/57gGhywVAmrLG5QGYfZnqs"
         },
         {
+          "name": "Depresión",
+          "artist": "Finale",
+          "album": "Visión de Futuro",
+          "duration": "1:43",
+          "image": "https://i.scdn.co/image/ab67616d0000b273297dfd363f4158773d70731d",
+          "url": "https://open.spotify.com/track/7y0E7RGsp5boPI8WbsQTqD"
+        },
+        {
           "name": "Es Amor",
           "artist": "Finale",
           "album": "Visión de Futuro",
@@ -1034,14 +1034,6 @@
           "duration": "3:40",
           "image": "https://i.scdn.co/image/ab67616d0000b2730fc0d02cfecb3b9acd16ba2d",
           "url": "https://open.spotify.com/track/6P2ITQT43x0rC0yqkSaXNo"
-        },
-        {
-          "name": "Depresión",
-          "artist": "Finale",
-          "album": "Visión de Futuro",
-          "duration": "1:43",
-          "image": "https://i.scdn.co/image/ab67616d0000b273297dfd363f4158773d70731d",
-          "url": "https://open.spotify.com/track/7y0E7RGsp5boPI8WbsQTqD"
         }
       ]
     },
@@ -1611,7 +1603,7 @@
           "artist": "Echo & the Bunnymen",
           "album": "Ocean Rain (Expanded; 2007 Remaster)",
           "duration": "5:48",
-          "image": "https://i.scdn.co/image/ab67616d0000b273bced3fdc09557f0e81c3cbed",
+          "image": "https://i.scdn.co/image/ab67616d0000b273790200cd2e2a202c8834e3ab",
           "url": "https://open.spotify.com/track/35E2eKIEXXnP5q9L51iOAk"
         },
         {
@@ -1734,7 +1726,7 @@
       "description": "",
       "image": "https://mosaic.scdn.co/640/ab67616d00001e0260a85504e6add050d613a61eab67616d00001e027693951c459da05ba896015eab67616d00001e0292a044b1a92d5157e3d7ca39ab67616d00001e02b5b81ce0c06b5d18e46ac01a",
       "url": "https://open.spotify.com/playlist/7jCyHog30iJLK7Av639MCT",
-      "totalTracks": 115,
+      "totalTracks": 114,
       "tracks": [
         {
           "name": "No Entiendo",
@@ -1980,8 +1972,8 @@
           "name": "Cien años",
           "artist": "Pedro Infante",
           "album": "15 Inmortales de Pedro Infante",
-          "duration": "3:32",
-          "image": "https://i.scdn.co/image/ab67616d0000b273111ca667e0c0dd5a7e269c57",
+          "duration": "3:31",
+          "image": "https://i.scdn.co/image/ab67616d0000b273373b60668413d6b090f3a364",
           "url": "https://open.spotify.com/track/760r2LXNtMaHDKMQ5wkXbi"
         },
         {
@@ -1999,14 +1991,6 @@
           "duration": "3:08",
           "image": "https://i.scdn.co/image/ab67616d0000b273274cbd16b0103c083679de69",
           "url": "https://open.spotify.com/track/5Cf8MCD6NcYvy8RQL2khAS"
-        },
-        {
-          "name": "Ojos Tristes (with The Marías)",
-          "artist": "Selena Gomez, benny blanco, The Marías",
-          "album": "I Said I Love You First",
-          "duration": "3:21",
-          "image": "https://i.scdn.co/image/ab67616d0000b2735c99217c0a33291dcd4e0242",
-          "url": "https://open.spotify.com/track/1DFmBjoeQN9DpOVTEewyx0"
         },
         {
           "name": "40 y 20",
@@ -2535,6 +2519,14 @@
           "duration": "4:50",
           "image": "https://i.scdn.co/image/ab67616d0000b2734fea82693604b715d8440f98",
           "url": "https://open.spotify.com/track/05BD87wSnrHtYe1SpeOkcE"
+        },
+        {
+          "name": "Te Seguiré Queriendo",
+          "artist": "Trio Martino",
+          "album": "Colección Doble Platino",
+          "duration": "2:32",
+          "image": "https://i.scdn.co/image/ab67616d0000b273dc46ec5df8bde74f0f0f5ba5",
+          "url": "https://open.spotify.com/track/4AmOgwcxQKJo7xrCjvkJIu"
         }
       ]
     },
@@ -3966,7 +3958,7 @@
       "description": "",
       "image": "https://mosaic.scdn.co/640/ab67616d00001e0233d1fc9841aa9b33dac06ac1ab67616d00001e02500f7d0243735942de6043c1ab67616d00001e02ba9af9de79c8b8fef7e8ba6cab67616d00001e02bcc30c5fa48fca3218c3ffa4",
       "url": "https://open.spotify.com/playlist/7Jmdux2Nwytm9tkUCO40LR",
-      "totalTracks": 125,
+      "totalTracks": 131,
       "tracks": [
         {
           "name": "Sin Miedo",
@@ -5586,7 +5578,7 @@
       "description": "",
       "image": "https://image-cdn-fa.spotifycdn.com/image/ab67706c0000da84e2d7ed05e574dc4a05130a75",
       "url": "https://open.spotify.com/playlist/5sXtWNyd9sFCeclulbZSDi",
-      "totalTracks": 96,
+      "totalTracks": 97,
       "tracks": [
         {
           "name": "Love",
@@ -5737,7 +5729,7 @@
           "artist": "Gustavo Cerati",
           "album": "Ahí Vamos",
           "duration": "3:52",
-          "image": "https://i.scdn.co/image/ab67616d0000b273d543f7c7de880da5370922c0",
+          "image": "https://i.scdn.co/image/ab67616d0000b273f89f01679779a2246c78bc7a",
           "url": "https://open.spotify.com/track/3oqWr0jDWNXxWufNogGREp"
         },
         {
@@ -5881,7 +5873,7 @@
           "artist": "Gustavo Cerati",
           "album": "Ahí Vamos",
           "duration": "3:53",
-          "image": "https://i.scdn.co/image/ab67616d0000b273d543f7c7de880da5370922c0",
+          "image": "https://i.scdn.co/image/ab67616d0000b273f89f01679779a2246c78bc7a",
           "url": "https://open.spotify.com/track/1rh4kDY9T4fHVDum8Foi5k"
         },
         {
@@ -5905,7 +5897,7 @@
           "artist": "Gustavo Cerati",
           "album": "Ahí Vamos",
           "duration": "5:08",
-          "image": "https://i.scdn.co/image/ab67616d0000b273d543f7c7de880da5370922c0",
+          "image": "https://i.scdn.co/image/ab67616d0000b273f89f01679779a2246c78bc7a",
           "url": "https://open.spotify.com/track/17eJyYLIlMNlOqcwHYJ9F2"
         },
         {
@@ -6177,7 +6169,7 @@
           "artist": "Mikel Erentxun",
           "album": "Naufragios",
           "duration": "3:53",
-          "image": "https://i.scdn.co/image/ab67616d0000b2734dd1e647d529501a2a06e543",
+          "image": "https://i.scdn.co/image/ab67616d0000b273aa30735bb1a97700cf07c6e3",
           "url": "https://open.spotify.com/track/7HlULtRMJSTzorUMebka0f"
         },
         {
@@ -6349,12 +6341,20 @@
           "url": "https://open.spotify.com/track/4XnPyINNc5ODYP1aoos7Um"
         },
         {
-          "name": "Bye Bye",
-          "artist": "Vilma Palma e Vampiros",
-          "album": "La Pachanga",
-          "duration": "5:49",
-          "image": "https://i.scdn.co/image/ab67616d0000b2730457ded975a6693ce8fc4392",
-          "url": "https://open.spotify.com/track/2FSYfKAApea3U42phhBOIc"
+          "name": "Diez años después",
+          "artist": "Los Rodriguez",
+          "album": "Palabras más, palabras menos",
+          "duration": "3:35",
+          "image": "https://i.scdn.co/image/ab67616d0000b27385043aee35906b4ae5810d65",
+          "url": "https://open.spotify.com/track/75ri6NVvxCULgNRrbGkfzj"
+        },
+        {
+          "name": "Buena suerte y hasta luego",
+          "artist": "Andrés Calamaro",
+          "album": "Grabaciones Encontradas (Dos)",
+          "duration": "3:01",
+          "image": "https://i.scdn.co/image/ab67616d0000b27379c00a92608bfebc4a3f778b",
+          "url": "https://open.spotify.com/track/5vKeUPPUggANk0Fk3jytjp"
         }
       ]
     },
@@ -7112,7 +7112,7 @@
       "description": "",
       "image": "https://mosaic.scdn.co/640/ab67616d00001e0242cb382726e956058bf73ed3ab67616d00001e02926efc8389e226405fff006cab67616d00001e02c428f67b4a9b7e1114dfc117ab67616d00001e02e90db8983ebd43b776694179",
       "url": "https://open.spotify.com/playlist/0HVyWsfWfkD0VpTtuhbVwX",
-      "totalTracks": 71,
+      "totalTracks": 73,
       "tracks": [
         {
           "name": "Your Best American Girl",
@@ -7681,6 +7681,22 @@
           "duration": "2:53",
           "image": "https://i.scdn.co/image/ab67616d0000b2733d2dfa42f771cd458b194979",
           "url": "https://open.spotify.com/track/3EaJDYHA0KnX88JvDhL9oa"
+        },
+        {
+          "name": "Ojos Tristes (with The Marías)",
+          "artist": "Selena Gomez, benny blanco, The Marías",
+          "album": "I Said I Love You First",
+          "duration": "3:21",
+          "image": "https://i.scdn.co/image/ab67616d0000b2735c99217c0a33291dcd4e0242",
+          "url": "https://open.spotify.com/track/1DFmBjoeQN9DpOVTEewyx0"
+        },
+        {
+          "name": "Por Qué Me Fui A Enamorar de Ti - En Vivo, Desde El Lunario del Auditorio Nacional",
+          "artist": "Mon Laferte",
+          "album": "Sola Con Mis Monstruos (En Vivo, Desde El Lunario del Auditorio Nacional)",
+          "duration": "4:33",
+          "image": "https://i.scdn.co/image/ab67616d0000b27307230fef59bb71c5011fe732",
+          "url": "https://open.spotify.com/track/0mqasl5sulqcKTBLJxdZnB"
         }
       ]
     },
@@ -10295,5 +10311,5 @@
       ]
     }
   ],
-  "fetchedAt": "2026-07-20T08:31:24.444Z"
+  "fetchedAt": "2026-07-27T09:19:30.001Z"
 }
