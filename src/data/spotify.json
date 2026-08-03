@@ -176,7 +176,7 @@
       "id": "18rGaItsvzl4AM2UNUaBzB",
       "name": "J",
       "description": "",
-      "image": "https://mosaic.scdn.co/640/ab67616d00001e023975b6b899eed4af577f7ba6ab67616d00001e0296bc7d5bd0b6488de76598abab67616d00001e029d377496c6bc8724b521222dab67616d00001e02b395acedffa5fa8e7696aea2",
+      "image": "https://mosaic.scdn.co/640/ab67616d00001e023975b6b899eed4af577f7ba6ab67616d00001e0263bb237154c47c65da7f63c2ab67616d00001e0296bc7d5bd0b6488de76598abab67616d00001e02ecfde7feaa212a1b60a197a1",
       "url": "https://open.spotify.com/playlist/18rGaItsvzl4AM2UNUaBzB",
       "totalTracks": 33,
       "tracks": [
@@ -450,7 +450,7 @@
       "id": "6hrVNJvFJ5VepMrrOm1tkP",
       "name": "The BEST PSYCHOBILLY",
       "description": "666% pure psychobilly music. https:&#x2F;&#x2F;dailyplaylists.com&#x2F;playlists&#x2F;6hrVNJvFJ5VepMrrOm1tkP . ",
-      "image": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da84d32493567f92a955b3562aa4",
+      "image": "https://image-cdn-fa.spotifycdn.com/image/ab67706c0000da84d32493567f92a955b3562aa4",
       "url": "https://open.spotify.com/playlist/6hrVNJvFJ5VepMrrOm1tkP",
       "totalTracks": 0,
       "tracks": []
@@ -1726,7 +1726,7 @@
       "description": "",
       "image": "https://mosaic.scdn.co/640/ab67616d00001e0260a85504e6add050d613a61eab67616d00001e027693951c459da05ba896015eab67616d00001e0292a044b1a92d5157e3d7ca39ab67616d00001e02b5b81ce0c06b5d18e46ac01a",
       "url": "https://open.spotify.com/playlist/7jCyHog30iJLK7Av639MCT",
-      "totalTracks": 114,
+      "totalTracks": 116,
       "tracks": [
         {
           "name": "No Entiendo",
@@ -2986,7 +2986,7 @@
       "description": "",
       "image": "https://mosaic.scdn.co/640/ab67616d00001e026b98dbf13791547e637e322fab67616d00001e02b0dd6a5cd1dec96c4119c262ab67616d00001e02b298538481c52f7e217ed000ab67616d00001e02d0bbfea6226b5c3707de92ed",
       "url": "https://open.spotify.com/playlist/3mdKZLxagfVqGDpgr9LCZ1",
-      "totalTracks": 62,
+      "totalTracks": 63,
       "tracks": [
         {
           "name": "You Right - Extended",
@@ -3483,6 +3483,14 @@
           "duration": "6:15",
           "image": "https://i.scdn.co/image/ab67616d0000b27338f4012b4bfa54fd54d2b61b",
           "url": "https://open.spotify.com/track/3jqk4fue7CILssCv8UpJe0"
+        },
+        {
+          "name": "Riri",
+          "artist": "Young Miko",
+          "album": "TRAP KITTY",
+          "duration": "2:14",
+          "image": "https://i.scdn.co/image/ab67616d0000b2734d42173bae92f075c0c5f5bb",
+          "url": "https://open.spotify.com/track/13FHy6nHjXHbzHj1dZFB1G"
         }
       ]
     },
@@ -3958,7 +3966,7 @@
       "description": "",
       "image": "https://mosaic.scdn.co/640/ab67616d00001e0233d1fc9841aa9b33dac06ac1ab67616d00001e02500f7d0243735942de6043c1ab67616d00001e02ba9af9de79c8b8fef7e8ba6cab67616d00001e02bcc30c5fa48fca3218c3ffa4",
       "url": "https://open.spotify.com/playlist/7Jmdux2Nwytm9tkUCO40LR",
-      "totalTracks": 131,
+      "totalTracks": 130,
       "tracks": [
         {
           "name": "Sin Miedo",
@@ -4768,7 +4776,7 @@
       "description": "",
       "image": "https://mosaic.scdn.co/640/ab67616d00001e0200eb533f941bc5ff1dad080aab67616d00001e02281532657f0c4174572ad7e3ab67616d00001e0287e7d0f29787bf25ee10ab2cab67616d00001e02c771f7401307f639d0272f68",
       "url": "https://open.spotify.com/playlist/0K9Q3HuLtLsgPcb3ivCLl1",
-      "totalTracks": 143,
+      "totalTracks": 152,
       "tracks": [
         {
           "name": "BRAZILIAN DANÇA PHONK",
@@ -5576,7 +5584,7 @@
       "id": "5sXtWNyd9sFCeclulbZSDi",
       "name": "RR",
       "description": "",
-      "image": "https://image-cdn-fa.spotifycdn.com/image/ab67706c0000da84e2d7ed05e574dc4a05130a75",
+      "image": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da84e2d7ed05e574dc4a05130a75",
       "url": "https://open.spotify.com/playlist/5sXtWNyd9sFCeclulbZSDi",
       "totalTracks": 97,
       "tracks": [
@@ -7659,6 +7667,14 @@
           "url": "https://open.spotify.com/track/2kn0fLwt9QRorHuGdmk6ze"
         },
         {
+          "name": "Ojos Tristes (with The Marías)",
+          "artist": "Selena Gomez, benny blanco, The Marías",
+          "album": "I Said I Love You First",
+          "duration": "3:21",
+          "image": "https://i.scdn.co/image/ab67616d0000b2735c99217c0a33291dcd4e0242",
+          "url": "https://open.spotify.com/track/1DFmBjoeQN9DpOVTEewyx0"
+        },
+        {
           "name": "Unslept",
           "artist": "Miraidempa",
           "album": "Unslept",
@@ -7683,20 +7699,12 @@
           "url": "https://open.spotify.com/track/3EaJDYHA0KnX88JvDhL9oa"
         },
         {
-          "name": "Ojos Tristes (with The Marías)",
-          "artist": "Selena Gomez, benny blanco, The Marías",
-          "album": "I Said I Love You First",
-          "duration": "3:21",
-          "image": "https://i.scdn.co/image/ab67616d0000b2735c99217c0a33291dcd4e0242",
-          "url": "https://open.spotify.com/track/1DFmBjoeQN9DpOVTEewyx0"
-        },
-        {
-          "name": "Por Qué Me Fui A Enamorar de Ti - En Vivo, Desde El Lunario del Auditorio Nacional",
-          "artist": "Mon Laferte",
-          "album": "Sola Con Mis Monstruos (En Vivo, Desde El Lunario del Auditorio Nacional)",
-          "duration": "4:33",
-          "image": "https://i.scdn.co/image/ab67616d0000b27307230fef59bb71c5011fe732",
-          "url": "https://open.spotify.com/track/0mqasl5sulqcKTBLJxdZnB"
+          "name": "Melting",
+          "artist": "Kali Uchis",
+          "album": "Por Vida",
+          "duration": "3:28",
+          "image": "https://i.scdn.co/image/ab67616d0000b27388d3a2c03886b0c034c7eb8f",
+          "url": "https://open.spotify.com/track/6lnqe1urLVOV4tn0YgmnIw"
         }
       ]
     },
@@ -10311,5 +10319,5 @@
       ]
     }
   ],
-  "fetchedAt": "2026-07-27T09:19:30.001Z"
+  "fetchedAt": "2026-08-03T08:54:13.029Z"
 }
