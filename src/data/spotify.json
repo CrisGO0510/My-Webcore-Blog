@@ -520,12 +520,12 @@
           "url": "https://open.spotify.com/track/7tlbZCr7a3BLXCSlwvWMCA"
         },
         {
-          "name": "Teenage Dirtbag",
-          "artist": "Wheatus",
-          "album": "Wheatus",
-          "duration": "4:01",
-          "image": "https://i.scdn.co/image/ab67616d0000b2730a3740efa638f10f14fabc46",
-          "url": "https://open.spotify.com/track/25FTMokYEbEWHEdss5JLZS"
+          "name": "I'm Still Cheering For The 1980 U.S. Hockey Team",
+          "artist": "Oakwood",
+          "album": "Summer",
+          "duration": "2:08",
+          "image": "https://i.scdn.co/image/ab67616d0000b273d02f20f823a9090b7320d63f",
+          "url": "https://open.spotify.com/track/4nuTEzmtIl2BDhXd3vLff6"
         }
       ]
     },
@@ -1041,7 +1041,7 @@
       "id": "4EdpqHgnDOnIqom2tkFjmO",
       "name": "deathrock🦇",
       "description": "",
-      "image": "https://image-cdn-fa.spotifycdn.com/image/ab67706c0000da8411d683e895431343ae1464c4",
+      "image": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da8411d683e895431343ae1464c4",
       "url": "https://open.spotify.com/playlist/4EdpqHgnDOnIqom2tkFjmO",
       "totalTracks": 0,
       "tracks": []
@@ -2536,7 +2536,7 @@
       "description": "",
       "image": "https://mosaic.scdn.co/640/ab67616d00001e020191ff6f45fafc6e34f16bb5ab67616d00001e02831ca1d43a5a4c1cf002cd73ab67616d00001e02a6cf5be81ca9813f53f56b6eab67616d00001e02c6ef47d0a53999ea34af9f11",
       "url": "https://open.spotify.com/playlist/1ArkFjpzwBoyCEf0uBvAMQ",
-      "totalTracks": 55,
+      "totalTracks": 53,
       "tracks": [
         {
           "name": "Jugando al amor",
@@ -2756,7 +2756,7 @@
         },
         {
           "name": "Si Amaneciera",
-          "artist": "Saratoga, Jeronimo Ramiro",
+          "artist": "Saratoga",
           "album": "El Clan de la Lucha",
           "duration": "5:54",
           "image": "https://i.scdn.co/image/ab67616d0000b2738474fbfcff561f59b1bd543f",
@@ -2779,28 +2779,12 @@
           "url": "https://open.spotify.com/track/3nV211W6kAjj92a5HqyX7a"
         },
         {
-          "name": "Maldito sea tu nombre",
-          "artist": "Ángeles Del Infierno",
-          "album": "Pacto con el diablo",
-          "duration": "3:45",
-          "image": "https://i.scdn.co/image/ab67616d0000b27383ae26d2bb3ebaa42c92b912",
-          "url": "https://open.spotify.com/track/7vEYpLe2jDmZTYg0zdPNoz"
-        },
-        {
           "name": "Las Normas de la Soledad",
           "artist": "Crossfire",
           "album": "Tierra",
           "duration": "4:18",
           "image": "https://i.scdn.co/image/ab67616d0000b273a8c3f1c6f46e6a186eebbeec",
           "url": "https://open.spotify.com/track/4maSUFUMxgBY5q5CrkYZMf"
-        },
-        {
-          "name": "Esta Triste Libertad",
-          "artist": "Akash",
-          "album": "Resurrección",
-          "duration": "4:54",
-          "image": "https://i.scdn.co/image/ab67616d0000b273d8723b3c8632f556f788c8af",
-          "url": "https://open.spotify.com/track/4hIPevRd2g3xeINiH7GRdC"
         },
         {
           "name": "Solo",
@@ -2812,7 +2796,7 @@
         },
         {
           "name": "Lejos de Ti",
-          "artist": "Saratoga, Nicolas Hierro",
+          "artist": "Saratoga",
           "album": "Mi Ciudad",
           "duration": "4:48",
           "image": "https://i.scdn.co/image/ab67616d0000b273334dc5a710d0549df0ee1cb4",
@@ -2852,7 +2836,7 @@
         },
         {
           "name": "Parte de Mi",
-          "artist": "Saratoga, Leo Jiménez",
+          "artist": "Saratoga",
           "album": "Agotarás",
           "duration": "4:22",
           "image": "https://i.scdn.co/image/ab67616d0000b27331e6931c91b72a09d425487a",
@@ -3966,7 +3950,7 @@
       "description": "",
       "image": "https://mosaic.scdn.co/640/ab67616d00001e0233d1fc9841aa9b33dac06ac1ab67616d00001e02500f7d0243735942de6043c1ab67616d00001e02ba9af9de79c8b8fef7e8ba6cab67616d00001e02bcc30c5fa48fca3218c3ffa4",
       "url": "https://open.spotify.com/playlist/7Jmdux2Nwytm9tkUCO40LR",
-      "totalTracks": 130,
+      "totalTracks": 132,
       "tracks": [
         {
           "name": "Sin Miedo",
@@ -5586,7 +5570,7 @@
       "description": "",
       "image": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da84e2d7ed05e574dc4a05130a75",
       "url": "https://open.spotify.com/playlist/5sXtWNyd9sFCeclulbZSDi",
-      "totalTracks": 97,
+      "totalTracks": 99,
       "tracks": [
         {
           "name": "Love",
@@ -6363,6 +6347,22 @@
           "duration": "3:01",
           "image": "https://i.scdn.co/image/ab67616d0000b27379c00a92608bfebc4a3f778b",
           "url": "https://open.spotify.com/track/5vKeUPPUggANk0Fk3jytjp"
+        },
+        {
+          "name": "Hacelo por Mí",
+          "artist": "Attaque 77",
+          "album": "El Cielo Puede Esperar",
+          "duration": "3:49",
+          "image": "https://i.scdn.co/image/ab67616d0000b273834dbc2fb7fc8fb32cd593ff",
+          "url": "https://open.spotify.com/track/5zqXco5gN08t20hf5AO62z"
+        },
+        {
+          "name": "Todavía una canción de amor",
+          "artist": "Los Rodriguez",
+          "album": "Palabras más, palabras menos",
+          "duration": "4:58",
+          "image": "https://i.scdn.co/image/ab67616d0000b27385043aee35906b4ae5810d65",
+          "url": "https://open.spotify.com/track/0bJsijV1n7s0a62xuCMlsD"
         }
       ]
     },
@@ -10319,5 +10319,5 @@
       ]
     }
   ],
-  "fetchedAt": "2026-08-03T08:54:13.029Z"
+  "fetchedAt": "2026-08-10T07:01:50.040Z"
 }
