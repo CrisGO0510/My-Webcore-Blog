@@ -15,7 +15,7 @@
       "description": "",
       "image": "https://mosaic.scdn.co/640/ab67616d00001e021a9d42dbbfa5a0b440654321ab67616d00001e02791d6daf3d05cde2a646c3cdab67616d00001e02c28a6d0f6ed7b540f8208543ab67616d00001e02e0e4b48b060715c9aa7fca18",
       "url": "https://open.spotify.com/playlist/6NOonfWLbNaymxPPTW4l93",
-      "totalTracks": 18,
+      "totalTracks": 19,
       "tracks": [
         {
           "name": "Amigo",
@@ -160,6 +160,14 @@
           "duration": "3:18",
           "image": "https://i.scdn.co/image/ab67616d0000b273a676aa01533e6cf5c40b99b6",
           "url": "https://open.spotify.com/track/1WbXIpiGBJkCiv3hn40iPB"
+        },
+        {
+          "name": "Deja vu",
+          "artist": "Prince Royce, Shakira",
+          "album": "FIVE (Deluxe Edition)",
+          "duration": "3:16",
+          "image": "https://i.scdn.co/image/ab67616d0000b27397d8bec3d2d22f13b5e55d03",
+          "url": "https://open.spotify.com/track/46HdsiK0uR26B2dY9QPzda"
         }
       ]
     },
@@ -1041,7 +1049,7 @@
       "id": "4EdpqHgnDOnIqom2tkFjmO",
       "name": "deathrock🦇",
       "description": "",
-      "image": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da8411d683e895431343ae1464c4",
+      "image": "https://image-cdn-fa.spotifycdn.com/image/ab67706c0000da8411d683e895431343ae1464c4",
       "url": "https://open.spotify.com/playlist/4EdpqHgnDOnIqom2tkFjmO",
       "totalTracks": 0,
       "tracks": []
@@ -5570,7 +5578,7 @@
       "description": "",
       "image": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da84e2d7ed05e574dc4a05130a75",
       "url": "https://open.spotify.com/playlist/5sXtWNyd9sFCeclulbZSDi",
-      "totalTracks": 99,
+      "totalTracks": 100,
       "tracks": [
         {
           "name": "Love",
@@ -6363,6 +6371,14 @@
           "duration": "4:58",
           "image": "https://i.scdn.co/image/ab67616d0000b27385043aee35906b4ae5810d65",
           "url": "https://open.spotify.com/track/0bJsijV1n7s0a62xuCMlsD"
+        },
+        {
+          "name": "Ella Dijo",
+          "artist": "Estelares, Jorge Serrano",
+          "album": "Sistema Nervioso Central",
+          "duration": "4:44",
+          "image": "https://i.scdn.co/image/ab67616d0000b273eed3fde2877221155601b242",
+          "url": "https://open.spotify.com/track/6cFf4Jfy7ThUwGzbqFcZsx"
         }
       ]
     },
@@ -10319,5 +10335,5 @@
       ]
     }
   ],
-  "fetchedAt": "2026-08-10T07:01:50.040Z"
+  "fetchedAt": "2026-08-17T06:25:31.556Z"
 }
