@@ -458,7 +458,7 @@
       "id": "6hrVNJvFJ5VepMrrOm1tkP",
       "name": "The BEST PSYCHOBILLY",
       "description": "666% pure psychobilly music. https:&#x2F;&#x2F;dailyplaylists.com&#x2F;playlists&#x2F;6hrVNJvFJ5VepMrrOm1tkP . ",
-      "image": "https://image-cdn-fa.spotifycdn.com/image/ab67706c0000da84d32493567f92a955b3562aa4",
+      "image": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000d72cd32493567f92a955b3562aa4",
       "url": "https://open.spotify.com/playlist/6hrVNJvFJ5VepMrrOm1tkP",
       "totalTracks": 0,
       "tracks": []
@@ -1049,7 +1049,7 @@
       "id": "4EdpqHgnDOnIqom2tkFjmO",
       "name": "deathrock🦇",
       "description": "",
-      "image": "https://image-cdn-fa.spotifycdn.com/image/ab67706c0000da8411d683e895431343ae1464c4",
+      "image": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da8411d683e895431343ae1464c4",
       "url": "https://open.spotify.com/playlist/4EdpqHgnDOnIqom2tkFjmO",
       "totalTracks": 0,
       "tracks": []
@@ -1060,7 +1060,7 @@
       "description": "",
       "image": "https://mosaic.scdn.co/640/ab67616d00001e0270e9e75b39a45a7a806d4464ab67616d00001e028f147e0af424cd7c6f91e9f2ab67616d00001e02d6cbefc7132fbaa8b9c81f41ab67616d00001e02d736b2c5f252f84ad45d5be6",
       "url": "https://open.spotify.com/playlist/5x8L3Gjlef8MoLM8MHUYBI",
-      "totalTracks": 83,
+      "totalTracks": 84,
       "tracks": [
         {
           "name": "Skeleton Kids",
@@ -1725,6 +1725,14 @@
           "duration": "2:38",
           "image": "https://i.scdn.co/image/ab67616d0000b27307b4fe32586f38f1cd560163",
           "url": "https://open.spotify.com/track/7xpmCypjM0cho2bTefkDcL"
+        },
+        {
+          "name": "Danza Fúnebre",
+          "artist": "Píldora Letal",
+          "album": "Danza Fúnebre",
+          "duration": "2:10",
+          "image": "https://i.scdn.co/image/ab67616d0000b273ca261932b692c073bfe20a06",
+          "url": "https://open.spotify.com/track/64EiOKVIye5VlJjBpZjJ7V"
         }
       ]
     },
@@ -1734,7 +1742,7 @@
       "description": "",
       "image": "https://mosaic.scdn.co/640/ab67616d00001e0260a85504e6add050d613a61eab67616d00001e027693951c459da05ba896015eab67616d00001e0292a044b1a92d5157e3d7ca39ab67616d00001e02b5b81ce0c06b5d18e46ac01a",
       "url": "https://open.spotify.com/playlist/7jCyHog30iJLK7Av639MCT",
-      "totalTracks": 116,
+      "totalTracks": 115,
       "tracks": [
         {
           "name": "No Entiendo",
@@ -2377,14 +2385,6 @@
           "url": "https://open.spotify.com/track/2yIUUOe7UVhvxQmaLVqRKr"
         },
         {
-          "name": "Tres Regalos",
-          "artist": "Los Dandys",
-          "album": "Coleccion Original",
-          "duration": "2:55",
-          "image": "https://i.scdn.co/image/ab67616d0000b273fb066848c30cd37be7f032f9",
-          "url": "https://open.spotify.com/track/0Wui9qdWQt5zhH0ZYXmrVq"
-        },
-        {
           "name": "Tantita Pena",
           "artist": "Alejandro Fernández",
           "album": "Orígenes",
@@ -2535,6 +2535,14 @@
           "duration": "2:32",
           "image": "https://i.scdn.co/image/ab67616d0000b273dc46ec5df8bde74f0f0f5ba5",
           "url": "https://open.spotify.com/track/4AmOgwcxQKJo7xrCjvkJIu"
+        },
+        {
+          "name": "Hoy tengo ganas de ti",
+          "artist": "Miguel Gallardo",
+          "album": "2 (Remasterizado 2017)",
+          "duration": "4:05",
+          "image": "https://i.scdn.co/image/ab67616d0000b273f104e195819919341b2514b9",
+          "url": "https://open.spotify.com/track/17oji5hYaIqOFWFnPPWCeJ"
         }
       ]
     },
@@ -2978,7 +2986,7 @@
       "description": "",
       "image": "https://mosaic.scdn.co/640/ab67616d00001e026b98dbf13791547e637e322fab67616d00001e02b0dd6a5cd1dec96c4119c262ab67616d00001e02b298538481c52f7e217ed000ab67616d00001e02d0bbfea6226b5c3707de92ed",
       "url": "https://open.spotify.com/playlist/3mdKZLxagfVqGDpgr9LCZ1",
-      "totalTracks": 63,
+      "totalTracks": 66,
       "tracks": [
         {
           "name": "You Right - Extended",
@@ -3483,6 +3491,30 @@
           "duration": "2:14",
           "image": "https://i.scdn.co/image/ab67616d0000b2734d42173bae92f075c0c5f5bb",
           "url": "https://open.spotify.com/track/13FHy6nHjXHbzHj1dZFB1G"
+        },
+        {
+          "name": "Big Booty",
+          "artist": "Hozwal, Young Miko, Lil Geniuz",
+          "album": "Sempiterno",
+          "duration": "3:11",
+          "image": "https://i.scdn.co/image/ab67616d0000b2736c94f44b052c5dfdfd03daca",
+          "url": "https://open.spotify.com/track/1eG68fWLXO7IphzE4GOeJf"
+        },
+        {
+          "name": "WASSUP",
+          "artist": "Young Miko",
+          "album": "Do Not Disturb",
+          "duration": "2:42",
+          "image": "https://i.scdn.co/image/ab67616d0000b2737fcd5648e2e2c477597e016c",
+          "url": "https://open.spotify.com/track/1aDAWD2QuWQUMoadcrr2Ru"
+        },
+        {
+          "name": "QLOO*",
+          "artist": "Young Cister, Kreamly",
+          "album": "LA CIUDAD NUNCA DUERME*",
+          "duration": "2:26",
+          "image": "https://i.scdn.co/image/ab67616d0000b2738eecda5e1e3b66578c162938",
+          "url": "https://open.spotify.com/track/7CMj1OOS1ho4CPEQTFKzcN"
         }
       ]
     },
@@ -5576,7 +5608,7 @@
       "id": "5sXtWNyd9sFCeclulbZSDi",
       "name": "RR",
       "description": "",
-      "image": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da84e2d7ed05e574dc4a05130a75",
+      "image": "https://image-cdn-fa.spotifycdn.com/image/ab67706c0000da84e2d7ed05e574dc4a05130a75",
       "url": "https://open.spotify.com/playlist/5sXtWNyd9sFCeclulbZSDi",
       "totalTracks": 100,
       "tracks": [
@@ -6508,7 +6540,7 @@
       "id": "17aFxLpI0QVSndRFa4xdTT",
       "name": "S",
       "description": "",
-      "image": "https://mosaic.scdn.co/640/ab67616d00001e0207031a0d94b5340aeb77e824ab67616d00001e0275ce3e12a916f36d44a6ef76ab67616d00001e02eb30f2df01fe768eca881c51ab67616d00001e02f421d294e9eb94e809defe72",
+      "image": "https://mosaic.scdn.co/640/ab67616d00001e0207031a0d94b5340aeb77e824ab67616d00001e0212b0e3a5babe31ebea270083ab67616d00001e0275ce3e12a916f36d44a6ef76ab67616d00001e02f421d294e9eb94e809defe72",
       "url": "https://open.spotify.com/playlist/17aFxLpI0QVSndRFa4xdTT",
       "totalTracks": 77,
       "tracks": [
@@ -8219,7 +8251,7 @@
           "artist": "稲葉曇",
           "album": "ANTICYCLONE",
           "duration": "3:24",
-          "image": "https://i.scdn.co/image/ab67616d0000b27325c2a3af824b7dd8cafae97e",
+          "image": "https://i.scdn.co/image/ab67616d0000b27312d6eaddbbff6de7dd946fe7",
           "url": "https://open.spotify.com/track/2zAi85TQB7mLzl8P1ySAj9"
         },
         {
@@ -10335,5 +10367,5 @@
       ]
     }
   ],
-  "fetchedAt": "2026-08-17T06:25:31.556Z"
+  "fetchedAt": "2026-08-24T06:29:30.683Z"
 }
