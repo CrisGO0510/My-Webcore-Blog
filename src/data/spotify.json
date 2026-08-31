@@ -458,7 +458,7 @@
       "id": "6hrVNJvFJ5VepMrrOm1tkP",
       "name": "The BEST PSYCHOBILLY",
       "description": "666% pure psychobilly music. https:&#x2F;&#x2F;dailyplaylists.com&#x2F;playlists&#x2F;6hrVNJvFJ5VepMrrOm1tkP . ",
-      "image": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000d72cd32493567f92a955b3562aa4",
+      "image": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da84d32493567f92a955b3562aa4",
       "url": "https://open.spotify.com/playlist/6hrVNJvFJ5VepMrrOm1tkP",
       "totalTracks": 0,
       "tracks": []
@@ -1049,7 +1049,7 @@
       "id": "4EdpqHgnDOnIqom2tkFjmO",
       "name": "deathrock🦇",
       "description": "",
-      "image": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da8411d683e895431343ae1464c4",
+      "image": "https://image-cdn-fa.spotifycdn.com/image/ab67706c0000da8411d683e895431343ae1464c4",
       "url": "https://open.spotify.com/playlist/4EdpqHgnDOnIqom2tkFjmO",
       "totalTracks": 0,
       "tracks": []
@@ -1742,7 +1742,7 @@
       "description": "",
       "image": "https://mosaic.scdn.co/640/ab67616d00001e0260a85504e6add050d613a61eab67616d00001e027693951c459da05ba896015eab67616d00001e0292a044b1a92d5157e3d7ca39ab67616d00001e02b5b81ce0c06b5d18e46ac01a",
       "url": "https://open.spotify.com/playlist/7jCyHog30iJLK7Av639MCT",
-      "totalTracks": 115,
+      "totalTracks": 117,
       "tracks": [
         {
           "name": "No Entiendo",
@@ -3149,7 +3149,7 @@
           "url": "https://open.spotify.com/track/3nlwUAx0P7XBSHMB8raHSK"
         },
         {
-          "name": "ecstacy (slowed)",
+          "name": "ecstacy - slowed",
           "artist": "SUICIDAL-IDOL",
           "album": "ecstacy (slowed)",
           "duration": "1:59",
@@ -4800,7 +4800,7 @@
       "description": "",
       "image": "https://mosaic.scdn.co/640/ab67616d00001e0200eb533f941bc5ff1dad080aab67616d00001e02281532657f0c4174572ad7e3ab67616d00001e0287e7d0f29787bf25ee10ab2cab67616d00001e02c771f7401307f639d0272f68",
       "url": "https://open.spotify.com/playlist/0K9Q3HuLtLsgPcb3ivCLl1",
-      "totalTracks": 152,
+      "totalTracks": 153,
       "tracks": [
         {
           "name": "BRAZILIAN DANÇA PHONK",
@@ -6668,8 +6668,8 @@
           "name": "Cali Pachanguero",
           "artist": "Grupo Niche",
           "album": "No Hay Quinto Malo",
-          "duration": "5:10",
-          "image": "https://i.scdn.co/image/ab67616d0000b27331f52b4562e4a6b06d4ec3b2",
+          "duration": "4:48",
+          "image": "https://i.scdn.co/image/ab67616d0000b273d3554f874c5c9b0ebb06b27e",
           "url": "https://open.spotify.com/track/6GsxCYC9UaL0J8b8MVrRqX"
         },
         {
@@ -10367,5 +10367,5 @@
       ]
     }
   ],
-  "fetchedAt": "2026-08-24T06:29:30.683Z"
+  "fetchedAt": "2026-08-31T11:55:23.853Z"
 }
